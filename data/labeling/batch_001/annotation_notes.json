@@ -1,0 +1,499 @@
+{
+  "group_1": {
+    "status": "AI-assisted DRAFT; requires user review before training",
+    "reviewed_names": [
+      "frame_000105.jpg",
+      "frame_000117.jpg",
+      "frame_000126.jpg",
+      "frame_000135.jpg",
+      "frame_000147.jpg",
+      "frame_000153.jpg",
+      "frame_000159.jpg",
+      "frame_000168.jpg",
+      "frame_000174.jpg",
+      "frame_000180.jpg",
+      "frame_000186.jpg",
+      "frame_000195.jpg",
+      "frame_000207.jpg",
+      "frame_000234.jpg",
+      "frame_000246.jpg",
+      "frame_000261.jpg",
+      "frame_000276.jpg",
+      "frame_000294.jpg",
+      "frame_000300.jpg",
+      "frame_000312.jpg",
+      "frame_000321.jpg",
+      "frame_000327.jpg",
+      "frame_000333.jpg",
+      "frame_000339.jpg",
+      "frame_000345.jpg"
+    ],
+    "counts": {
+      "0": 88,
+      "2": 17,
+      "1": 7
+    },
+    "per_image_counts": {
+      "frame_000105.jpg": {
+        "0": 5
+      },
+      "frame_000117.jpg": {
+        "0": 5
+      },
+      "frame_000126.jpg": {
+        "0": 5
+      },
+      "frame_000135.jpg": {
+        "0": 5
+      },
+      "frame_000147.jpg": {
+        "0": 5
+      },
+      "frame_000153.jpg": {
+        "0": 5
+      },
+      "frame_000159.jpg": {
+        "0": 4
+      },
+      "frame_000168.jpg": {
+        "0": 4
+      },
+      "frame_000174.jpg": {
+        "0": 3
+      },
+      "frame_000180.jpg": {
+        "0": 3,
+        "2": 1
+      },
+      "frame_000186.jpg": {
+        "0": 4,
+        "2": 1
+      },
+      "frame_000195.jpg": {
+        "0": 5,
+        "2": 1,
+        "1": 1
+      },
+      "frame_000207.jpg": {
+        "0": 4,
+        "2": 1,
+        "1": 1
+      },
+      "frame_000234.jpg": {
+        "0": 3,
+        "2": 2,
+        "1": 1
+      },
+      "frame_000246.jpg": {
+        "0": 3,
+        "1": 1,
+        "2": 1
+      },
+      "frame_000261.jpg": {
+        "0": 2,
+        "1": 1,
+        "2": 1
+      },
+      "frame_000276.jpg": {
+        "0": 3,
+        "1": 1,
+        "2": 1
+      },
+      "frame_000294.jpg": {
+        "0": 3,
+        "1": 1,
+        "2": 1
+      },
+      "frame_000300.jpg": {
+        "0": 3,
+        "2": 1
+      },
+      "frame_000312.jpg": {
+        "0": 3,
+        "2": 1
+      },
+      "frame_000321.jpg": {
+        "0": 3,
+        "2": 1
+      },
+      "frame_000327.jpg": {
+        "0": 2,
+        "2": 1
+      },
+      "frame_000333.jpg": {
+        "0": 2,
+        "2": 1
+      },
+      "frame_000339.jpg": {
+        "0": 2,
+        "2": 1
+      },
+      "frame_000345.jpg": {
+        "0": 2,
+        "2": 1
+      }
+    },
+    "bbox_rationale": [
+      "Each original 1412x814 image was individually displayed and visually inspected. Pixel boxes manually selected, normalized to six decimals.",
+      "Train boxes enclose visible body, roof, undercarriage and attached ramps. Contiguous car sequences grouped when boundaries unclear; separate lane vehicles separated.",
+      "Barrier supports included where visible. Image-edge objects clipped. Players, coins, policeman, UI and power-up glows excluded."
+    ],
+    "ambiguous_objects": [
+      {
+        "images": [
+          "frame_000105.jpg",
+          "frame_000117.jpg",
+          "frame_000126.jpg",
+          "frame_000135.jpg"
+        ],
+        "note": "Overlapping trains: small distant lantern fronts and visible foreground red cart/ramp portions treated as separate vehicles where visually distinct; review train continuity."
+      },
+      {
+        "images": [
+          "frame_000186.jpg",
+          "frame_000195.jpg",
+          "frame_000207.jpg"
+        ],
+        "note": "Very small far trains partly hidden by foreground roofs; boxes contain visible portions. Additional tiny indistinct horizon details omitted."
+      },
+      {
+        "images": [
+          "frame_000180.jpg",
+          "frame_000186.jpg",
+          "frame_000195.jpg",
+          "frame_000207.jpg",
+          "frame_000234.jpg",
+          "frame_000246.jpg",
+          "frame_000261.jpg",
+          "frame_000276.jpg",
+          "frame_000294.jpg",
+          "frame_000300.jpg",
+          "frame_000312.jpg",
+          "frame_000321.jpg",
+          "frame_000327.jpg",
+          "frame_000333.jpg",
+          "frame_000339.jpg",
+          "frame_000345.jpg"
+        ],
+        "note": "Blue-cap red/white downward chevron obstacles interpreted as overhead barriers; visible green supports enclosed. Review distant and roof-occluded support extents."
+      },
+      {
+        "images": [
+          "frame_000321.jpg",
+          "frame_000327.jpg",
+          "frame_000333.jpg"
+        ],
+        "note": "Large glowing shoe power-up occludes trains/barrier. Boxes enclose visible disconnected portions only; frame333 is especially uncertain and needs priority user review."
+      }
+    ]
+  },
+  "group_2": {
+    "status": "AI-assisted DRAFT; requires user overlay review before training",
+    "reviewed_names": [
+      "frame_000357.jpg",
+      "frame_000363.jpg",
+      "frame_000369.jpg",
+      "frame_000375.jpg",
+      "frame_000381.jpg",
+      "frame_000387.jpg",
+      "frame_000402.jpg",
+      "frame_000414.jpg",
+      "frame_000420.jpg",
+      "frame_000432.jpg",
+      "frame_000453.jpg",
+      "frame_000459.jpg",
+      "frame_000468.jpg",
+      "frame_000477.jpg",
+      "frame_000510.jpg",
+      "frame_000516.jpg",
+      "frame_000525.jpg",
+      "frame_000552.jpg",
+      "frame_000564.jpg",
+      "frame_000570.jpg",
+      "frame_000576.jpg",
+      "frame_000582.jpg",
+      "frame_000597.jpg",
+      "frame_000612.jpg",
+      "frame_000618.jpg"
+    ],
+    "image_count": 25,
+    "object_counts": {
+      "0": 42,
+      "1": 21,
+      "2": 9
+    },
+    "per_image_counts": {
+      "frame_000357.jpg": 3,
+      "frame_000363.jpg": 3,
+      "frame_000369.jpg": 4,
+      "frame_000375.jpg": 4,
+      "frame_000381.jpg": 4,
+      "frame_000387.jpg": 4,
+      "frame_000402.jpg": 3,
+      "frame_000414.jpg": 5,
+      "frame_000420.jpg": 5,
+      "frame_000432.jpg": 3,
+      "frame_000453.jpg": 2,
+      "frame_000459.jpg": 2,
+      "frame_000468.jpg": 2,
+      "frame_000477.jpg": 2,
+      "frame_000510.jpg": 3,
+      "frame_000516.jpg": 2,
+      "frame_000525.jpg": 2,
+      "frame_000552.jpg": 2,
+      "frame_000564.jpg": 2,
+      "frame_000570.jpg": 2,
+      "frame_000576.jpg": 2,
+      "frame_000582.jpg": 2,
+      "frame_000597.jpg": 3,
+      "frame_000612.jpg": 3,
+      "frame_000618.jpg": 3
+    },
+    "reviewed_empty_negatives": [],
+    "bbox_rationale": "Every original image inspected visually at 1412x814. Pixel extents manually selected and normalized. Contiguous side trains enclosed once, including roofs, clipped to image edges. Barriers include visible supports. Occluded objects use enclosing visible fragments without invented hidden geometry. The blue/white and red/yellow lantern-front vehicles are class 0 per README. No coins, powerups, characters, buildings or HUD labeled.",
+    "ambiguous_objects": [
+      {
+        "images": [
+          "frame_000369.jpg",
+          "frame_000375.jpg"
+        ],
+        "note": "Tiny center red/yellow train partly behind foreground overhead barrier; bbox only visible front/roof fragments. Prioritize user review."
+      },
+      {
+        "images": [
+          "frame_000387.jpg"
+        ],
+        "note": "Overhead barrier extremely close, sign and supports clipped; mostly roof visible filling bottom. Side trains bounded to actually visible extents above the foreground barrier."
+      },
+      {
+        "images": [
+          "frame_000402.jpg"
+        ],
+        "note": "Small red/white detail left of distant center train too occluded to confidently bound as separate barrier; omitted."
+      },
+      {
+        "images": [
+          "frame_000414.jpg",
+          "frame_000420.jpg",
+          "frame_000432.jpg"
+        ],
+        "note": "Small left raised crossbar classified overhead; small right low chevron on pedestal classified ground. Distant boxes especially need review."
+      },
+      {
+        "images": [
+          "frame_000468.jpg"
+        ],
+        "note": "Ground barrier partially covered by coin and player; bounds derived from visible sign, side cap and base."
+      },
+      {
+        "images": [
+          "frame_000597.jpg",
+          "frame_000612.jpg",
+          "frame_000618.jpg"
+        ],
+        "note": "Second left ground barrier emerges behind train. Box includes visible portions only; its left edge coincides with train occlusion."
+      }
+    ]
+  },
+  "group_3": {
+    "reviewed_images": [
+      "frame_000627.jpg",
+      "frame_000633.jpg",
+      "frame_000675.jpg",
+      "frame_000681.jpg",
+      "frame_000687.jpg",
+      "frame_000693.jpg",
+      "frame_000699.jpg",
+      "frame_000708.jpg",
+      "frame_000714.jpg",
+      "frame_000723.jpg",
+      "frame_000729.jpg",
+      "frame_000735.jpg",
+      "frame_000741.jpg",
+      "frame_000753.jpg",
+      "frame_000759.jpg",
+      "frame_000765.jpg",
+      "frame_000771.jpg",
+      "frame_000777.jpg",
+      "frame_000783.jpg",
+      "frame_000789.jpg",
+      "frame_000795.jpg",
+      "frame_000801.jpg",
+      "frame_000807.jpg",
+      "frame_000813.jpg",
+      "frame_000819.jpg"
+    ],
+    "annotation_type": "AI-assisted visual draft",
+    "method": "Every image visually inspected in 706x407 contact-sheet views, with full-resolution checks for distant objects and overlapping trains.",
+    "class_counts": {
+      "0": 51,
+      "1": 6,
+      "2": 11
+    },
+    "uncertainties": {
+      "frame_000633.jpg": "Possible tiny clipped train fragment at extreme left omitted; partial barrier boxes clipped at image boundary.",
+      "frame_000675.jpg": "Wall obscures much of image; distant train/barrier boxes require full-resolution review.",
+      "frame_000735.jpg": "Far boarding ramp partly occluded by foreground overhead barrier; box is visible portion.",
+      "frame_000741.jpg": "Overhead barrier clipped at bottom; distant ramp partly hidden.",
+      "frame_000783.jpg": "Adjacent roofs and player occlusion make train extents approximate; distant ramp/blue-front train are separate draft boxes.",
+      "frame_000789.jpg": "Ground beam partly occluded by foreground train roof.",
+      "frame_000795.jpg": "Review contiguous-roof grouping and distant ramp extent.",
+      "frame_000801.jpg": "Two foreground train roofs overlap in projection; human review recommended.",
+      "frame_000807.jpg": "Distant train ramp and blue-front cart should be reviewed at full resolution.",
+      "frame_000813.jpg": "Foreground right train clipped heavily; review instance grouping.",
+      "frame_000819.jpg": "Tiny ambiguous object in far horizon omitted rather than inventing a class."
+    }
+  },
+  "group_4": {
+    "status": "AI-assisted DRAFT; user review required before training",
+    "reviewed_names": [
+      "frame_000828.jpg",
+      "frame_000834.jpg",
+      "frame_000840.jpg",
+      "frame_000846.jpg",
+      "frame_000852.jpg",
+      "frame_000858.jpg",
+      "frame_000864.jpg",
+      "frame_000873.jpg",
+      "frame_000882.jpg",
+      "frame_000891.jpg",
+      "frame_000900.jpg",
+      "frame_000906.jpg",
+      "frame_000915.jpg",
+      "frame_000927.jpg",
+      "frame_000933.jpg",
+      "frame_000945.jpg",
+      "frame_000951.jpg",
+      "frame_000981.jpg",
+      "frame_000993.jpg",
+      "frame_001002.jpg",
+      "frame_001008.jpg",
+      "frame_001014.jpg",
+      "frame_001020.jpg",
+      "frame_001029.jpg",
+      "frame_001035.jpg"
+    ],
+    "counts": {
+      "0": 72,
+      "1": 14,
+      "2": 9
+    },
+    "reviewed_empty_negatives": [],
+    "bbox_rationale": "Every image visually inspected at full resolution. Pixel extents manually chosen around visible contiguous train bodies and attached ramps; continuous same-lane roofs grouped, separate lanes boxed separately. Supports included for barriers. Edge-clipped objects terminate at image edges. Player, coins, HUD, bats, scenery and powerup excluded.",
+    "ambiguous_objects": [
+      {
+        "frames": "frame_000852.jpg through frame_000864.jpg",
+        "note": "Distant red/yellow window rail front annotated train, as theme rule. Small horizontal red-white obstacle behind left train annotated ground_barrier where supports are distinguishable (858 onward); possible tiny occluded barrier earlier omitted."
+      },
+      {
+        "frames": "frame_000891.jpg through frame_000951.jpg",
+        "note": "Distant blue-white front left of center annotated separate train; boundaries partly occluded by adjacent train. Review distant extents."
+      },
+      {
+        "frames": "frame_000981.jpg through frame_001008.jpg",
+        "note": "Bats and bright power-up effect occlude train and right overhead barrier. Boxes enclose visible extents; overhead support/base edges approximate under occlusion."
+      },
+      {
+        "frames": "frame_000873.jpg and frame_000882.jpg",
+        "note": "Right-lane roofs treated as contiguous train rather than splitting car segments; review continuity."
+      },
+      {
+        "frames": "frame_000981.jpg and frame_000993.jpg",
+        "note": "Tiny distant left horizontal red-white ground barrier has partly obscured supports. Review class and extent."
+      }
+    ],
+    "class_consistency_correction": {
+      "changed_files": [
+        "frame_000858.txt",
+        "frame_000864.txt",
+        "frame_000873.txt",
+        "frame_000882.txt",
+        "frame_000891.txt",
+        "frame_000900.txt",
+        "frame_000906.txt",
+        "frame_000915.txt",
+        "frame_000927.txt",
+        "frame_000933.txt",
+        "frame_000945.txt",
+        "frame_000951.txt",
+        "frame_000981.txt",
+        "frame_000993.txt"
+      ],
+      "rule": "Low horizontal red/white beam on green pedestal assigned ground_barrier=1 by consistent shape mapping; tall roofed down-chevron frame remains overhead_barrier=2. All boxes preserved.",
+      "uncertainty": "Tiny low beams in858,864,873,882,981,993 have partly occluded supports; review class and extents. Frame945 player pose appears rolling under low beam, so actual required action should be human-verified."
+    }
+  },
+  "perspective_audit": {
+    "corrected_boxes": [
+      {
+        "image": "frame_000795.jpg",
+        "label_row": 1,
+        "previous": "0 0.419263 0.673219 0.294618 0.653563",
+        "updated": "0 0.444405 0.690418 0.244334 0.619165",
+        "reason": "Tightened foreground train left/top edges to remove excess wall/background."
+      },
+      {
+        "image": "frame_000807.jpg",
+        "label_row": 2,
+        "previous": "0 0.651558 0.808354 0.328612 0.383292",
+        "updated": "0 0.635623 0.807125 0.265581 0.385749",
+        "reason": "Tightened right foreground roof box; removed excess adjacent wall/track."
+      },
+      {
+        "image": "frame_000813.jpg",
+        "label_row": 2,
+        "previous": "0 0.767705 0.884521 0.464589 0.230958",
+        "updated": "0 0.665014 0.884521 0.267705 0.230958",
+        "reason": "Removed clearly excess right-side wall/tree background from clipped foreground roof box."
+      }
+    ],
+    "review_flags_are_not_error_detections": true,
+    "wide_train_examples": [
+      "frame_000105.jpg",
+      "frame_000117.jpg",
+      "frame_000126.jpg",
+      "frame_000135.jpg",
+      "frame_000147.jpg",
+      "frame_000153.jpg",
+      "frame_000159.jpg",
+      "frame_000168.jpg",
+      "frame_000174.jpg",
+      "frame_000180.jpg",
+      "frame_000186.jpg",
+      "frame_000339.jpg",
+      "frame_000345.jpg",
+      "frame_000357.jpg",
+      "frame_000363.jpg",
+      "frame_000369.jpg",
+      "frame_000375.jpg",
+      "frame_000381.jpg",
+      "frame_000387.jpg",
+      "frame_000402.jpg",
+      "frame_000414.jpg",
+      "frame_000420.jpg",
+      "frame_000459.jpg",
+      "frame_000468.jpg",
+      "frame_000477.jpg",
+      "frame_000735.jpg",
+      "frame_000741.jpg",
+      "frame_000753.jpg",
+      "frame_000759.jpg",
+      "frame_000765.jpg",
+      "frame_000771.jpg",
+      "frame_000777.jpg",
+      "frame_000783.jpg",
+      "frame_000789.jpg",
+      "frame_000858.jpg",
+      "frame_000915.jpg",
+      "frame_000927.jpg",
+      "frame_000933.jpg",
+      "frame_000945.jpg",
+      "frame_000951.jpg",
+      "frame_000981.jpg",
+      "frame_001020.jpg",
+      "frame_001029.jpg",
+      "frame_001035.jpg"
+    ],
+    "remaining_status": "All labels remain drafts; no lane/collision ground truth has been assigned."
+  }
+}
