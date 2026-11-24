@@ -5,7 +5,6 @@ import hashlib
 import math
 from contextlib import contextmanager
 from pathlib import Path
-import sys
 
 # Keep settings here instead of adding command-line options.
 ROOT = Path(__file__).resolve().parents[1]
@@ -18,7 +17,6 @@ TRAIN_END = 780
 VAL_START = 850
 # Fine-tune the existing model; a separate run keeps the first model intact.
 MODEL = ROOT / 'models/barriers_640/weights/best.pt'
-EXPERIMENT = 'control'
 LEARNING_RATE = 0.0003
 
 
@@ -71,31 +69,21 @@ def verify_images(batch=BATCH):
     return len(frames)
 
 
-def experiment_settings(name):
-    """Use matched budgets and change one augmentation strategy at a time."""
-    changes = {'control': {}, 'translate_scale': {'translate': .10, 'scale': .25},
-               'mosaic': {'mosaic': .25}, 'mixup': {'mixup': .05}, 'partial_views': {}}
-    if name not in changes:
-        raise ValueError(f'Unknown experiment: {name}')
+def training_settings():
+    """One conservative training configuration; existing checkpoints stay intact."""
     return dict(epochs=12, patience=5, time=None, imgsz=IMAGE_SIZE, batch=BATCH_SIZE,
                 seed=42, optimizer='AdamW', lr0=LEARNING_RATE, warmup_epochs=1,
                 mosaic=0, close_mosaic=3, scale=.2, translate=.05,
-                mixup=0, cutmix=0, degrees=0, perspective=0, flipud=0) | changes[name]
+                mixup=0, cutmix=0, degrees=0, perspective=0, flipud=0)
 
 
-def prepare_data(batch=BATCH, output=DATA, keep_partial_views=False):
+def prepare_data(batch=BATCH, output=DATA):
     """Write image lists without copying images or changing their labels."""
     manifest = json.loads((batch / 'manifest.json').read_text())
     frames = sorted((f for f in manifest['frames'] if f['training_eligible'] is True),
                     key=lambda f: f['source_frame'])
     # Neighboring frames are almost identical. Keep one in three for training.
     training = [f for f in frames if f['source_frame'] <= TRAIN_END][::FRAME_STEP]
-    if keep_partial_views:
-        # Do not discard rare, reviewed partial views through uniform sampling.
-        audit = json.loads((batch/'partial_audit.json').read_text())
-        priority = {c['image'] for c in audit['changes'] if c['class_id']==2 and c['old_box'] is None}
-        selected = {f['image'] for f in training} | priority
-        training = [f for f in frames if f['source_frame'] <= TRAIN_END and f['image'] in selected]
     # A later time block and a gap reduce overlap; this is still one session.
     validation = [f for f in frames if f['source_frame'] >= VAL_START]
     # Filter after sampling so an uncertain frame does not shift later selections.
@@ -135,21 +123,20 @@ def prepare_data(batch=BATCH, output=DATA, keep_partial_views=False):
     return config
 
 
-def main(experiment=EXPERIMENT):
+def main():
     # Import the training libraries only when actually starting a run.
     import torch
     from ultralytics import YOLO, settings
 
     settings.update({'sync': False})
-    config = experiment_settings(experiment)
+    config = training_settings()
     print(f'Verified {verify_images()} unchanged original screenshots.')
-    dataset = prepare_data(keep_partial_views=experiment=='partial_views')
+    dataset = prepare_data()
     files = [DATA/'train.txt', DATA/'val.txt', BATCH/'manifest.json']
     if (BATCH/'partial_audit.json').exists():
         files.append(BATCH/'partial_audit.json')
     files += sorted((BATCH/'labels').glob('*.txt'))
-    record = dict(experiment=experiment, settings=config, initial_checkpoint=str(MODEL), status='running',
-                  retain_reviewed_partial_views=experiment=='partial_views',
+    record = dict(settings=config, initial_checkpoint=str(MODEL), status='running',
                   training_images=(DATA/'train.txt').read_text().splitlines(),
                   validation_images=(DATA/'val.txt').read_text().splitlines(),
                   checkpoint_sha256=hashlib.sha256(MODEL.read_bytes()).hexdigest(),
@@ -160,7 +147,7 @@ def main(experiment=EXPERIMENT):
     models.mkdir(exist_ok=True)
     model = YOLO(MODEL)
     model.add_callback('on_train_start', lambda trainer:
-                       (trainer.save_dir/'experiment.json').write_text(json.dumps(record, indent=2)+'\n'))
+                       (trainer.save_dir/'run.json').write_text(json.dumps(record, indent=2)+'\n'))
     # Release unused GPU allocations between epochs on this 8 GB Mac.
     if device == 'mps':
         model.add_callback('on_train_epoch_end', lambda _: torch.mps.empty_cache())
@@ -168,14 +155,14 @@ def main(experiment=EXPERIMENT):
         model.train(data=str(dataset), **config, device=device,
                     # Avoid extra worker processes and image caches on this 8 GB Mac.
                     workers=0, cache=False, project=str(models),
-                    name=f'partial_{experiment}', plots=True)
+                    name='training', plots=True)
     if any(hashlib.sha256(p.read_bytes()).hexdigest() != record['inputs'][str(p.relative_to(ROOT))]
            for p in files):
         raise ValueError('Dataset inputs changed during training; do not compare this run.')
     record.update(status='complete', epochs_completed=model.trainer.epoch+1)
-    (model.trainer.save_dir/'experiment.json').write_text(json.dumps(record, indent=2)+'\n')
+    (model.trainer.save_dir/'run.json').write_text(json.dumps(record, indent=2)+'\n')
     print(f'Best checkpoint: {model.trainer.best}')
 
 
 if __name__ == '__main__':
-    main(sys.argv[1] if len(sys.argv) > 1 else EXPERIMENT)
+    main()

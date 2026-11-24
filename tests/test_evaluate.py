@@ -9,6 +9,17 @@ from scripts.evaluate import match_objects, write_json, predict_frames, check_co
 
 
 class MatchingTests(unittest.TestCase):
+    def test_barrier_strokes_only_recommend_for_confident_nearby_barriers(self):
+        from scripts.evaluate import barrier_strokes
+        boxes = [dict(class_id=1, confidence=.8, xyxy=[300, 500, 450, 700]),
+                 dict(class_id=2, confidence=.9, xyxy=[600, 500, 750, 700]),
+                 dict(class_id=0, confidence=.9, xyxy=[100, 300, 500, 800]),
+                 dict(class_id=1, confidence=.49, xyxy=[300, 500, 450, 700]),
+                 dict(class_id=2, confidence=.9, xyxy=[600, 200, 650, 300])]
+        self.assertEqual(barrier_strokes(boxes, (800, 1200)),
+                         [dict(prediction_index=0, key='up', action='jump'),
+                          dict(prediction_index=1, key='down', action='roll')])
+
     def test_proximity_waits_for_exposed_barrier_but_rejects_low_confidence(self):
         from scripts.evaluate import nearby_indexes
         # Real predictions: frame 880 is farther away; frame 885 is closer.

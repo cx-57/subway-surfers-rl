@@ -37,6 +37,18 @@ def nearby_indexes(predictions, image_shape):
     return nearby
 
 
+def barrier_strokes(predictions, image_shape):
+    """Suggest keys per nearby barrier; check player path and timing before sending."""
+    strokes = {1: ('up', 'jump'), 2: ('down', 'roll')}
+    recommendations = []
+    for index in nearby_indexes(predictions, image_shape):
+        stroke = strokes.get(predictions[index]['class_id'])
+        if stroke is not None:
+            key, action = stroke
+            recommendations.append(dict(prediction_index=index, key=key, action=action))
+    return recommendations
+
+
 def write_json(path, value):
     # Ultralytics includes NumPy integer scalars in some metric summaries.
     path.write_text(json.dumps(value, indent=2, default=lambda v: v.item())+'\n')
@@ -169,6 +181,7 @@ def evaluate(checkpoint, dataset, split='val', output=None):
             negatives.append(dict(image=image.name, false_positives=len(boxes)))
         records.append(dict(image=image.name, truth=truth, predictions=boxes, matched=matched,
                             image_shape=[height, width], nearby_prediction_indexes=nearby_indexes(boxes, (height, width)),
+                            barrier_strokes=barrier_strokes(boxes, (height, width)),
                             false_positive_indexes=extra))
     check_coverage([str(Path(p).absolute()) for p in images], seen)
     # A synchronized single-image measurement is closer to future live inference.

@@ -10,30 +10,6 @@ from scripts import train
 
 
 class DatasetTests(unittest.TestCase):
-    def test_partial_view_selection_keeps_only_confident_early_frames(self):
-        with tempfile.TemporaryDirectory() as folder:
-            batch = Path(folder)/'batch'
-            (batch/'images').mkdir(parents=True)
-            (batch/'labels').mkdir()
-            frames, changes = [], []
-            for n in [105, 108, 111, 114, 850, 853]:
-                name = f'frame_{n:06}.jpg'
-                (batch/'images'/name).write_bytes(b'original')
-                (batch/'labels'/name.replace('.jpg','.txt')).write_text('2 .5 .5 .1 .2\n')
-                frames.append(dict(image=name, source_frame=n, training_eligible=True,
-                                   annotation_uncertain=n==111))
-                if n in [108,111,853]:
-                    changes.append(dict(image=name, class_id=2, old_box=None))
-            (batch/'manifest.json').write_text(json.dumps({'frames':frames}))
-            (batch/'partial_audit.json').write_text(json.dumps({'changes':changes}))
-            (batch/'classes.txt').write_text('train\nground_barrier\noverhead_barrier\n')
-            output = Path(folder)/'prepared'
-            train.prepare_data(batch, output, keep_partial_views=True)
-            selected = [Path(p).name for p in (output/'train.txt').read_text().splitlines()]
-            self.assertEqual(selected,['frame_000105.jpg','frame_000108.jpg','frame_000114.jpg'])
-            self.assertEqual(len(selected),len(set(selected)))
-            self.assertEqual(train.experiment_settings('partial_views'),train.experiment_settings('control'))
-
     def test_valid_edge_boxes_and_empty_background_labels(self):
         with tempfile.TemporaryDirectory() as folder:
             label = Path(folder) / 'frame.txt'
@@ -102,23 +78,6 @@ class DatasetTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'identical screenshot'):
                 train.prepare_data(batch, output)
 
-    def test_experiments_change_only_the_intended_training_transform(self):
-        control = train.experiment_settings('control')
-        scale = train.experiment_settings('translate_scale')
-        mosaic = train.experiment_settings('mosaic')
-        self.assertEqual(scale, {**control, 'translate': .10, 'scale': .25})
-        self.assertEqual(mosaic, {**control, 'mosaic': .25})
-        self.assertEqual(control['seed'], 42)
-        self.assertEqual(control['epochs'], 12)
-        self.assertEqual(control['mixup'], 0)
-        self.assertEqual(control['cutmix'], 0)
-        self.assertEqual(control['degrees'], 0)
-        self.assertEqual(control['perspective'], 0)
-        self.assertEqual(control['flipud'], 0)
-        self.assertIsNone(control['time'])
-        self.assertNotIn('erasing', control)
-        with self.assertRaises(ValueError):
-            train.experiment_settings('unknown')
 
 
 if __name__ == '__main__':

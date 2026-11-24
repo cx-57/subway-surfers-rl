@@ -7,4 +7,6 @@ data/labeling/*/images/
 data/labeling/*/review/
 data/training/
 models/
+runs/
+.pytest_cache/
 data/**/*.cache

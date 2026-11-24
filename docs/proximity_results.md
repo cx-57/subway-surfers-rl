@@ -45,5 +45,5 @@ it does not improve the underlying model or overall mAP. These measurements do n
 establish gameplay success or a safe collision deadline.
 
 Per-frame predictions, nearby selections, missed boxes and summaries are saved in
-`models/partial_experiments/proximity_expanded/`. The input snapshots are
-`models/partial_experiments/frozen_validation/` and `frozen_regression/`.
+`models/evaluation/proximity_expanded/`. The input snapshots are
+`models/evaluation/frozen_validation/` and `frozen_regression/`.
