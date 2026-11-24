@@ -6,16 +6,16 @@
   "newly_labeled_images": 935,
   "training_eligible_images": 876,
   "training_excluded_images": 159,
-  "object_count": 3592,
+  "object_count": 3679,
   "class_counts": {
-    "train": 2609,
-    "ground_barrier": 566,
-    "overhead_barrier": 417
+    "0": 2636,
+    "2": 477,
+    "1": 566
   },
   "training_eligible_class_counts": {
-    "train": 2233,
-    "ground_barrier": 555,
-    "overhead_barrier": 404
+    "0": 2260,
+    "1": 555,
+    "2": 464
   },
   "selected_100_audit": {
     "scope": "100 selected images, not the entire 1035-frame raw session",
@@ -24061,5 +24061,28 @@
         "uncertainties": []
       }
     ]
+  },
+  "partial_revision_file": "partial_audit.json",
+  "training_usable_images": 810,
+  "annotation_uncertain_images": 118,
+  "partial_revision_resolved_prior_ground_uncertainty": [
+    907,
+    908,
+    909,
+    910,
+    911,
+    912,
+    913,
+    914
+  ],
+  "training_usable_class_counts": {
+    "0": 2074,
+    "1": 525,
+    "2": 417
+  },
+  "class_id_names": {
+    "0": "train",
+    "1": "ground_barrier",
+    "2": "overhead_barrier"
   }
 }

@@ -13,17 +13,40 @@ avoiding 935 additional full-size JPEG copies. The 52 contact sheets in `review/
 show every frame. The redundant standalone preview copies were removed; the gallery draws boxes
 over the unchanged originals.
 
-Validated: 1,035 readable images, 1,035 label files, 3,592 boxes,
+Validated: 1,035 readable images, 1,035 label files, 3,679 boxes,
 finite normalized coordinates within image bounds, and unchanged source SHA256
 fingerprints for all 1,035 images. `manifest.json` maps each label to its source.
 
-**Training status:** 876 frames eligible for human review before training;
-159 frames excluded for pause/countdown, obscured camera, or individual
-review reasons. Excluded frames still have labels and remain in the gallery.
-Use `training_eligible` in the manifest when preparing training data. The original
+**Training status:** 876 frames were originally eligible and 159 excluded for
+pause/countdown, obscured camera, or individual review reasons. The partial-object
+revision leaves 810 usable and 225 excluded after combining eligibility and
+uncertainty flags. Excluded frames still have labels and remain in the gallery.
+Use `training_eligible` and require `annotation_uncertain` to be false when preparing data. The original
 pause/countdown range 1–104 and camera-obscured range 635–665 remain excluded.
 Empty label files only mean no confidently identifiable target object was labeled;
 excluded or uncertain frames must not be treated as clear gameplay negatives.
+
+## Partial-obstacle revision (2026-11-23)
+
+Reexamined all 1,035 original frames on aspect-preserving contact sheets, with
+native crops for correction candidates. Added 60 overhead barriers and 27 train
+fragments; adjusted 17 train boxes, three overhead boxes and eight ground boxes.
+The 115 row changes affect 103 images. Sources remain unchanged, and the labels
+remain AI-assisted drafts rather than verified human ground truth.
+
+`partial_audit.json` records every old/new row, visible pixel bounds, reason,
+before/after frame labels, uncertainty notes and label hashes. It flags 118 frames
+as uncertain, including previously excluded frames. Of the original 876 eligible
+frames, 810 remain usable. The fixed temporal/sample split now contains 200 training
+frames and 144 validation frames; 37 former validation frames are excluded because
+their object extents remain ambiguous. Both baseline and candidates must use the
+same revised labels and exclusions.
+
+Open `review/partial_before_after.jpg` for six before/after examples, or
+`review/index.html` for every frame. Contact sheets have been rebuilt from the
+current labels. No original screenshot was warped, pasted into or overwritten.
+No usable background-only image was verified in the old session; its empty-label
+frames show pause menus or obscured camera views and were not added as negatives.
 
 `review_audit.json` records actual review methods, uncertainties and provenance for
 each frame, plus the previous 100-image correction audit. `annotation_notes.json`

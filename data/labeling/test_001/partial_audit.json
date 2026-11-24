@@ -1,0 +1,75 @@
+{
+  "scope": "Evaluation visibility tags only; source images and existing label rows unchanged.",
+  "review_status": "AI-assisted visual review; all eight frames follow one physical barrier, so subgroup counts are preliminary.",
+  "evaluation_cases": [
+    {
+      "image": "frame_000830.jpg",
+      "label": "2 0.46962617 0.32030265 0.03115265 0.03278689",
+      "tags": [
+        "occluded",
+        "hood_only"
+      ],
+      "reason": "Original full screenshot and native context inspected; train hides chevron/supports in early views. Frame900 exposes the complete barrier."
+    },
+    {
+      "image": "frame_000840.jpg",
+      "label": "2 0.47585670 0.33165195 0.03894081 0.03783102",
+      "tags": [
+        "occluded",
+        "hood_only"
+      ],
+      "reason": "Original full screenshot and native context inspected; train hides chevron/supports in early views. Frame900 exposes the complete barrier."
+    },
+    {
+      "image": "frame_000850.jpg",
+      "label": "2 0.47936137 0.33921816 0.04127726 0.03530895",
+      "tags": [
+        "occluded",
+        "hood_only"
+      ],
+      "reason": "Original full screenshot and native context inspected; train hides chevron/supports in early views. Frame900 exposes the complete barrier."
+    },
+    {
+      "image": "frame_000860.jpg",
+      "label": "2 0.48403427 0.35813367 0.04906542 0.03783102",
+      "tags": [
+        "occluded",
+        "hood_only"
+      ],
+      "reason": "Original full screenshot and native context inspected; train hides chevron/supports in early views. Frame900 exposes the complete barrier."
+    },
+    {
+      "image": "frame_000870.jpg",
+      "label": "2 0.48948598 0.38587642 0.05841121 0.05548550",
+      "tags": [
+        "occluded",
+        "hood_only"
+      ],
+      "reason": "Original full screenshot and native context inspected; train hides chevron/supports in early views. Frame900 exposes the complete barrier."
+    },
+    {
+      "image": "frame_000880.jpg",
+      "label": "2 0.49415888 0.44199243 0.07242991 0.08196721",
+      "tags": [
+        "occluded"
+      ],
+      "reason": "Original full screenshot and native context inspected; train hides chevron/supports in early views. Frame900 exposes the complete barrier."
+    },
+    {
+      "image": "frame_000890.jpg",
+      "label": "2 0.49766355 0.53909206 0.09501558 0.15006305",
+      "tags": [
+        "occluded"
+      ],
+      "reason": "Original full screenshot and native context inspected; train hides chevron/supports in early views. Frame900 exposes the complete barrier."
+    },
+    {
+      "image": "frame_000900.jpg",
+      "label": "2 0.50194704 0.76544767 0.14252336 0.33291299",
+      "tags": [
+        "fully_visible"
+      ],
+      "reason": "Original full screenshot and native context inspected; train hides chevron/supports in early views. Frame900 exposes the complete barrier."
+    }
+  ]
+}
