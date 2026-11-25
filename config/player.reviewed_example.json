@@ -1,0 +1,12 @@
+{
+  "source_session": "session_1795440601129365000",
+  "player_observations": {
+    "data/raw/session_1795440601129365000/frame_000885.jpg": {
+      "lane": 1,
+      "movement": "ON_TRAIN",
+      "transitioning": false,
+      "provenance": "AI-assisted visual review of original frame 885: feet on center train roof. Single-frame provisional label, no confidence assigned; not automatic localization."
+    }
+  },
+  "_note": "Player-only reviewed demonstration. No lane calibration, no collision timing, no state propagation, no action permission."
+}

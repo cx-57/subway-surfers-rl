@@ -1,0 +1,18 @@
+{
+  "distance_filter": true,
+  "visual_player": true,
+  "automatic_geometry": true,
+  "max_observation_age": 0.5,
+  "tracking": {
+    "max_age": 0.6,
+    "history_size": 12,
+    "max_tracks": 128
+  },
+  "policy": {
+    "provisional_action_durations": {},
+    "provisional_action_window": 1.0,
+    "provisional_movement_cooldown": 0.0,
+    "history_size": 128
+  },
+  "_note": "These are configurable engineering bounds, not measured game reaction times. No action durations or collision boundary have been calibrated. An empty duration map cannot certify an action. This config never enables keyboard control."
+}

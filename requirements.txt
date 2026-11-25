@@ -1,6 +1,9 @@
+# Screen capture.
 mss==10.2.0
+# Image arrays and image processing (also used by YOLO).
 numpy==2.5.5
 opencv-python==4.10.0.84
+# Detector and its inference backend. Keep these versions together.
 ultralytics==8.4.216
 torch==2.15.0
 torchvision==0.29.2

@@ -5,7 +5,12 @@ __pycache__/
 data/raw/
 data/labeling/*/images/
 data/labeling/*/review/
-data/training/
+# Keep curated labels/manifests in Git; ignore images and generated local paths.
+data/training/images/
+data/training/train.txt
+data/training/val.txt
+data/training/dataset.yaml
+data/cleanup.json
 models/
 runs/
 .pytest_cache/

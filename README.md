@@ -1,112 +1,173 @@
-# Gameplay screenshots
+# Subway Surfers vision
 
-Open Subway Surfers in Chrome, then open `scripts/gameplay.py` in VS Code.
-Press **F5** and choose **Record gameplay**.
+Read-only gameplay observation: YOLO obstacle detection, distance filtering,
+tracking, player localization, provisional lane estimates, overlays and video.
+Normal observation does not press keys or train an RL agent. An explicit
+control-validation mode can send a bounded sequence of test arrow taps.
 
-1. Bring Chrome forward during the first countdown.
-2. Click two opposite corners of the game, then press **Enter**. Press **R** to redo or **Esc** to cancel.
-3. Return to Chrome during the 15-second countdown and play.
-4. Recording stops after 30 seconds. Screenshots are saved in `data/raw/session_.../`.
+The standing requirements are in the [implementation task](docs/live_state_engine_task.md).
+See the [engine report](docs/game_state_engine.md),
+[player tracking results](docs/player_tracking.md),
+[distance-filter evaluation](docs/proximity_results.md), and
+[code audit](docs/code_audit.md) when resuming work.
 
-Press **Ctrl+C** in the terminal to stop early. Each run creates a new folder.
-Change `FPS`, `DURATION`, `START_DELAY`, `SELECTION_DELAY`, and `MONITOR` at the top
-of `scripts/gameplay.py` when needed. The target is 60 screenshots per second (about 1,800 images in 30 seconds).
-The final summary reports the actual rate; large crops or a busy Mac can be slower.
-Each session also saves a small `metadata.json` with settings, crop, timestamps,
-frame count, actual FPS and completion/interruption status. Images and metadata
-are published atomically, and Ctrl+C finishes counting the current image before
-stopping. Use a local Mac folder with hard-link support, such as APFS.
-There are no command-line options; settings stay at the top of the script.
+## Observe live
 
-To run from the terminal:
+Open Subway Surfers in Chrome, then run:
+
+```bash
+.venv/bin/python scripts/observe_live.py
+```
+
+Click two opposite corners of the gameplay area and press **Enter**. Return to
+Chrome during the **15-second countdown**. Keep gameplay visible and move the
+observer window outside the selected area so it does not capture itself.
+
+The terminal prints **CAPTURING**, **OBSERVING**, and **VIDEO ON** with the output
+path. A normal run lasts about 30 seconds. Q/Esc, closing the observer, or Ctrl+C
+stops it. B/L/P/H/S toggle boxes, lanes, player, hazards and status overlays.
+
+Video saves by default. Each new `models/evaluation/engine_live_<run ID>/` contains:
+
+- `observation.mp4` and `observation.json`: annotated 15 FPS review copy and timing metadata.
+- `states.jsonl`: detections, tracks, player/lane estimates and fixed 113-value observations.
+- `observation_schema.json` and `benchmark.json`: field ordering and measured performance.
+
+Video has no audio, is capped at 960px width without stretching, and holds frames
+across capture gaps. Encoding adds work. Use `--no-video` to disable recording,
+`--duration 60` to run longer, or `--start-delay 20` to change the post-selection delay.
+To record without the preview window's display overhead:
+
+```bash
+.venv/bin/python scripts/observe_live.py --headless
+```
+
+## Check lane estimates and keyboard controls
+
+Start a run in Chrome in the **center lane**, then use:
+
+```bash
+.venv/bin/python scripts/observe_live.py --validate-controls
+```
+
+Select the area as usual and return to the game during the countdown. Keep
+Chrome focused and do not steer manually. This mode saves video without opening
+a preview window. Relative to the first observed frame, it taps left at 5s,
+right at 8s, right at 11s, left at 14s, up at 17s and down at 20s. Switch to
+another app to prevent subsequent taps; the next focus check aborts the sequence.
+It never activates Chrome or follows policy recommendations.
+
+macOS needs Accessibility permission for the launching Terminal/VS Code and may
+request Automation access to System Events. A failed permission/focus check stops
+the test; missed deadlines are not replayed in a burst.
+
+The usual output folder also contains `controls.jsonl`: command results and
+later player/lane observations, aligned with video timestamps. Expected lanes
+assume a center start and successful moves; **they are not ground truth or lane
+accuracy**. Review the video for movement, collisions, respawns and candidate
+lanes. Commands do not overwrite the estimator or turn UNKNOWN into confirmed
+lanes. This prepares a validation recording; actual keyboard delivery and lane
+correctness must be checked on that recording before autonomous gameplay.
+
+## Record or replay screenshots
+
+For screenshots for labeling/testing, open `scripts/gameplay.py` in VS Code and
+press **F5 → Record gameplay**, or run:
 
 ```bash
 .venv/bin/python scripts/gameplay.py
 ```
 
-If setup is needed, use Python 3.12:
+Bring Chrome forward during the first countdown. Select two corners, press Enter,
+then return to Chrome during the 15-second countdown. R redoes selection; Esc
+cancels. Recording stops after 60 seconds; Ctrl+C stops early. Every run creates a
+new `data/raw/session_<ID>/` with original JPEGs and metadata. Target FPS is 20;
+metadata reports actual rate, dimensions and completion status. Recorder settings
+are at the top of `scripts/gameplay.py`; it has no CLI options.
+
+Replay existing footage without Chrome:
+
+```bash
+.venv/bin/python scripts/replay_gameplay.py data/raw/session_<ID> --start 1 --limit 20
+```
+
+Replay uses the same engine. `--headless` suppresses display, `--video` enables
+video (opt-in for replay), and `--preview-every 5` saves separate overlay PNGs.
+Existing recordings have approximate source timestamps derived from measured FPS;
+exact timestamp files can be supplied. Run scripts with `--help` for other options.
+
+## Models, proximity and limits
+
+- `models/baseline/weights/best.pt`: original detector.
+- `models/barriers_640/weights/best.pt`: retained detector used by observation.
+- `models/evaluation/`: saved test results and observation runs.
+
+The distance filter is code, not another trained model. Shared settings live in
+`agent/detection.py`: confidence **50%**, plus both box-position and width rules:
+
+| Object | Box bottom, fraction of image height | Minimum fraction of image width |
+| --- | --- | --- |
+| Ground/overhead barrier | 55% down from top | 6% |
+| Train | 65% down from top | 12% |
+
+These are proximity estimates, not meters or collision deadlines. Live/replay
+hazards use nearby tracks. Overlays/video show all retained detections above the
+confidence cutoff: distant tracks are muted and marked UPCOMING; nearby tracks
+are bright cyan and marked NEARBY. All tracks remain logged for lane lookahead.
+`nearby_track_ids` identifies the subset and the overlay shows its count.
+Use an engine settings JSON with `distance_filter: false` to disable proximity
+filtering for hazard checks too. UPCOMING is not a collision-time estimate.
+
+The green box follows the player's upper body. Candidate lanes 0/1/2 mean
+left/center/right. Templates and rail heuristics are appearance-specific; weak
+matches, train occlusion and unsupported themes yield UNKNOWN. Upper-body matches
+do not establish foot contact or running/jumping/rolling/train-roof state.
+Recommendations generally remain UNKNOWN. Numeric observations mask missing data.
+Boxes do not directly identify occupied lanes. Videos/logs do not prove accuracy.
+
+The original evaluation utility remains available:
+
+```bash
+.venv/bin/python scripts/evaluate.py models/barriers_640/weights/best.pt data/training/dataset.yaml val
+```
+
+Reproduce nearby-subset AP50 on retained validation images with
+`.venv/bin/python scripts/distance_map.py`. Removed test recordings are skipped;
+their previously saved reports remain historical results.
+The optional `scripts/train.py` keeps one conservative training configuration and
+creates a separate numbered `models/training/` run; no training is needed to observe.
+
+## Setup and checks
+
+Use Python 3.12, select `.venv/bin/python` in VS Code, and install requirements:
 
 ```bash
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python -m unittest discover -v
 ```
 
-In VS Code, select `.venv/bin/python` as the Python interpreter. For screen
-permission, enable VS Code or Terminal in **System Settings → Privacy & Security →
-Screen & System Audio Recording**. If project files hang, choose **Keep Downloaded**
-in Finder.
+On this Mac `.venv` already links to a local environment under
+`~/Library/Application Support/subway-surfers-rl/venv`, outside Desktop syncing.
+For capture permission, enable Terminal or VS Code in **System Settings → Privacy
+& Security → Screen & System Audio Recording**. If project reads hang, choose
+**Keep Downloaded** in Finder. Runtime benchmarks detect actual hardware and
+versions; current measurements do not assume a future Mac's performance.
 
-On this Mac, `.venv` links to a local Python environment under
-`~/Library/Application Support/subway-surfers-rl/venv`. This keeps installed
-packages outside Desktop syncing; the commands above still work.
+## Data and development rules
 
-Run tests with `.venv/bin/python -m unittest discover -v`.
+- Preserve source-image bytes, dimensions and aspect ratios. Keep overlays/crops separate.
+- `data/training/` holds the curated originals, labels and explicit 200/144 train/validation lists. `data/raw/` is for new recordings. See `data/README.md` for the cleanup record and folder layout.
+- Label only recognizable visible extents; preserve correct labels, record corrections/provenance, and exclude ambiguous frames. Predictions are review candidates, not ground truth.
+- Keep chronological training <=780, validation >=850 and the gap. Never train on validation or newer recordings. Inspected recordings are regression data, not untouched independent tests.
+- Use real screenshots. Compare one training change at a time with matched seeds/budgets; avoid significant rotation, perspective warp and vertical flips. Never paste objects permanently into datasets.
+- Empty-label negatives need visual confirmation. Paused, obscured or ambiguous frames are not verified negatives.
+- Preserve earlier checkpoints and compare partial/small-object recall, false positives and latency alongside AP. Never claim gains from relabeling alone or training accuracy.
+- Keep resource use bounded and code simple. Preserve UNKNOWN rather than inventing lanes, confidence or seconds. No automatic controls or RL training in this milestone.
+- Prefer ordinary loops, descriptive names and one statement per line. Avoid comprehensions and anonymous functions in production code. Comment important timing, geometry, file-writing and control behavior. Keep necessary NumPy/OpenCV operations instead of reimplementing image processing.
 
-For future detection/control work: bounding boxes are object labels, not blocked
-lane maps. Validate perspective-aware lane occupancy near the player before using
-detections to restrict actions. See `data/labeling/batch_001/README.md` for the
-annotation review rules and known edge cases.
+## Next milestone
 
-## Kept models
-
-- `models/baseline/weights/best.pt`: original detector.
-- `models/barriers_640/weights/best.pt`: retained detector used with the distance filter.
-- `models/evaluation/`: retained validation, regression and proximity-check results.
-
-The distance filter is code in `scripts/evaluate.py`, not a second set of weights.
-Experimental training runs and calibration diagnostics were removed. The original
-training utility remains available in `scripts/train.py` with one configuration;
-running it creates a separate `models/training/` run (numbered on repeat runs).
-No training is required to use the retained detector.
-
-To evaluate the retained detector on the newer labeled recording:
-
-```bash
-.venv/bin/python scripts/evaluate.py models/barriers_640/weights/best.pt data/labeling/test_001/dataset.yaml test
-```
-
-The three scripts are `gameplay.py` (record), `evaluate.py` (detect and report),
-and `train.py` (optional training). Detection output includes nearby objects and
-conditional key recommendations; it does not press keys.
-
-## Partial-obstacle detection requirements
-
-- Never change source screenshots: preserve their bytes, dimensions and aspect ratios. Store labels and overlays separately.
-- Label every confidently recognizable visible target, including clipped objects, supports and occluded fragments. Enclose visible extents only; never invent hidden geometry.
-- Preserve correct labels. Record each correction's old/new row, class, visual evidence and AI-assisted provenance. Flag ambiguous fragments and exclude their frames from quantitative evaluation and training negatives.
-- Inspect original pixels; model predictions are review candidates, never unquestioned ground truth.
-- Split chronologically before augmentation: training <=780, validation >=850, with the gap preserved. Never train on validation or the newer recording.
-- The newer recording already informed diagnosis, so it is a regression set. Genuine unseen generalization needs another untouched recording.
-- Compare frozen checkpoints and matched training controls on identical revised labels. Keep seeds, training budgets and all settings reproducible; select checkpoints on validation only.
-- If training again, compare changes individually. Use no significant rotation, perspective warp or vertical flip. Never permanently paste synthetic objects into the dataset.
-- Add empty-label hard negatives only after visually confirming no target objects. Ambiguous, paused and camera-obscured frames are not negatives.
-- Keep the architecture small for the 8 GB Mac, preserve earlier checkpoints, and judge class/partial/small-object recall, false positives and latency alongside mAP. Training accuracy alone is insufficient.
-- Report actual completed experiments and uncertainty. Reject changes that harm reliability; do not repeatedly tune against the regression set or claim gains from label corrections alone.
-
-Current recommended checkpoint: **`models/barriers_640/weights/best.pt`**.
-Individual detections now use a **50% confidence cutoff** in `scripts/evaluate.py`.
-Historical reports retain their original cutoffs. The mAP calculation still sweeps
-confidence scores. There is no live gameplay controller yet.
-
-Evaluation now saves `nearby_prediction_indexes` separately from all detections.
-Candidates need 50% confidence plus both a minimum screen position and width:
-barrier boxes must reach 55% down the image and span 6% of its width; train boxes
-must reach 65% down and span 12%. Change `NEARBY_LIMITS` in `scripts/evaluate.py`
-to adjust these starting estimates. They use the cropped gameplay image dimensions.
-The gate does not change detection metrics or labels, estimate meters, determine
-lane occupancy, or prove there is enough time to react. Large side-view train boxes
-can pass it; a future controller must check their actual footprint before avoiding
-a lane. Distant detections remain available for tracking but are excluded from
-the nearby list. This is recorded-output filtering, not automatic gameplay.
-Each nearby barrier also gets a `barrier_strokes` recommendation: ground barrier
--> `up` (jump), overhead barrier -> `down` (roll), linked to its prediction index.
-Trains require lane planning and get no fixed key. Recommendations are conditional
-on the barrier being in the player's path; they do not send keys, choose between
-conflicting barriers, or decide action timing. Consecutive frames can repeat a
-recommendation, so a future controller must also prevent repeated keypresses for
-the same encounter.
-See the [236-frame proximity check](docs/proximity_results.md) for per-class results
-and a case where the gate delayed a correct overhead detection.
-Rejected training variants were removed because they did not fix the hidden-barrier
-misses. Source recordings, reviewed labels and annotation audits are preserved.
-See [annotation examples](data/labeling/batch_001/review/partial_before_after.jpg).
+Validate player ground contact/animation and lane estimates through manual lane
+changes, then obstacle footprints and collision/action timing on a fresh recording.
+Automatic controls, a Gymnasium environment and DQN training follow that validation.

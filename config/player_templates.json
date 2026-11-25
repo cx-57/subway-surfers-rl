@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "description": "Scene/character-specific color NCC upperbody localizer with bounded verified LK between strong NCC refreshes. NCC scores are correlations, not probabilities. Flow observations have score=null. No footpoint or pose classifier.",
+  "working_width": 320,
+  "roi": [
+    0.15,
+    0.38,
+    0.85,
+    0.93
+  ],
+  "aspect_range": [
+    1.35,
+    1.85
+  ],
+  "score_threshold": 0.73,
+  "margin_threshold": 0.07,
+  "scales": [
+    0.88,
+    1.0,
+    1.12
+  ],
+  "max_time_gap": 0.5,
+  "templates": [
+    {
+      "path": "player_templates/upper_300.png",
+      "reference_height": 814,
+      "bbox_kind": "upperbody",
+      "movement": "UNKNOWN",
+      "source": "data/raw/session_1795365206207213000/frame_000300.jpg",
+      "source_sha256": "82cf588061c30d6317e71b68de0b7f14a6ec872607466d7d96434ba99723d057",
+      "source_bbox": [
+        675,
+        541,
+        737,
+        625
+      ],
+      "provenance": "AI-assisted visible head/backpack/arms crop after inspecting original pixels; excludes legs; no footpoint or movement label",
+      "template_sha256": "d94fdd12c4cb31824e0b0fbd23a83e824d15260b930b23744a5293d522231327",
+      "reference_width": 1412
+    },
+    {
+      "path": "player_templates/upper_500.png",
+      "reference_height": 814,
+      "bbox_kind": "upperbody",
+      "movement": "UNKNOWN",
+      "source": "data/raw/session_1795365206207213000/frame_000500.jpg",
+      "source_sha256": "992e851a81ceb45d2fa377fe4f93b001f0b7070c3b2f8b72d5ffc8b31803c483",
+      "source_bbox": [
+        737,
+        534,
+        834,
+        620
+      ],
+      "provenance": "AI-assisted visible head/backpack/arms crop after inspecting original pixels; excludes legs; no footpoint or movement label",
+      "template_sha256": "9b5e2802aa854312f33eff51058f7495aa8a1bdde4e9ff26599fa482c1ab15d6",
+      "reference_width": 1412
+    },
+    {
+      "path": "player_templates/upper_600.png",
+      "reference_height": 814,
+      "bbox_kind": "upperbody",
+      "movement": "UNKNOWN",
+      "source": "data/raw/session_1795365206207213000/frame_000600.jpg",
+      "source_sha256": "42caec60bd13973565e0e35934210f6570c7897afbe66b0df6577d7ba29fada8",
+      "source_bbox": [
+        739,
+        544,
+        804,
+        629
+      ],
+      "provenance": "AI-assisted visible head/backpack/arms crop after inspecting original pixels; excludes legs; no footpoint or movement label",
+      "template_sha256": "17d6b88be9ef443ad0608d1a9e6a181897d98e841f2c30f5f5d04725d1eeb7e9",
+      "reference_width": 1412
+    },
+    {
+      "path": "player_templates/upper_700.png",
+      "reference_height": 814,
+      "bbox_kind": "upperbody",
+      "movement": "UNKNOWN",
+      "source": "data/raw/session_1795365206207213000/frame_000700.jpg",
+      "source_sha256": "5928608833f5735890af159f629f0e8042782ee095a224e974d2d9abb91e6ab8",
+      "source_bbox": [
+        615,
+        531,
+        702,
+        610
+      ],
+      "provenance": "AI-assisted visible head/backpack/arms crop after inspecting original pixels; excludes legs; no footpoint or movement label",
+      "template_sha256": "6ccf98bf33ce16533c0d826f63953469cabae5eb159f8577c8ba7e5e5349ad15",
+      "reference_width": 1412
+    }
+  ],
+  "enable_flow": true,
+  "ncc_refresh_interval": 0.15,
+  "flow_max_gap": 0.2,
+  "flow_identity_ttl": 0.4,
+  "flow_min_features": 5
+}

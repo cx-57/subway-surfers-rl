@@ -1,0 +1,10 @@
+{
+  "lane_rows": [],
+  "provenance": null,
+  "source_session": null,
+  "valid_frames": [],
+  "aspect_ratio": null,
+  "footprints": {},
+  "player_observations": {},
+  "_instructions": "Intentionally invalid template: no measured coordinates supplied. Calibrate original pixels. lane_rows contains [normalized_y,left_center,center_center,right_center] at increasing y. Restrict valid_frames or source_session/frame_range to reviewed camera geometry. footprints maps frame basenames to lists of {bbox:[pixel x1,y1,x2,y2],point:[normalized x,y],provenance:review evidence}; exact detection boxes must match. Only reviewed footprints yield KNOWN lanes. player_observations maps exact frames to {lane:0|1|2,movement:RUNNING|JUMPING|ROLLING|ON_TRAIN,transitioning:false|true,provenance:review evidence}. These observations do not propagate. No timing calibration or action-duration measurements are supplied."
+}

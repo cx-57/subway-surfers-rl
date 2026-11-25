@@ -1,5 +1,38 @@
 # Expanded proximity check
 
+## Distance-filtered AP50 rerun
+
+Fresh inference on the same 236 frames with the retained checkpoint, confidence
+floor 0.001, input size 640, NMS IoU 0.7 and one-to-one matching IoU >=0.5 gave:
+
+| Class | Combined AP50 | Nearby labeled appearances |
+| --- | --- | --- |
+| Train | 96.0% | 333 |
+| Ground barrier | 96.2% | 31 |
+| Overhead barrier | 92.5% | 13 |
+| Mean | 94.9% | 377 |
+
+Older 144-frame validation mAP50: 93.9%; newer 92-frame regression mAP50: 97.5%.
+The newer cohort has just two nearby overhead appearances (AP50 99.5%), so that
+score is not strong generalization evidence. Combined overhead appearances still
+cover only two encounters. AP sweeps confidence; it is not recall at the live
+50% threshold. These scores evaluate an easier, explicitly selected nearby subset,
+not changed model weights or calibrated physical collision distances.
+
+Strict ROI protocol: apply the existing class-specific bottom/width conditions
+to both predictions and labels, independent of confidence. Unmatched retained
+predictions count as false positives, including geometry-boundary mismatches.
+AP uses Ultralytics' 101-point integration. This AP protocol differs from the
+earlier fixed-cutoff table below, where matching a true object outside the nearby
+label subset was not counted as a false positive.
+
+Reproduce with `.venv/bin/python scripts/distance_map.py`. Predictions, hashes,
+protocol and summaries are saved in
+`models/evaluation/distance_map50_1795539557960037000/`.
+No training or live-filter integration was performed by this evaluation.
+
+## Earlier fixed-confidence check
+
 Replayed frozen-checkpoint predictions on 236 labeled frames at 50% confidence:
 144 held-out validation frames from the older recording, plus 92 previously
 inspected regression frames from the newer recording. No training, fresh model
