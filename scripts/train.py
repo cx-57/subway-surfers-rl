@@ -177,7 +177,7 @@ def prepare_data(batch=BATCH, output=DATA):
         + "\n"
     )
     print(f"Training: {len(training)} frames; validation: {len(validation)} frames.")
-    print("Diagnostic split from one session; a new recording is needed for a real test.")
+    print("Validation includes an older chronological block and a continuation clip; collect a truly independent test recording.")
     return config
 
 

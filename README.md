@@ -30,7 +30,7 @@ stops it. B/L/P/H/S toggle boxes, lanes, player, hazards and status overlays.
 Video saves by default. Each new `models/evaluation/engine_live_<run ID>/` contains:
 
 - `observation.mp4` and `observation.json`: annotated 15 FPS review copy and timing metadata.
-- `states.jsonl`: detections, tracks, player/lane estimates and fixed 113-value observations.
+- `states.jsonl`: detections, tracks, player/lane estimates and fixed 137-value v2 observations.
 - `observation_schema.json` and `benchmark.json`: field ordering and measured performance.
 
 Video has no audio, is capped at 960px width without stretching, and holds frames
@@ -99,7 +99,8 @@ exact timestamp files can be supplied. Run scripts with `--help` for other optio
 ## Models, proximity and limits
 
 - `models/baseline/weights/best.pt`: original detector.
-- `models/barriers_640/weights/best.pt`: retained detector used by observation.
+- `models/barriers_640/weights/best.pt`: retained three-class checkpoint for comparison.
+- `models/training/weights/best.pt`: current six-class checkpoint (default).
 - `models/evaluation/`: saved test results and observation runs.
 
 The distance filter is code, not another trained model. Shared settings live in
@@ -133,9 +134,13 @@ For example (the run directory may have a numeric suffix):
 ```
 
 The dataset now includes bush, small-obstacle and central-pillar classes. See
-[data counts and annotation rules](data/README.md). The default observer still uses the older three-class detector. The newly trained
-six-class model is `models/training/weights/best.pt`; pass it using `--checkpoint`
-when running `observe_live.py`. Adding class names alone does not update weights.
+[data counts and annotation rules](data/README.md).
+The default observer uses the six-class `models/training/weights/best.pt`.
+For a legacy three-class comparison, specify
+`--checkpoint models/barriers_640/weights/best.pt`.
+Class IDs are validated at model load. The 137-value v2 observation schema is
+not interchangeable with older 113-value v1 logs. Neither checkpoint establishes
+confirmed lane occupancy or calibrated collision timing.
 Earlier distance-filter AP50 reports use the older frozen dataset and must not be
 compared directly with six-class results. `scripts/distance_map.py` deliberately
 rejects changed annotation revisions.
@@ -164,7 +169,7 @@ versions; current measurements do not assume a future Mac's performance.
 - Preserve source-image bytes, dimensions and aspect ratios. Keep overlays/crops separate.
 - `data/training/` holds the curated originals, labels and explicit 510/273 train/validation lists. `data/raw/` is for new recordings. See `data/README.md` for the cleanup record and folder layout.
 - Label only recognizable visible extents; preserve correct labels, record corrections/provenance, and exclude ambiguous frames. Predictions are review candidates, not ground truth.
-- Keep chronological training <=780, validation >=850 and the gap. Never train on validation or newer recordings. Inspected recordings are regression data, not untouched independent tests.
+- The original recording retains its chronological train ≤780 / validation ≥850 split and gap. New clips have fixed recording-level assignments. Never train on validation data or treat previously inspected clips as an untouched independent test.
 - Use real screenshots. Compare one training change at a time with matched seeds/budgets; avoid significant rotation, perspective warp and vertical flips. Never paste objects permanently into datasets.
 - Empty-label negatives need visual confirmation. Paused, obscured or ambiguous frames are not verified negatives.
 - Preserve earlier checkpoints and compare partial/small-object recall, false positives and latency alongside AP. Never claim gains from relabeling alone or training accuracy.

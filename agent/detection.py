@@ -8,6 +8,31 @@ from contextlib import contextmanager
 
 CONFIDENCE = 0.5
 CLASS_NAMES = ('train', 'ground_barrier', 'overhead_barrier', 'bush', 'small_obstacle', 'pillar')
+LEGACY_CLASS_NAMES = CLASS_NAMES[:3]
+
+
+def validate_checkpoint_classes(names):
+    """Reject silent class-ID remapping between checkpoint and game-state code."""
+    if isinstance(names, dict):
+        count = len(names)
+        if all(index in names for index in range(count)):
+            ordered = tuple(names[index] for index in range(count))
+        elif all(str(index) in names for index in range(count)):
+            ordered = tuple(names[str(index)] for index in range(count))
+        else:
+            raise ValueError("Checkpoint class IDs must be consecutive from zero")
+    elif isinstance(names, (tuple, list)):
+        ordered = tuple(names)
+    else:
+        raise ValueError("Checkpoint is missing usable class names")
+    if ordered not in (LEGACY_CLASS_NAMES, CLASS_NAMES):
+        raise ValueError(
+            f"Checkpoint class IDs/names {ordered!r} are incompatible with "
+            f"expected {CLASS_NAMES!r}; do not run inference with a mismatched head"
+        )
+    return ordered
+
+
 # Minimum normalized box bottom and width; proximity estimates, not meters.
 NEARBY_LIMITS = {0: (0.65, 0.12), 1: (0.55, 0.06), 2: (0.55, 0.06),
                  3: (0.55, 0.06), 4: (0.55, 0.06), 5: (0.55, 0.06)}

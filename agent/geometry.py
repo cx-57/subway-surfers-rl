@@ -253,7 +253,9 @@ class Geometry:
                 return LaneEstimate(
                     reason="Train rectangle does not establish visible track footprint"
                 )
-            if detection.class_id not in (1, 2):
+            # A new obstacle's box bottom gives only a provisional lane candidate.
+            # It is not verified ground contact or blocking geometry.
+            if detection.class_id not in (1, 2, 3, 4, 5):
                 return LaneEstimate(reason="Unsupported object class")
             if x1 <= 0 or x2 >= w or y2 >= h:
                 return LaneEstimate(reason="Clipped barrier needs reviewed visible footprint")
@@ -287,7 +289,7 @@ class Geometry:
             else (
                 "Reviewed visible footprint"
                 if measured
-                else "provisional barrier bottom-center candidate; visible footprint unverified"
+                else "provisional obstacle bottom-center candidate; visible footprint unverified"
             )
         )
         return LaneEstimate(

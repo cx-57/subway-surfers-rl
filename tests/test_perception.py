@@ -18,6 +18,9 @@ class Array:
 
 
 class Model:
+    names = {0: "train", 1: "ground_barrier", 2: "overhead_barrier", 3: "bush",
+             4: "small_obstacle", 5: "pillar"}
+
     def predict(self, image, **kwargs):
         return [
             SimpleNamespace(
@@ -71,6 +74,30 @@ class PerceptionTests(unittest.TestCase):
                 detector.detect(np.zeros((30, 40, 3), np.uint8), 0.0)
             self.assertEqual(detector.device, "mps")
             self.assertEqual(detector.model.calls, 2)
+
+    def test_six_class_metadata_and_legacy_checkpoint(self):
+        with tempfile.NamedTemporaryFile(suffix=".pt") as file, patch(
+            "agent.perception._load_model", return_value=Model()
+        ):
+            self.assertEqual(len(Detector(file.name, device="cpu").class_names), 6)
+
+        class OldModel(Model):
+            names = {0: "train", 1: "ground_barrier", 2: "overhead_barrier"}
+
+        with tempfile.NamedTemporaryFile(suffix=".pt") as file, patch(
+            "agent.perception._load_model", return_value=OldModel()
+        ):
+            self.assertEqual(len(Detector(file.name, device="cpu").class_names), 3)
+
+    def test_mismatched_checkpoint_is_rejected(self):
+        class BadModel(Model):
+            names = {0: "pillar", 1: "ground_barrier", 2: "train"}
+
+        with tempfile.NamedTemporaryFile(suffix=".pt") as file, patch(
+            "agent.perception._load_model", return_value=BadModel()
+        ):
+            with self.assertRaisesRegex(RuntimeError, "incompatible"):
+                Detector(file.name, device="cpu")
 
     def test_missing_path(self):
         with self.assertRaises(ValueError):

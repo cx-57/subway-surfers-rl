@@ -105,7 +105,7 @@ class Metrics:
 
 def add_common_options(parser):
     parser.add_argument(
-        "--checkpoint", type=Path, default=ROOT / "models/barriers_640/weights/best.pt"
+        "--checkpoint", type=Path, default=ROOT / "models/training/weights/best.pt"
     )
     parser.add_argument("--calibration", type=Path)
     parser.add_argument(
@@ -303,6 +303,8 @@ def run(frames, args, mode, mailbox=None):
             mode=mode,
             hardware=hardware_info(),
             device=detector.device,
+            checkpoint=str(args.checkpoint),
+            checkpoint_classes=list(getattr(detector, "class_names", ())),
             fallback_reason=detector.fallback_reason,
             model_load_ms=model_load_ms,
             timings=metrics.summary(),

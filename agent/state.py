@@ -3,6 +3,11 @@
 from dataclasses import asdict, dataclass, field
 import math
 
+from .detection import CLASS_NAMES
+
+# v2 includes all six classes; do not interpret 113-value v1 logs as v2.
+OBSERVATION_SCHEMA_VERSION = 2
+
 ACTIONS = ("NO_OP", "LEFT", "RIGHT", "JUMP", "ROLL")
 MOVEMENTS = ("RUNNING", "JUMPING", "ROLLING", "ON_TRAIN")
 GLOBAL_FIELDS = (
@@ -25,6 +30,9 @@ GLOBAL_FIELDS = (
     "unknown_lane_tracks",
     "missing_tracks",
 )
+# Preserve unlocated detections without inventing lane occupancy.
+for name in CLASS_NAMES:
+    GLOBAL_FIELDS += (f"unlocated.{name}",)
 for lane in range(3):
     GLOBAL_FIELDS += (f"lane{lane}.visible", f"lane{lane}.visibility_known")
 SLOT_FIELDS = (
@@ -34,6 +42,9 @@ SLOT_FIELDS = (
     "train",
     "ground",
     "overhead",
+    "bush",
+    "small_obstacle",
+    "pillar",
     "confidence",
     "depth",
     "depth_known",
@@ -181,10 +192,13 @@ class GameState:
             values.append(float(player.movement == movement))
         unknown_tracks = 0
         missing_tracks = 0
+        unlocated_counts = [0] * len(CLASS_NAMES)
         hazards = {}
         for track in self.tracks:
             if not _known_lane(track):
                 unknown_tracks += 1
+                if not track.missed and 0 <= track.class_id < len(CLASS_NAMES):
+                    unlocated_counts[track.class_id] += 1
             if track.missed:
                 missing_tracks += 1
         for hazard in self.hazards:
@@ -204,6 +218,8 @@ class GameState:
             _unit(unknown_tracks, 10.0),
             _unit(missing_tracks, 10.0),
         ]
+        for count in unlocated_counts:
+            values.append(_unit(count, 10.0))
         for lane in range(3):
             visibility = self.lane_visibility[lane] if lane < len(self.lane_visibility) else None
             values += [float(visibility is True), float(isinstance(visibility, bool))]
@@ -225,7 +241,7 @@ class GameState:
                 ttc_known = ttc is not None and math.isfinite(ttc) and ttc >= 0
                 urgency = hazard.urgency if hazard else "UNKNOWN"
                 values += [1.0, float(not track.missed), 1.0]
-                for class_id in range(3):
+                for class_id in range(len(CLASS_NAMES)):
                     values.append(float(track.class_id == class_id))
                 values += [
                     _unit(track.confidence),
