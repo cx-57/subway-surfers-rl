@@ -1,3 +1,6 @@
 train
 ground_barrier
 overhead_barrier
+bush
+small_obstacle
+pillar

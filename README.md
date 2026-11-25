@@ -125,15 +125,19 @@ do not establish foot contact or running/jumping/rolling/train-roof state.
 Recommendations generally remain UNKNOWN. Numeric observations mask missing data.
 Boxes do not directly identify occupied lanes. Videos/logs do not prove accuracy.
 
-The original evaluation utility remains available:
+After training, evaluate the new six-class checkpoint printed by the training script.
+For example (the run directory may have a numeric suffix):
 
 ```bash
-.venv/bin/python scripts/evaluate.py models/barriers_640/weights/best.pt data/training/dataset.yaml val
+.venv/bin/python scripts/evaluate.py models/training/weights/best.pt data/training/dataset.yaml val
 ```
 
-Reproduce nearby-subset AP50 on retained validation images with
-`.venv/bin/python scripts/distance_map.py`. Removed test recordings are skipped;
-their previously saved reports remain historical results.
+The dataset now includes bush, small-obstacle and central-pillar classes. See
+[data counts and annotation rules](data/README.md). The retained detector still
+has three classes until retrained; adding class names does not update its weights.
+Earlier distance-filter AP50 reports use the older frozen dataset and must not be
+compared directly with six-class results. `scripts/distance_map.py` deliberately
+rejects changed annotation revisions.
 The optional `scripts/train.py` keeps one conservative training configuration and
 creates a separate numbered `models/training/` run; no training is needed to observe.
 
@@ -157,7 +161,7 @@ versions; current measurements do not assume a future Mac's performance.
 ## Data and development rules
 
 - Preserve source-image bytes, dimensions and aspect ratios. Keep overlays/crops separate.
-- `data/training/` holds the curated originals, labels and explicit 200/144 train/validation lists. `data/raw/` is for new recordings. See `data/README.md` for the cleanup record and folder layout.
+- `data/training/` holds the curated originals, labels and explicit 510/273 train/validation lists. `data/raw/` is for new recordings. See `data/README.md` for the cleanup record and folder layout.
 - Label only recognizable visible extents; preserve correct labels, record corrections/provenance, and exclude ambiguous frames. Predictions are review candidates, not ground truth.
 - Keep chronological training <=780, validation >=850 and the gap. Never train on validation or newer recordings. Inspected recordings are regression data, not untouched independent tests.
 - Use real screenshots. Compare one training change at a time with matched seeds/budgets; avoid significant rotation, perspective warp and vertical flips. Never paste objects permanently into datasets.

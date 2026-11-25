@@ -1,0 +1,66 @@
+{
+  "classes": [
+    "train",
+    "ground_barrier",
+    "overhead_barrier",
+    "bush",
+    "small_obstacle",
+    "pillar"
+  ],
+  "splits": {
+    "train": {
+      "images": 510,
+      "boxes": {
+        "train": 991,
+        "ground_barrier": 258,
+        "overhead_barrier": 140,
+        "bush": 46,
+        "small_obstacle": 13,
+        "pillar": 192
+      },
+      "frames_by_class": {
+        "train": 473,
+        "ground_barrier": 215,
+        "overhead_barrier": 130,
+        "bush": 37,
+        "small_obstacle": 13,
+        "pillar": 157
+      },
+      "appearances": {
+        "orange_warning_box": 12,
+        "domed_bin": 1
+      }
+    },
+    "val": {
+      "images": 273,
+      "boxes": {
+        "train": 622,
+        "ground_barrier": 116,
+        "overhead_barrier": 148,
+        "bush": 10,
+        "small_obstacle": 2,
+        "pillar": 74
+      },
+      "frames_by_class": {
+        "train": 258,
+        "ground_barrier": 115,
+        "overhead_barrier": 147,
+        "bush": 10,
+        "small_obstacle": 2,
+        "pillar": 63
+      },
+      "appearances": {
+        "domed_bin": 2
+      }
+    }
+  },
+  "source_sessions": {
+    "session_1795570315962077000": 132,
+    "session_1795570539890370000": 108,
+    "session_1795570682988894000": 129,
+    "session_1795570876212146000": 70
+  },
+  "counting": "Labeled boxes and labeled frames; repeated views are not distinct physical obstacles.",
+  "label_quality": "AI-assisted visual drafts; not independently human-verified.",
+  "validation_note": "Third new clip is held out. Recordings appear to continue the same game, so this is not an independent unseen test."
+}
