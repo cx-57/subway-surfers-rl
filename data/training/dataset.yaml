@@ -1,0 +1,12 @@
+{
+  "train": "train.txt",
+  "val": "val.txt",
+  "names": [
+    "train",
+    "ground_barrier",
+    "overhead_barrier",
+    "bush",
+    "small_obstacle",
+    "pillar"
+  ]
+}

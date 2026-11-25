@@ -35,6 +35,12 @@ class TrainingDataTests(unittest.TestCase):
             (batch / "classes.txt").write_text("train\nground_barrier\noverhead_barrier\n")
             train.prepare_data(batch, batch)
             self.assertEqual(len((batch / "train.txt").read_text().splitlines()), 3)
+            for line in (batch / 'train.txt').read_text().splitlines():
+                self.assertTrue(line.startswith('./'))
+                self.assertTrue((batch / line).is_file())
+            config = json.loads((batch / 'dataset.yaml').read_text())
+            self.assertNotIn('path', config)
+            self.assertEqual(config['train'], 'train.txt')
             splits["val"] = ["frame_000105.jpg"]
             (batch / "manifest.json").write_text(json.dumps(dict(frames=frames, splits=splits)))
             with self.assertRaisesRegex(ValueError, "overlap"):

@@ -3,6 +3,7 @@
 import json
 import hashlib
 import math
+import os
 import sys
 from pathlib import Path
 
@@ -55,7 +56,10 @@ def verify_images(batch=BATCH):
     for frame in frames:
         paths = [batch / "images" / frame["image"]]
         if "source" in frame:
-            paths.append(ROOT / frame["source"])
+            source = ROOT / frame['source']
+            # GitHub shares the curated original; the full raw clip is optional.
+            if source.is_file() and source != paths[0]:
+                paths.append(source)
         for path in paths:
             with path.open("rb") as source:
                 actual = hashlib.file_digest(source, "sha256").hexdigest()
@@ -155,7 +159,8 @@ def prepare_data(batch=BATCH, output=DATA):
             if not read_labels(label) and not frame.get("verified_background", False):
                 raise ValueError(f"Empty label needs a visual background review: {label}")
             # Keep /images/ in the path so YOLO finds the matching /labels/ file.
-            images.append(str(image.absolute()))
+            # YOLO resolves ./ paths relative to this split file, on any computer.
+            images.append('./' + os.path.relpath(image.absolute(), output.absolute()))
         (output / f"{name}.txt").write_text("\n".join(images) + "\n")
 
     # JSON is valid YAML and safely handles spaces in paths and class names.
@@ -163,9 +168,8 @@ def prepare_data(batch=BATCH, output=DATA):
     config.write_text(
         json.dumps(
             dict(
-                path=str(batch.absolute()),
-                train=str((output / "train.txt").absolute()),
-                val=str((output / "val.txt").absolute()),
+                train='train.txt',
+                val='val.txt',
                 names=(batch / "classes.txt").read_text().splitlines(),
             ),
             indent=2,

@@ -92,7 +92,7 @@ def evaluate(checkpoint, dataset, split="val", output=None):
     from ultralytics.utils import YAML
 
     settings.update({"sync": False})
-    checkpoint, dataset = Path(checkpoint), Path(dataset)
+    checkpoint, dataset = Path(checkpoint), Path(dataset).resolve()
     output = Path(output) if output else checkpoint.parent.parent / f"evaluation_{split}"
     requested, number = output, 2
     while (output / "summary.json").exists():
@@ -100,9 +100,16 @@ def evaluate(checkpoint, dataset, split="val", output=None):
         number += 1
     output.mkdir(parents=True, exist_ok=True)
     data = YAML.load(dataset)
-    batch = Path(data["path"])
+    batch = Path(data.get('path', dataset.parent)).resolve()
     image_list = Path(data[split])
-    images = image_list.read_text().splitlines()
+    if not image_list.is_absolute():
+        image_list = batch / image_list
+    images = []
+    for line in image_list.read_text().splitlines():
+        path = Path(line)
+        if line.startswith('./'):
+            path = image_list.parent / path
+        images.append(str(path.resolve()))
     manifest = json.loads((batch / "manifest.json").read_text())
     frames = {}
     for frame in manifest["frames"]:

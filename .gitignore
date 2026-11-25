@@ -5,13 +5,35 @@ __pycache__/
 data/raw/
 data/labeling/*/images/
 data/labeling/*/review/
-# Keep curated labels/manifests in Git; ignore images and generated local paths.
-data/training/images/
-data/training/train.txt
-data/training/val.txt
-data/training/dataset.yaml
+# Curated images, labels and portable split files are shared through GitHub.
 data/cleanup.json
-models/
+# Share actual checkpoint bytes, not Git LFS pointers.
+models/*
+!models/baseline/
+!models/barriers_640/
+!models/training/
+models/baseline/*
+models/barriers_640/*
+models/training/*
+!models/baseline/weights/
+!models/barriers_640/weights/
+!models/training/weights/
+models/*/weights/*
+!models/*/weights/best.pt
+!models/training/run.json
+!models/training/args.yaml
+!models/training/results.csv
+!models/evaluation/
+models/evaluation/*
+!models/evaluation/obstacle_labels/
+models/evaluation/obstacle_labels/*
+!models/evaluation/obstacle_labels/legacy_new_objects.json
+!models/evaluation/obstacle_labels/session_*/
+models/evaluation/obstacle_labels/session_*/*
+!models/evaluation/obstacle_labels/session_*/annotations.json
 runs/
 .pytest_cache/
 data/**/*.cache
+.env
+.env.*
+!.env.example

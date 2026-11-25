@@ -1,0 +1,4696 @@
+{
+  "session": "session_1795570315962077000",
+  "class_names": [
+    "train",
+    "ground_barrier",
+    "overhead_barrier",
+    "bush",
+    "small_obstacle",
+    "pillar"
+  ],
+  "frames": [
+    {
+      "image": "frame_000001.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            203,
+            607,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            618,
+            201,
+            716,
+            319
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            532,
+            207,
+            571,
+            232
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            592,
+            505,
+            938,
+            777
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            586,
+            249,
+            620,
+            281
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; coins, pickups and decorative objects excluded. Ramp-topped red wagons are train instances.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000021.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            476,
+            203,
+            607,
+            386
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            679,
+            201,
+            1346,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            602,
+            210,
+            683,
+            277
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            609,
+            300,
+            713,
+            372
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; coins, pickups and decorative objects excluded. Ramp-topped red wagons are train instances.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000041.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            585,
+            201,
+            655,
+            318
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            649,
+            204,
+            696,
+            286
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            690,
+            202,
+            802,
+            321
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; coins, pickups and decorative objects excluded. Ramp-topped red wagons are train instances.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000061.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            355,
+            219,
+            779,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            690,
+            219,
+            1346,
+            822
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Visible freight wagon bodies and attached ramp ends classified train; purple passenger trains separate. Coins, marine scenery, portal beams and signals excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000081.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            400,
+            409,
+            670,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            685,
+            439,
+            952,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            649,
+            302,
+            791,
+            500
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            811,
+            409,
+            1346,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            598,
+            268,
+            661,
+            331
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Visible freight wagon bodies and attached ramp ends classified train; purple passenger trains separate. Coins, marine scenery, portal beams and signals excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000101.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            537,
+            490,
+            815,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            589,
+            306,
+            790,
+            750
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            619,
+            267,
+            786,
+            462
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            606,
+            269,
+            621,
+            296
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            557,
+            290,
+            584,
+            311
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Visible freight wagon bodies and attached ramp ends classified train; purple passenger trains separate. Coins, marine scenery, portal beams and signals excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000121.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            607,
+            379,
+            920,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            614,
+            268,
+            695,
+            394
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            571,
+            269,
+            619,
+            341
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            546,
+            273,
+            573,
+            312
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            535,
+            307,
+            574,
+            337
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Visible freight wagon bodies and attached ramp ends classified train; purple passenger trains separate. Coins, marine scenery, portal beams and signals excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000141.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            360,
+            335,
+            630,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            624,
+            687,
+            888,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            609,
+            271,
+            662,
+            376
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            628,
+            302,
+            722,
+            475
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            571,
+            270,
+            623,
+            339
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            535,
+            276,
+            557,
+            305
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            486,
+            384,
+            537,
+            432
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Visible freight wagon bodies and attached ramp ends classified train; purple passenger trains separate. Coins, marine scenery, portal beams and signals excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000161.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            537,
+            572,
+            1008,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            622,
+            273,
+            838,
+            582
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            196,
+            317,
+            625,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            617,
+            259,
+            661,
+            319
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            542,
+            259,
+            592,
+            301
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Visible freight wagon bodies and attached ramp ends classified train; purple passenger trains separate. Coins, marine scenery, portal beams and signals excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000181.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            607,
+            532,
+            922,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            633,
+            315,
+            723,
+            476
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            559,
+            267,
+            626,
+            361
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            522,
+            277,
+            546,
+            305
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Visible freight wagon bodies and attached ramp ends classified train; purple passenger trains separate. Coins, marine scenery, portal beams and signals excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000201.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            518,
+            278,
+            801,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            547,
+            270,
+            598,
+            330
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Visible freight wagon bodies and attached ramp ends classified train; purple passenger trains separate. Coins, marine scenery, portal beams and signals excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000221.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            357,
+            491,
+            659,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            531,
+            284,
+            660,
+            738
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            663,
+            595,
+            968,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            570,
+            270,
+            603,
+            318
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Visible freight wagon bodies and attached ramp ends classified train; purple passenger trains separate. Coins, marine scenery, portal beams and signals excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000241.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            556,
+            291,
+            698,
+            701
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Visible freight wagon bodies and attached ramp ends classified train; purple passenger trains separate. Coins, marine scenery, portal beams and signals excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000261.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            617,
+            251,
+            650,
+            296
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            588,
+            267,
+            616,
+            299
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            579,
+            304,
+            602,
+            367
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native frame reviewed. Cropped redwhite jump hurdle fragment visible at portal left; tiny distant obscured geometry omitted as unrecognizable.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000281.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            637,
+            206,
+            703,
+            279
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            596,
+            237,
+            640,
+            278
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; coins, pickups and decorative objects excluded. Ramp-topped red wagons are train instances.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000301.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            626,
+            202,
+            850,
+            423
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            607,
+            228,
+            629,
+            271
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            579,
+            286,
+            687,
+            375
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Freight wagon bodies with attached ramps labeled train. Full tall chevron hurdle is overhead; low crossbar hurdle is ground barrier. Decorative portals and signals excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000321.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            661,
+            202,
+            1346,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            624,
+            212,
+            665,
+            273
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            749,
+            204,
+            1120,
+            305
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            584,
+            235,
+            595,
+            260
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            587,
+            245,
+            625,
+            271
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Freight wagon bodies with attached ramps labeled train. Full tall chevron hurdle is overhead; low crossbar hurdle is ground barrier. Decorative portals and signals excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000341.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            751,
+            202,
+            1346,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            655,
+            202,
+            741,
+            327
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            711,
+            202,
+            786,
+            292
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            588,
+            218,
+            622,
+            264
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            590,
+            245,
+            646,
+            286
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Freight wagon bodies with attached ramps labeled train. Full tall chevron hurdle is overhead; low crossbar hurdle is ground barrier. Decorative portals and signals excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000361.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            364,
+            388,
+            981,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            589,
+            283,
+            738,
+            386
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            682,
+            250,
+            1148,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            549,
+            242,
+            617,
+            332
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            626,
+            242,
+            700,
+            286
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            458,
+            420,
+            552,
+            521
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            612,
+            276,
+            650,
+            298
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Freight wagon bodies with attached ramps labeled train. Full tall chevron hurdle is overhead; low crossbar hurdle is ground barrier. Decorative portals and signals excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000381.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            432,
+            294,
+            651,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            678,
+            290,
+            918,
+            626
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            918,
+            693,
+            1257,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            589,
+            270,
+            659,
+            325
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            569,
+            267,
+            598,
+            299
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            644,
+            420,
+            734,
+            491
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            657,
+            301,
+            684,
+            328
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Freight wagon bodies with attached ramps labeled train. Full tall chevron hurdle is overhead; low crossbar hurdle is ground barrier. Decorative portals and signals excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000401.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            582,
+            270,
+            599,
+            310
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            636,
+            275,
+            749,
+            433
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            833,
+            438,
+            1326,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            413,
+            559,
+            731,
+            822
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            744,
+            365,
+            806,
+            421
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            597,
+            275,
+            641,
+            338
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Freight wagon bodies with attached ramps labeled train. Full tall chevron hurdle is overhead; low crossbar hurdle is ground barrier. Decorative portals and signals excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000421.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            530,
+            329,
+            817,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            563,
+            269,
+            598,
+            333
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            626,
+            269,
+            676,
+            332
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            509,
+            354,
+            609,
+            495
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Freight wagon bodies with attached ramps labeled train. Full tall chevron hurdle is overhead; low crossbar hurdle is ground barrier. Decorative portals and signals excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000441.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            587,
+            262,
+            661,
+            416
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            624,
+            263,
+            702,
+            359
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            709,
+            279,
+            812,
+            414
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            690,
+            268,
+            742,
+            319
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Visible freight vehicle sides/body and attached ramps labeled train; signals, side columns, decorative railings and coins excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000461.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            176,
+            368,
+            887,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            736,
+            351,
+            1346,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            933,
+            368,
+            1346,
+            670
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            554,
+            242,
+            695,
+            370
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            627,
+            238,
+            684,
+            301
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            710,
+            244,
+            1035,
+            406
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Visible freight vehicle sides/body and attached ramps labeled train; signals, side columns, decorative railings and coins excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000481.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            361,
+            485,
+            654,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            833,
+            488,
+            1346,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            658,
+            411,
+            882,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            624,
+            271,
+            762,
+            510
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            577,
+            268,
+            610,
+            327
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            583,
+            326,
+            631,
+            362
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            720,
+            326,
+            733,
+            346
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Visible freight vehicle sides/body and attached ramps labeled train; signals, side columns, decorative railings and coins excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000501.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            549,
+            445,
+            808,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            555,
+            272,
+            611,
+            391
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            614,
+            270,
+            654,
+            319
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            586,
+            272,
+            613,
+            313
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            468,
+            527,
+            597,
+            612
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            737,
+            525,
+            858,
+            611
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Visible freight vehicle sides/body and attached ramps labeled train; signals, side columns, decorative railings and coins excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000521.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            207,
+            205,
+            604,
+            701
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            611,
+            203,
+            675,
+            300
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            659,
+            209,
+            716,
+            291
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Visible freight vehicle sides/body and attached ramps labeled train; signals, side columns, decorative railings and coins excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000541.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            203,
+            625,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            622,
+            202,
+            788,
+            476
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Visible freight vehicle sides/body and attached ramps labeled train; signals, side columns, decorative railings and coins excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000561.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            624,
+            283,
+            888,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            550,
+            267,
+            609,
+            323
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Visible freight vehicle sides/body and attached ramps labeled train; signals, side columns, decorative railings and coins excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000581.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            526,
+            329,
+            631,
+            545
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            570,
+            270,
+            626,
+            367
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            634,
+            428,
+            858,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            537,
+            270,
+            565,
+            310
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Vehicle bodies boxed; coins, pickups, signals, portal beams and side decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000601.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            555,
+            345,
+            801,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            525,
+            276,
+            610,
+            464
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            549,
+            273,
+            573,
+            322
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Vehicle bodies boxed; coins, pickups, signals, portal beams and side decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000621.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            464,
+            453,
+            750,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            595,
+            302,
+            670,
+            441
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            597,
+            275,
+            654,
+            328
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Vehicle bodies boxed; coins, pickups, signals, portal beams and side decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000641.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            582,
+            268,
+            608,
+            305
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            605,
+            270,
+            625,
+            305
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            622,
+            267,
+            647,
+            306
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; coins, pickups and decorative objects excluded. Ramp-topped red wagons are train instances.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000661.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            564,
+            209,
+            609,
+            272
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            607,
+            211,
+            645,
+            270
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            640,
+            211,
+            678,
+            272
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; coins, pickups and decorative objects excluded. Ramp-topped red wagons are train instances.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000681.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            431,
+            200,
+            562,
+            346
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            552,
+            201,
+            630,
+            321
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            632,
+            198,
+            708,
+            315
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; coins, pickups and decorative objects excluded. Ramp-topped red wagons are train instances.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000701.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            291,
+            558,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            568,
+            195,
+            627,
+            281
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            629,
+            292,
+            661,
+            328
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            658,
+            288,
+            685,
+            328
+          ],
+          "appearance": "orange_warning_box"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Compound encounter: separately boxed visible bush union and orange warning box; coins and decorative potted shrubs excluded. Bush right lobe hidden by coin; no inferred extent.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000703.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            527,
+            148,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            567,
+            193,
+            633,
+            291
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            629,
+            305,
+            724,
+            345
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            662,
+            302,
+            693,
+            344
+          ],
+          "appearance": "orange_warning_box"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Compound encounter: separately boxed visible bush union and orange warning box; coins and decorative potted shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000705.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            556,
+            197,
+            636,
+            307
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            628,
+            320,
+            730,
+            365
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            667,
+            317,
+            702,
+            365
+          ],
+          "appearance": "orange_warning_box"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Compound encounter: separately boxed visible bush union and orange warning box; coins and decorative potted shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000707.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            544,
+            197,
+            636,
+            330
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            626,
+            339,
+            746,
+            391
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            670,
+            335,
+            713,
+            391
+          ],
+          "appearance": "orange_warning_box"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Compound encounter: separately boxed visible bush union and orange warning box; coins and decorative potted shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000709.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            513,
+            200,
+            640,
+            370
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            624,
+            364,
+            751,
+            429
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            675,
+            362,
+            724,
+            429
+          ],
+          "appearance": "orange_warning_box"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Compound encounter: separately boxed visible bush union and orange warning box; coins and decorative potted shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000711.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            458,
+            202,
+            637,
+            447
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            618,
+            403,
+            786,
+            481
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            681,
+            402,
+            739,
+            481
+          ],
+          "appearance": "orange_warning_box"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Compound encounter: separately boxed visible bush union and orange warning box; coins and decorative potted shrubs excluded. Player partially occludes top-right box corner.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000713.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            260,
+            201,
+            640,
+            713
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            608,
+            475,
+            827,
+            586
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            687,
+            477,
+            768,
+            586
+          ],
+          "appearance": "orange_warning_box"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Compound encounter: separately boxed visible bush union and orange warning box; coins and decorative potted shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000715.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            202,
+            640,
+            822
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            590,
+            563,
+            879,
+            718
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            696,
+            577,
+            804,
+            724
+          ],
+          "appearance": "orange_warning_box"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Compound encounter: separately boxed visible bush union and orange warning box; coins and decorative potted shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000717.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            201,
+            637,
+            822
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            627,
+            809,
+            710,
+            822
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Compound encounter: separately boxed visible bush union and orange warning box; coins and decorative potted shrubs excluded. Only bottom-clipped bush fragment remains recognizable; orange box outside image.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000721.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            224,
+            624,
+            822
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Glowing question-mark cube is a pickup; decorative sidewalk shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000741.jpg",
+      "boxes": [],
+      "reviewed": true,
+      "notes": "Native frame visually checked: coins and architecture only; no recognizable target obstacles.",
+      "verified_background": true
+    },
+    {
+      "image": "frame_000761.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            582,
+            228,
+            609,
+            272
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            557,
+            249,
+            594,
+            271
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            637,
+            250,
+            664,
+            273
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Distant but recognizable lime bushes occupy both side lanes; center purple train front.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000777.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            571,
+            231,
+            624,
+            313
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            530,
+            276,
+            570,
+            308
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            632,
+            283,
+            675,
+            317
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            543,
+            263,
+            571,
+            283
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            624,
+            259,
+            644,
+            285
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Coins, powerups, and decorative sidewalk shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000779.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            558,
+            237,
+            631,
+            334
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            526,
+            280,
+            566,
+            313
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            632,
+            289,
+            678,
+            325
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            541,
+            264,
+            565,
+            283
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            625,
+            260,
+            643,
+            286
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Both playable-lane bushes recognized; coins and potted shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000781.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            552,
+            231,
+            629,
+            359
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            518,
+            281,
+            557,
+            319
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            633,
+            294,
+            681,
+            335
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            538,
+            266,
+            558,
+            285
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            626,
+            260,
+            643,
+            286
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Coins, powerups, and decorative sidewalk shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000783.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            525,
+            224,
+            630,
+            399
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            637,
+            299,
+            687,
+            343
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            625,
+            256,
+            645,
+            282
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Left bush hidden by train; no inferred box. Right bush partially occluded by coin.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000785.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            479,
+            220,
+            626,
+            462
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            638,
+            295,
+            697,
+            348
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            625,
+            253,
+            646,
+            282
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Left bush fully hidden behind train; no inferred box. Coins and decorative shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000787.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            332,
+            210,
+            626,
+            641
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            638,
+            294,
+            707,
+            349
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            625,
+            246,
+            651,
+            278
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Coins, powerups, and decorative sidewalk shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000789.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            204,
+            626,
+            822
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            641,
+            300,
+            727,
+            365
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            624,
+            244,
+            658,
+            279
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Coins, powerups, and decorative sidewalk shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000791.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            202,
+            626,
+            822
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            641,
+            315,
+            734,
+            391
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            624,
+            243,
+            664,
+            279
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Coins, powerups, and decorative sidewalk shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000793.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            202,
+            627,
+            822
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            641,
+            339,
+            756,
+            437
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            624,
+            243,
+            668,
+            281
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Coins, powerups, and decorative sidewalk shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000795.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            202,
+            627,
+            822
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            638,
+            386,
+            785,
+            508
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            625,
+            245,
+            680,
+            290
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Coins, powerups, and decorative sidewalk shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000797.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            204,
+            627,
+            822
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            632,
+            433,
+            814,
+            593
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            627,
+            249,
+            690,
+            296
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Coins, powerups, and decorative sidewalk shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000799.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            206,
+            627,
+            822
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            620,
+            535,
+            883,
+            800
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            628,
+            251,
+            694,
+            303
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Coins, powerups, and decorative sidewalk shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000801.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            222,
+            608,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            590,
+            231,
+            609,
+            260
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            693,
+            783,
+            907,
+            822
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            632,
+            253,
+            701,
+            311
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Bush visible only at bottom border; tiny but recognizable distant purple train front. Coins excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000821.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            553,
+            216,
+            598,
+            269
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            608,
+            213,
+            679,
+            271
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Vehicle bodies boxed; coins, pickups, signals, portal beams and side decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000841.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            550,
+            204,
+            613,
+            295
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            639,
+            201,
+            768,
+            313
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            604,
+            217,
+            625,
+            266
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Vehicle bodies boxed; coins, pickups, signals, portal beams and side decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000861.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            202,
+            610,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            690,
+            202,
+            1346,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            605,
+            203,
+            668,
+            282
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Vehicle bodies boxed; coins, pickups, signals, portal beams and side decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000881.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            350,
+            204,
+            633,
+            579
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            620,
+            210,
+            657,
+            271
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Vehicle bodies boxed; coins, pickups, signals, portal beams and side decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000901.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            274,
+            585,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            638,
+            203,
+            729,
+            335
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            563,
+            255,
+            637,
+            312
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            575,
+            155,
+            603,
+            262
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Vehicle bodies boxed; coins, pickups, signals, portal beams and side decoration excluded. Solid gold central T vertical pillar stem in distant portal boxed; horizontal beam and side columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000915.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            785,
+            224,
+            1346,
+            822
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            564,
+            387,
+            782,
+            554
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            618,
+            120,
+            660,
+            273
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original or 673-pixel-wide contact-sheet tile. Central pillars exclude side columns and decorative potted shrubs.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000917.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            614,
+            120,
+            662,
+            276
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            844,
+            252,
+            1346,
+            822
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            526,
+            460,
+            824,
+            700
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000919.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            1163,
+            356,
+            1346,
+            822
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            421,
+            671,
+            936,
+            822
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            614,
+            99,
+            664,
+            287
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original or 673-pixel-wide contact-sheet tile. Central pillars exclude side columns and decorative potted shrubs.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000921.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            614,
+            90,
+            664,
+            292
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000923.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            618,
+            78,
+            668,
+            298
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            573,
+            190,
+            595,
+            268
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original or 673-pixel-wide contact-sheet tile. Central pillars exclude side columns and decorative potted shrubs.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000925.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            61,
+            675,
+            307
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            576,
+            185,
+            599,
+            267
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            673,
+            208,
+            691,
+            270
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original or 673-pixel-wide contact-sheet tile. Central pillars exclude side columns and decorative potted shrubs.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000927.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            46,
+            682,
+            320
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            578,
+            180,
+            606,
+            268
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            678,
+            210,
+            698,
+            276
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000929.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            621,
+            19,
+            687,
+            328
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            581,
+            178,
+            607,
+            268
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            683,
+            206,
+            712,
+            285
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original or 673-pixel-wide contact-sheet tile. Central pillars exclude side columns and decorative potted shrubs.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000931.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            622,
+            0,
+            700,
+            346
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            584,
+            176,
+            610,
+            268
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            692,
+            206,
+            732,
+            288
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000933.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            618,
+            0,
+            704,
+            366
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            587,
+            173,
+            613,
+            267
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            695,
+            202,
+            751,
+            311
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original or 673-pixel-wide contact-sheet tile. Central pillars exclude side columns and decorative potted shrubs.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000935.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            618,
+            0,
+            716,
+            390
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            592,
+            170,
+            620,
+            268
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            704,
+            202,
+            778,
+            324
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000937.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            624,
+            0,
+            747,
+            435
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            595,
+            163,
+            623,
+            270
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            736,
+            201,
+            841,
+            376
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Central square pillars only; round side columns and potted shrubs excluded. Top of near pillar clipped.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000939.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            671,
+            0,
+            828,
+            494
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            609,
+            158,
+            640,
+            270
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            812,
+            202,
+            985,
+            460
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original or 673-pixel-wide contact-sheet tile. Central pillars exclude side columns and decorative potted shrubs.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000941.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            736,
+            0,
+            960,
+            594
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            621,
+            152,
+            657,
+            270
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            928,
+            208,
+            1341,
+            688
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original or 673-pixel-wide contact-sheet tile. Central pillars exclude side columns and decorative potted shrubs.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000943.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            758,
+            0,
+            1294,
+            790
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            623,
+            151,
+            657,
+            272
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            1068,
+            237,
+            1346,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            744,
+            201,
+            815,
+            350
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original or 673-pixel-wide contact-sheet tile. Central pillars exclude side columns and decorative potted shrubs.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000945.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            798,
+            0,
+            1346,
+            822
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            626,
+            145,
+            664,
+            273
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            774,
+            202,
+            938,
+            452
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original or 673-pixel-wide contact-sheet tile. Central pillars exclude side columns and decorative potted shrubs.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000955.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            616,
+            118,
+            660,
+            278
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000957.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            616,
+            106,
+            666,
+            286
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            566,
+            220,
+            588,
+            262
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000959.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            618,
+            98,
+            668,
+            290
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            566,
+            216,
+            592,
+            264
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000961.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            86,
+            668,
+            282
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            574,
+            194,
+            600,
+            268
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            568,
+            214,
+            596,
+            268
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000963.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            74,
+            672,
+            290
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            564,
+            212,
+            600,
+            270
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000965.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            62,
+            676,
+            300
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            578,
+            178,
+            604,
+            268
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            562,
+            212,
+            606,
+            272
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000967.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            622,
+            42,
+            682,
+            316
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            560,
+            210,
+            606,
+            280
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000969.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            622,
+            0,
+            688,
+            336
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            558,
+            204,
+            610,
+            286
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000971.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            0,
+            700,
+            348
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            552,
+            204,
+            612,
+            294
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000973.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            624,
+            0,
+            708,
+            372
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            542,
+            202,
+            616,
+            302
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000975.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            594,
+            0,
+            694,
+            416
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            504,
+            202,
+            604,
+            334
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000977.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            526,
+            0,
+            664,
+            460
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            414,
+            204,
+            538,
+            388
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000979.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            420,
+            0,
+            614,
+            531
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            229,
+            208,
+            455,
+            510
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Central pillar top clipped. Distant architecture not sufficiently separable for another pillar box.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000981.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            300,
+            0,
+            576,
+            660
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            218,
+            380,
+            822
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            572,
+            162,
+            606,
+            270
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000983.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            0,
+            0,
+            532,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            476,
+            204,
+            540,
+            368
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            574,
+            148,
+            616,
+            272
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000985.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            0,
+            0,
+            428,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            106,
+            208,
+            508,
+            552
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            576,
+            148,
+            618,
+            272
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000995.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            616,
+            118,
+            660,
+            278
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000997.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            616,
+            106,
+            666,
+            286
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000999.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            618,
+            98,
+            668,
+            290
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001001.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            618,
+            86,
+            668,
+            282
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            574,
+            194,
+            600,
+            268
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001003.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            74,
+            674,
+            292
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            578,
+            188,
+            604,
+            268
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001005.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            62,
+            678,
+            300
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            580,
+            180,
+            606,
+            268
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            676,
+            210,
+            696,
+            272
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001007.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            622,
+            42,
+            684,
+            316
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            582,
+            176,
+            608,
+            268
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            680,
+            210,
+            712,
+            280
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001009.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            622,
+            0,
+            690,
+            336
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            586,
+            172,
+            614,
+            268
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            688,
+            204,
+            726,
+            292
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001011.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            0,
+            700,
+            350
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            586,
+            172,
+            614,
+            268
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            696,
+            204,
+            752,
+            298
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001013.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            0,
+            708,
+            370
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            588,
+            170,
+            616,
+            268
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            704,
+            202,
+            782,
+            306
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001015.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            632,
+            0,
+            753,
+            428
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            597,
+            165,
+            623,
+            271
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            744,
+            201,
+            842,
+            370
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Central square pillars only; round side columns and potted shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001017.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            694,
+            0,
+            894,
+            504
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            610,
+            158,
+            644,
+            270
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            852,
+            204,
+            1038,
+            480
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001019.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            738,
+            0,
+            966,
+            612
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            624,
+            152,
+            660,
+            270
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            950,
+            212,
+            1346,
+            794
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001021.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            772,
+            0,
+            1346,
+            820
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            626,
+            148,
+            664,
+            272
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            1260,
+            236,
+            1346,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            748,
+            202,
+            828,
+            354
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001023.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            824,
+            0,
+            1346,
+            822
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            626,
+            146,
+            668,
+            274
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            778,
+            202,
+            990,
+            474
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001025.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            628,
+            142,
+            670,
+            274
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            836,
+            208,
+            1346,
+            786
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001033.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            616,
+            118,
+            660,
+            278
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001035.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            616,
+            106,
+            666,
+            286
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001037.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            618,
+            98,
+            668,
+            290
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001039.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            618,
+            86,
+            668,
+            286
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001041.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            68,
+            672,
+            290
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            574,
+            186,
+            604,
+            268
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            670,
+            208,
+            688,
+            272
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001043.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            622,
+            46,
+            676,
+            304
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            674,
+            208,
+            692,
+            274
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001045.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            622,
+            34,
+            680,
+            310
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            580,
+            178,
+            608,
+            268
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            680,
+            206,
+            704,
+            278
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001047.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            624,
+            0,
+            688,
+            332
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            686,
+            206,
+            724,
+            288
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001049.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            622,
+            0,
+            698,
+            354
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            692,
+            202,
+            744,
+            298
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001051.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            624,
+            0,
+            702,
+            370
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            704,
+            202,
+            772,
+            320
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Central square pillar and recognizable trains/hurdles labeled; tiny indistinct far-opening geometry omitted. Decorative columns and shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001053.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            0,
+            722,
+            416
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            720,
+            202,
+            816,
+            354
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            566,
+            268,
+            588,
+            288
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001055.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            664,
+            0,
+            820,
+            484
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            796,
+            204,
+            946,
+            428
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            576,
+            260,
+            600,
+            284
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001057.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            719,
+            0,
+            944,
+            576
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            908,
+            211,
+            1242,
+            601
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            592,
+            249,
+            617,
+            269
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Central square pillar top clipped; redwhite ground hurdle recognizable in distant opening. Side columns and potted shrubs excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001059.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            762,
+            0,
+            1346,
+            766
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            1120,
+            230,
+            1346,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            740,
+            202,
+            808,
+            336
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            590,
+            250,
+            616,
+            278
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001061.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            802,
+            0,
+            1346,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            774,
+            202,
+            966,
+            428
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            596,
+            246,
+            624,
+            278
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001063.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            820,
+            208,
+            1346,
+            778
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            600,
+            246,
+            628,
+            276
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed 673px aspect-preserving tile. Square central pillars only; side columns and potted shrubs excluded. Tiny indistinct geometry in distant openings omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001081.jpg",
+      "boxes": [
+        {
+          "class_id": 1,
+          "xyxy": [
+            608,
+            239,
+            648,
+            274
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            611,
+            227,
+            643,
+            243
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native reviewed. Small red train wagon visible above ground hurdle; signals, coins and buildings excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001101.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            630,
+            211,
+            687,
+            271
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            595,
+            216,
+            635,
+            273
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            571,
+            225,
+            598,
+            266
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            610,
+            279,
+            710,
+            356
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Vehicle bodies boxed; coins, pickups, signals, portal beams and side decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001121.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            653,
+            203,
+            729,
+            315
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            716,
+            204,
+            883,
+            343
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            616,
+            211,
+            659,
+            271
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Native visual review. Vehicle bodies boxed; coins, pickups, signals, portal beams and side decoration excluded.",
+      "verified_background": false
+    }
+  ],
+  "excluded": [],
+  "method": "AI-assisted visual review; not verified human ground truth"
+}

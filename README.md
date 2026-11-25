@@ -133,8 +133,9 @@ For example (the run directory may have a numeric suffix):
 ```
 
 The dataset now includes bush, small-obstacle and central-pillar classes. See
-[data counts and annotation rules](data/README.md). The retained detector still
-has three classes until retrained; adding class names does not update its weights.
+[data counts and annotation rules](data/README.md). The default observer still uses the older three-class detector. The newly trained
+six-class model is `models/training/weights/best.pt`; pass it using `--checkpoint`
+when running `observe_live.py`. Adding class names alone does not update weights.
 Earlier distance-filter AP50 reports use the older frozen dataset and must not be
 compared directly with six-class results. `scripts/distance_map.py` deliberately
 rejects changed annotation revisions.

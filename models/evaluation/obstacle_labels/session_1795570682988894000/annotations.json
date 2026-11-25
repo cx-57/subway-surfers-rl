@@ -1,0 +1,3914 @@
+{
+  "session": "session_1795570682988894000",
+  "class_names": [
+    "train",
+    "ground_barrier",
+    "overhead_barrier",
+    "bush",
+    "small_obstacle",
+    "pillar"
+  ],
+  "frames": [
+    {
+      "image": "frame_000001.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            337,
+            287,
+            637,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            619,
+            319,
+            776,
+            684
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            439,
+            417,
+            502,
+            497
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000021.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            624,
+            317,
+            749,
+            434
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            624,
+            434,
+            909,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            519,
+            282,
+            574,
+            359
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            567,
+            279,
+            602,
+            334
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            554,
+            319,
+            602,
+            352
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000041.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            307,
+            337,
+            607,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            597,
+            299,
+            784,
+            826
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            741,
+            596,
+            891,
+            696
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000061.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            487,
+            367,
+            756,
+            826
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000081.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            589,
+            267,
+            639,
+            354
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            647,
+            270,
+            684,
+            304
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000101.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            157,
+            242,
+            849,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            756,
+            242,
+            861,
+            354
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            599,
+            257,
+            669,
+            299
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000121.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            462,
+            247,
+            716,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            696,
+            307,
+            1168,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            624,
+            272,
+            676,
+            337
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000141.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            567,
+            294,
+            694,
+            392
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            557,
+            674,
+            771,
+            826
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            547,
+            359,
+            599,
+            402
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            686,
+            302,
+            739,
+            379
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000161.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            704,
+            282,
+            899,
+            649
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            582,
+            244,
+            655,
+            324
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            632,
+            240,
+            674,
+            300
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            556,
+            276,
+            587,
+            303
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded. Native audit corrected distant train extents and added missed barrier.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000181.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            632,
+            215,
+            1338,
+            826
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000201.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            569,
+            217,
+            689,
+            277
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            691,
+            322,
+            1338,
+            756
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000221.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            567,
+            217,
+            756,
+            534
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            741,
+            205,
+            1338,
+            826
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000241.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            569,
+            477,
+            796,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            657,
+            307,
+            841,
+            556
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            582,
+            275,
+            654,
+            362
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            554,
+            332,
+            599,
+            364
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000261.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            549,
+            299,
+            811,
+            826
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000281.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            499,
+            287,
+            592,
+            554
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            577,
+            429,
+            841,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            602,
+            279,
+            664,
+            382
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            674,
+            304,
+            734,
+            399
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000301.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            524,
+            556,
+            811,
+            826
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000321.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            552,
+            222,
+            602,
+            307
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            607,
+            222,
+            779,
+            324
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            594,
+            247,
+            624,
+            289
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000341.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            122,
+            242,
+            841,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            686,
+            240,
+            1338,
+            674
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            699,
+            372,
+            1266,
+            826
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000361.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            519,
+            284,
+            686,
+            664
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            624,
+            294,
+            1004,
+            826
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            831,
+            477,
+            891,
+            534
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000381.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            504,
+            292,
+            751,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            634,
+            272,
+            676,
+            332
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000401.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            524,
+            275,
+            806,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            667,
+            282,
+            771,
+            454
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000421.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            622,
+            437,
+            851,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            569,
+            282,
+            604,
+            317
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000441.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            674,
+            222,
+            756,
+            337
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            582,
+            215,
+            624,
+            284
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000461.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            537,
+            205,
+            694,
+            534
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            696,
+            210,
+            1338,
+            826
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000481.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            382,
+            472,
+            667,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            642,
+            314,
+            771,
+            539
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            701,
+            289,
+            816,
+            442
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000501.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            534,
+            292,
+            624,
+            442
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            614,
+            439,
+            874,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            519,
+            287,
+            564,
+            354
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            609,
+            284,
+            667,
+            357
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            497,
+            369,
+            552,
+            434
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            624,
+            367,
+            684,
+            439
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            564,
+            270,
+            607,
+            322
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000521.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            394,
+            392,
+            612,
+            769
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            699,
+            297,
+            949,
+            771
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            597,
+            337,
+            704,
+            477
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000541.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            457,
+            297,
+            729,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            664,
+            339,
+            751,
+            442
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000561.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            544,
+            289,
+            637,
+            424
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            619,
+            270,
+            701,
+            412
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            489,
+            357,
+            537,
+            387
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000581.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            334,
+            529,
+            609,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            617,
+            324,
+            734,
+            539
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            567,
+            275,
+            604,
+            312
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            527,
+            270,
+            564,
+            314
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000600.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            662,
+            217,
+            756,
+            342
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            739,
+            215,
+            896,
+            357
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            587,
+            210,
+            667,
+            339
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000601.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            667,
+            217,
+            764,
+            344
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            756,
+            217,
+            926,
+            364
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            584,
+            210,
+            664,
+            342
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000602.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            674,
+            217,
+            774,
+            352
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            771,
+            215,
+            966,
+            377
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            579,
+            210,
+            664,
+            347
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000604.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            676,
+            217,
+            816,
+            394
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            796,
+            220,
+            1088,
+            447
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            569,
+            205,
+            676,
+            377
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000606.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            689,
+            220,
+            859,
+            427
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            836,
+            222,
+            1256,
+            542
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            569,
+            205,
+            691,
+            404
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000608.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            701,
+            225,
+            921,
+            532
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            879,
+            227,
+            1338,
+            719
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            542,
+            210,
+            701,
+            462
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000610.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            704,
+            230,
+            1101,
+            746
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            971,
+            245,
+            1338,
+            826
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            489,
+            207,
+            714,
+            581
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000612.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            729,
+            227,
+            1338,
+            826
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            339,
+            245,
+            776,
+            804
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000614.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            739,
+            245,
+            1338,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            637,
+            225,
+            691,
+            277
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            0,
+            439,
+            1083,
+            826
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000616.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            637,
+            217,
+            701,
+            289
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            1001,
+            544,
+            1338,
+            826
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            589,
+            297,
+            662,
+            357
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000618.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            634,
+            220,
+            711,
+            304
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            587,
+            309,
+            671,
+            379
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000620.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            634,
+            215,
+            741,
+            337
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            577,
+            337,
+            679,
+            414
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000621.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            637,
+            215,
+            794,
+            377
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            562,
+            352,
+            679,
+            452
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000622.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            639,
+            215,
+            816,
+            402
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            554,
+            369,
+            681,
+            477
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000624.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            652,
+            215,
+            1036,
+            624
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            517,
+            439,
+            701,
+            604
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000625.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            657,
+            210,
+            1338,
+            826
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            489,
+            494,
+            706,
+            701
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000626.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            657,
+            215,
+            1338,
+            826
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            444,
+            571,
+            719,
+            826
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000627.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            676,
+            212,
+            1338,
+            826
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            397,
+            706,
+            716,
+            826
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000681.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            517,
+            235,
+            634,
+            399
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            507,
+            292,
+            534,
+            332
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            622,
+            292,
+            679,
+            347
+          ],
+          "appearance": "domed_bin"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000701.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            544,
+            222,
+            594,
+            275
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            439,
+            292,
+            534,
+            362
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            627,
+            282,
+            719,
+            359
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000721.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            559,
+            212,
+            647,
+            312
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000741.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            210,
+            619,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            617,
+            215,
+            741,
+            419
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000761.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            624,
+            382,
+            934,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            549,
+            277,
+            652,
+            469
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            634,
+            277,
+            691,
+            394
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            509,
+            302,
+            559,
+            389
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000781.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            632,
+            277,
+            876,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            444,
+            699,
+            582,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            457,
+            312,
+            554,
+            467
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000801.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            592,
+            309,
+            871,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            517,
+            282,
+            624,
+            494
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            529,
+            282,
+            564,
+            322
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000821.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            549,
+            502,
+            854,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            519,
+            287,
+            604,
+            457
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            627,
+            284,
+            746,
+            429
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            599,
+            319,
+            627,
+            364
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000841.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            437,
+            464,
+            739,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            781,
+            382,
+            1338,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            584,
+            277,
+            676,
+            342
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            584,
+            302,
+            624,
+            349
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            721,
+            791,
+            936,
+            826
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000861.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            394,
+            279,
+            617,
+            811
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            607,
+            297,
+            681,
+            409
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            352,
+            522,
+            454,
+            626
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000881.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            260,
+            289,
+            622,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            612,
+            284,
+            839,
+            696
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            584,
+            691,
+            904,
+            826
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            524,
+            292,
+            564,
+            344
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000901.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            617,
+            275,
+            831,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            352,
+            367,
+            614,
+            826
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            527,
+            270,
+            567,
+            344
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            569,
+            279,
+            614,
+            324
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000921.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            544,
+            312,
+            624,
+            444
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            632,
+            322,
+            714,
+            484
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            474,
+            309,
+            557,
+            427
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000941.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            607,
+            282,
+            686,
+            469
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            487,
+            469,
+            597,
+            554
+          ],
+          "appearance": "domed_bin"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000961.jpg",
+      "boxes": [],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": true
+    },
+    {
+      "image": "frame_001001.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            664,
+            235,
+            784,
+            412
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001021.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            579,
+            284,
+            671,
+            369
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            771,
+            284,
+            881,
+            364
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001041.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            489,
+            207,
+            604,
+            362
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            609,
+            207,
+            691,
+            362
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            674,
+            212,
+            756,
+            297
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001056.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            554,
+            354,
+            766,
+            639
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            766,
+            459,
+            1263,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            442,
+            624,
+            859,
+            826
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            574,
+            192,
+            607,
+            319
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001058.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            347,
+            344,
+            731,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            716,
+            699,
+            1041,
+            826
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            574,
+            195,
+            607,
+            327
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001060.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            417,
+            569,
+            826
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            564,
+            205,
+            607,
+            339
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001061.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            721,
+            429,
+            826
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            562,
+            205,
+            609,
+            347
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001062.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            562,
+            205,
+            609,
+            354
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001064.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            562,
+            205,
+            612,
+            359
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001066.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            562,
+            205,
+            612,
+            364
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001068.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            562,
+            205,
+            612,
+            374
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001069.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            562,
+            202,
+            614,
+            384
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001070.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            562,
+            205,
+            614,
+            397
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001072.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            557,
+            205,
+            617,
+            417
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001074.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            552,
+            210,
+            619,
+            442
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001076.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            542,
+            230,
+            622,
+            472
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001078.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            524,
+            170,
+            622,
+            514
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001080.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            482,
+            0,
+            614,
+            556
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001081.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            442,
+            0,
+            607,
+            537
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001082.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            377,
+            0,
+            592,
+            564
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001084.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            202,
+            0,
+            554,
+            719
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            547,
+            225,
+            572,
+            292
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            562,
+            157,
+            592,
+            309
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001086.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            0,
+            0,
+            527,
+            826
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            559,
+            0,
+            617,
+            309
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            527,
+            217,
+            567,
+            289
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001088.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            557,
+            0,
+            617,
+            314
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            517,
+            202,
+            564,
+            289
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001090.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            569,
+            0,
+            642,
+            327
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            519,
+            197,
+            579,
+            299
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001092.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            592,
+            0,
+            674,
+            357
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            529,
+            202,
+            599,
+            317
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001094.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            604,
+            0,
+            699,
+            399
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            517,
+            205,
+            609,
+            344
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001096.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            552,
+            0,
+            671,
+            449
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            417,
+            215,
+            554,
+            422
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001098.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            367,
+            0,
+            599,
+            537
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            105,
+            222,
+            442,
+            614
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001100.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            202,
+            0,
+            562,
+            736
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            235,
+            315,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            539,
+            207,
+            567,
+            275
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            567,
+            127,
+            614,
+            317
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001101.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            57,
+            0,
+            534,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            272,
+            132,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            519,
+            215,
+            567,
+            284
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            564,
+            92,
+            617,
+            327
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001102.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            0,
+            0,
+            507,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            422,
+            210,
+            519,
+            422
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            502,
+            215,
+            562,
+            284
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            562,
+            67,
+            617,
+            327
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001104.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            222,
+            494,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            517,
+            212,
+            579,
+            292
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            569,
+            0,
+            642,
+            339
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001105.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            240,
+            462,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            534,
+            212,
+            592,
+            289
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            589,
+            0,
+            657,
+            337
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001106.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            287,
+            434,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            529,
+            207,
+            597,
+            294
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            594,
+            0,
+            671,
+            349
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001108.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            529,
+            207,
+            609,
+            314
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            604,
+            0,
+            691,
+            374
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001110.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            497,
+            207,
+            604,
+            359
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            597,
+            0,
+            701,
+            419
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001112.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            387,
+            210,
+            534,
+            414
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            502,
+            0,
+            649,
+            487
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001114.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            72,
+            212,
+            442,
+            614
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            317,
+            0,
+            602,
+            564
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001116.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            240,
+            270,
+            826
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            67,
+            0,
+            562,
+            786
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            567,
+            120,
+            614,
+            312
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001118.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            402,
+            207,
+            527,
+            464
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            0,
+            0,
+            517,
+            826
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            564,
+            50,
+            622,
+            319
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001120.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            222,
+            524,
+            826
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            572,
+            0,
+            637,
+            334
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001121.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            242,
+            514,
+            826
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            587,
+            0,
+            657,
+            337
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001122.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            282,
+            509,
+            826
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            599,
+            0,
+            679,
+            362
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001124.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            609,
+            0,
+            699,
+            397
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            542,
+            215,
+            564,
+            275
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001126.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            607,
+            0,
+            706,
+            429
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            547,
+            207,
+            574,
+            284
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001128.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            539,
+            0,
+            676,
+            497
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            512,
+            207,
+            547,
+            297
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001129.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            474,
+            0,
+            649,
+            509
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            494,
+            210,
+            534,
+            304
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001130.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            352,
+            0,
+            612,
+            569
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            594,
+            190,
+            609,
+            282
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001132.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            102,
+            0,
+            579,
+            774
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            569,
+            115,
+            612,
+            312
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            534,
+            215,
+            562,
+            282
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001134.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            0,
+            0,
+            532,
+            826
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            564,
+            37,
+            617,
+            322
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            527,
+            215,
+            567,
+            282
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001136.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            577,
+            0,
+            647,
+            334
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            539,
+            212,
+            579,
+            292
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001138.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            594,
+            0,
+            674,
+            359
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            537,
+            205,
+            599,
+            297
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001140.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            602,
+            0,
+            691,
+            384
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            529,
+            207,
+            604,
+            324
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001141.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            587,
+            0,
+            681,
+            384
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            512,
+            200,
+            594,
+            332
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001142.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            547,
+            0,
+            657,
+            422
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            469,
+            205,
+            564,
+            352
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001144.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            469,
+            0,
+            619,
+            482
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            334,
+            212,
+            489,
+            432
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001146.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            305,
+            0,
+            587,
+            564
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            217,
+            424,
+            694
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            609,
+            217,
+            629,
+            277
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001148.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            72,
+            0,
+            562,
+            746
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            230,
+            270,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            609,
+            212,
+            642,
+            284
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            567,
+            107,
+            612,
+            307
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001150.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            0,
+            0,
+            514,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            404,
+            212,
+            532,
+            427
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            612,
+            217,
+            649,
+            292
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            564,
+            37,
+            612,
+            319
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001152.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            230,
+            467,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            614,
+            215,
+            664,
+            294
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            557,
+            0,
+            619,
+            327
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001154.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            277,
+            382,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            634,
+            212,
+            691,
+            304
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            572,
+            0,
+            644,
+            339
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001156.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            676,
+            207,
+            744,
+            314
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            597,
+            0,
+            681,
+            367
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001158.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            694,
+            212,
+            794,
+            364
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            604,
+            0,
+            699,
+            407
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001160.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            716,
+            212,
+            871,
+            437
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            607,
+            0,
+            714,
+            457
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001161.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            754,
+            212,
+            974,
+            517
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            624,
+            0,
+            759,
+            494
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001162.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            821,
+            215,
+            1221,
+            684
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            659,
+            0,
+            854,
+            554
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed selected frame. Bounds are approximate visible extents; clipped/occluded targets included where recognizable. Tiny unrecognizable horizon details are not labeled. Side foliage/columns, powerups, coins and player/inspector excluded.",
+      "verified_background": false
+    }
+  ],
+  "excluded": [
+    {
+      "image": "frame_000641.jpg",
+      "reason": "Distant lane obstacles at palace exit too small/occluded for reliable complete annotation."
+    },
+    {
+      "image": "frame_000661.jpg",
+      "reason": "Distant striped barrier has ambiguous jump/roll geometry; native review confirms bush and small box but complete frame labeling remains uncertain."
+    },
+    {
+      "image": "frame_000981.jpg",
+      "reason": "Native audit rejects empty negative: distant bush, warning box and unclear red obstacle visible. Needs more annotation review."
+    }
+  ],
+  "method": "AI-assisted visual review; not verified human ground truth"
+}

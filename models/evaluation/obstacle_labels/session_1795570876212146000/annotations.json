@@ -1,0 +1,2223 @@
+{
+  "session": "session_1795570876212146000",
+  "class_names": [
+    "train",
+    "ground_barrier",
+    "overhead_barrier",
+    "bush",
+    "small_obstacle",
+    "pillar"
+  ],
+  "frames": [
+    {
+      "image": "frame_000001.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            100,
+            667,
+            297
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000005.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            624,
+            61,
+            683,
+            329
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            680,
+            213,
+            709,
+            287
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000009.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            0,
+            704,
+            380
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            701,
+            207,
+            765,
+            320
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            570,
+            260,
+            593,
+            273
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000013.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            607,
+            0,
+            741,
+            476
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            728,
+            207,
+            886,
+            440
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            576,
+            260,
+            603,
+            277
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000017.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            718,
+            0,
+            1099,
+            786
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            1028,
+            247,
+            1348,
+            823
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            593,
+            253,
+            623,
+            277
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000021.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            0,
+            0,
+            320,
+            823
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            869,
+            223,
+            1348,
+            806
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            610,
+            250,
+            640,
+            277
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000025.jpg",
+      "boxes": [
+        {
+          "class_id": 1,
+          "xyxy": [
+            603,
+            250,
+            634,
+            277
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000041.jpg",
+      "boxes": [
+        {
+          "class_id": 1,
+          "xyxy": [
+            607,
+            247,
+            637,
+            277
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000081.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            27,
+            225,
+            570,
+            823
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            555,
+            212,
+            771,
+            618
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            715,
+            209,
+            893,
+            416
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000105.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            499,
+            217,
+            620,
+            383
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            617,
+            220,
+            701,
+            370
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            694,
+            223,
+            762,
+            320
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            583,
+            203,
+            620,
+            250
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000109.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            421,
+            213,
+            610,
+            490
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            610,
+            207,
+            728,
+            433
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            714,
+            217,
+            785,
+            337
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            573,
+            207,
+            630,
+            280
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000113.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            81,
+            220,
+            566,
+            823
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            553,
+            207,
+            778,
+            590
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            755,
+            217,
+            880,
+            420
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            563,
+            213,
+            640,
+            337
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000117.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            496,
+            451,
+            823
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            301,
+            273,
+            1088,
+            823
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            752,
+            302,
+            1078,
+            770
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            532,
+            244,
+            621,
+            362
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            570,
+            213,
+            663,
+            282
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000121.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            506,
+            313,
+            620,
+            493
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            536,
+            450,
+            816,
+            823
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            795,
+            596,
+            1348,
+            823
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            613,
+            350,
+            677,
+            400
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            576,
+            263,
+            671,
+            353
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000125.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            381,
+            363,
+            576,
+            656
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            431,
+            773,
+            698,
+            823
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            583,
+            400,
+            657,
+            460
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            489,
+            290,
+            650,
+            400
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000129.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            20,
+            440,
+            475,
+            823
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            522,
+            466,
+            634,
+            543
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            421,
+            310,
+            617,
+            473
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000133.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            556,
+            324,
+            823
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            219,
+            563,
+            415,
+            710
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            425,
+            563,
+            620,
+            713
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            212,
+            307,
+            627,
+            573
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000137.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            0,
+            0,
+            627,
+            823
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000141.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            0,
+            0,
+            620,
+            823
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000145.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            0,
+            0,
+            596,
+            823
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            583,
+            410,
+            630,
+            456
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000161.jpg",
+      "boxes": [
+        {
+          "class_id": 1,
+          "xyxy": [
+            549,
+            436,
+            802,
+            616
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            627,
+            117,
+            667,
+            273
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000201.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            580,
+            193,
+            600,
+            273
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000203.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            583,
+            187,
+            610,
+            277
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000207.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            596,
+            160,
+            623,
+            277
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000211.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            607,
+            137,
+            644,
+            283
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000215.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            617,
+            107,
+            664,
+            300
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000219.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            623,
+            60,
+            694,
+            333
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000223.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            0,
+            725,
+            393
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000237.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            623,
+            93,
+            691,
+            340
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            563,
+            210,
+            613,
+            287
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000241.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            617,
+            50,
+            711,
+            400
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            532,
+            213,
+            610,
+            323
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000245.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            600,
+            0,
+            748,
+            526
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            354,
+            213,
+            529,
+            446
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000249.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            0,
+            0,
+            570,
+            823
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            580,
+            150,
+            610,
+            277
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            495,
+            210,
+            549,
+            373
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000253.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            233,
+            428,
+            823
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            603,
+            127,
+            640,
+            283
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000257.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            610,
+            123,
+            650,
+            293
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            559,
+            237,
+            580,
+            277
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000261.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            103,
+            667,
+            303
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            566,
+            230,
+            590,
+            283
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000265.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            73,
+            687,
+            337
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            563,
+            213,
+            610,
+            293
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000269.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            27,
+            708,
+            383
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            559,
+            217,
+            623,
+            320
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000273.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            607,
+            0,
+            738,
+            470
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            532,
+            210,
+            617,
+            357
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000277.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            546,
+            0,
+            755,
+            600
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            361,
+            217,
+            526,
+            453
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000281.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            0,
+            0,
+            576,
+            823
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            576,
+            157,
+            610,
+            280
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            499,
+            207,
+            546,
+            337
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000285.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            233,
+            428,
+            823
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            580,
+            143,
+            613,
+            280
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            539,
+            243,
+            556,
+            277
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000289.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            610,
+            127,
+            650,
+            290
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            559,
+            233,
+            580,
+            277
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000293.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            103,
+            667,
+            297
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            570,
+            227,
+            593,
+            277
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000297.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            617,
+            77,
+            687,
+            333
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            563,
+            217,
+            610,
+            293
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000301.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            27,
+            711,
+            383
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            559,
+            210,
+            623,
+            323
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000305.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            603,
+            0,
+            738,
+            470
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            539,
+            210,
+            613,
+            363
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000309.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            546,
+            0,
+            758,
+            603
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            361,
+            220,
+            546,
+            450
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000313.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            0,
+            0,
+            580,
+            823
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            573,
+            250,
+            596,
+            273
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000317.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            227,
+            445,
+            823
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            573,
+            250,
+            596,
+            273
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000321.jpg",
+      "boxes": [
+        {
+          "class_id": 1,
+          "xyxy": [
+            573,
+            250,
+            600,
+            277
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review of original and aspect-preserved contact sheet; only lane obstacles labeled; sidewalk foliage and columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000361.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            591,
+            213,
+            653,
+            297
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            648,
+            211,
+            839,
+            324
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review at native resolution; all recognizable lane obstacles labeled; pickups and sidewalk decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000401.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            578,
+            274,
+            692,
+            580
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            637,
+            284,
+            731,
+            396
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            716,
+            480,
+            1044,
+            823
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            777,
+            356,
+            883,
+            482
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review at native resolution; all recognizable lane obstacles labeled; pickups and sidewalk decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000441.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            500,
+            469,
+            801,
+            823
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            609,
+            277,
+            679,
+            392
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            652,
+            278,
+            771,
+            428
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            555,
+            297,
+            616,
+            390
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review at native resolution; all recognizable lane obstacles labeled; pickups and sidewalk decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000481.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            570,
+            207,
+            695,
+            409
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            686,
+            211,
+            758,
+            295
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review at native resolution; all recognizable lane obstacles labeled; pickups and sidewalk decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000521.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            567,
+            275,
+            638,
+            328
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            566,
+            322,
+            802,
+            823
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review at native resolution; all recognizable lane obstacles labeled; pickups and sidewalk decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000561.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            736,
+            251,
+            1348,
+            823
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            629,
+            207,
+            735,
+            305
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            600,
+            250,
+            618,
+            277
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review at native resolution; all recognizable lane obstacles labeled; pickups and sidewalk decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000601.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            530,
+            204,
+            596,
+            306
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            595,
+            208,
+            668,
+            310
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            662,
+            203,
+            729,
+            306
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review at native resolution; all recognizable lane obstacles labeled; pickups and sidewalk decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000641.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            219,
+            587,
+            823
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            687,
+            209,
+            1348,
+            823
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            611,
+            205,
+            700,
+            324
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            548,
+            205,
+            616,
+            295
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review at native resolution; all recognizable lane obstacles labeled; pickups and sidewalk decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000681.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            213,
+            600,
+            823
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            728,
+            212,
+            1348,
+            823
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            616,
+            209,
+            708,
+            305
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            466,
+            583,
+            894,
+            815
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review at native resolution; all recognizable lane obstacles labeled; pickups and sidewalk decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000721.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            575,
+            213,
+            622,
+            277
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            658,
+            247,
+            701,
+            278
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review at native resolution; all recognizable lane obstacles labeled; pickups and sidewalk decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000761.jpg",
+      "boxes": [
+        {
+          "class_id": 1,
+          "xyxy": [
+            490,
+            259,
+            567,
+            322
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            640,
+            272,
+            700,
+            321
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            536,
+            242,
+            559,
+            267
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            562,
+            235,
+            622,
+            274
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review at native resolution; all recognizable lane obstacles labeled; pickups and sidewalk decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000801.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            510,
+            210,
+            624,
+            349
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            645,
+            205,
+            1141,
+            690
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            618,
+            264,
+            676,
+            307
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            607,
+            226,
+            627,
+            258
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review at native resolution; all recognizable lane obstacles labeled; pickups and sidewalk decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000841.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            210,
+            632,
+            823
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            638,
+            286,
+            742,
+            377
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            627,
+            210,
+            678,
+            295
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review at native resolution; all recognizable lane obstacles labeled; pickups and sidewalk decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000881.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            566,
+            276,
+            645,
+            315
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            616,
+            295,
+            679,
+            400
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            650,
+            282,
+            1004,
+            823
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review at native resolution; all recognizable lane obstacles labeled; pickups and sidewalk decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000921.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            267,
+            634,
+            823
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            508,
+            288,
+            1178,
+            823
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            600,
+            247,
+            706,
+            340
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review at native resolution; all recognizable lane obstacles labeled; pickups and sidewalk decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000961.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            309,
+            449,
+            626,
+            823
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            616,
+            659,
+            891,
+            823
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            629,
+            282,
+            730,
+            523
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            540,
+            275,
+            574,
+            335
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            568,
+            275,
+            590,
+            313
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            598,
+            294,
+            627,
+            319
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            316,
+            575,
+            438,
+            698
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review at native resolution; all recognizable lane obstacles labeled; pickups and sidewalk decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001001.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            460,
+            360,
+            738,
+            823
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            594,
+            304,
+            659,
+            365
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            588,
+            301,
+            611,
+            315
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review at native resolution; all recognizable lane obstacles labeled; pickups and sidewalk decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001041.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            585,
+            250,
+            661,
+            319
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            656,
+            251,
+            697,
+            321
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            561,
+            259,
+            591,
+            298
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review at native resolution; all recognizable lane obstacles labeled; pickups and sidewalk decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001081.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            62,
+            421,
+            503,
+            823
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            422,
+            337,
+            552,
+            481
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            476,
+            292,
+            635,
+            681
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            638,
+            435,
+            859,
+            823
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            640,
+            366,
+            742,
+            471
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            601,
+            277,
+            621,
+            298
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            557,
+            276,
+            587,
+            313
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review at native resolution; all recognizable lane obstacles labeled; pickups and sidewalk decoration excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001121.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            211,
+            630,
+            823
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            558,
+            271,
+            1059,
+            785
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            626,
+            247,
+            667,
+            281
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            623,
+            224,
+            640,
+            249
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visual review at native resolution; all recognizable lane obstacles labeled; pickups and sidewalk decoration excluded.",
+      "verified_background": false
+    }
+  ],
+  "excluded": [],
+  "pending": [],
+  "method": "AI-assisted visual draft, not human verified ground truth"
+}

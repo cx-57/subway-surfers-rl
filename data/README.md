@@ -66,6 +66,15 @@ validation boxes represent small obstacles; that class needs more varied example
 
 ## Rebuild and train
 
+GitHub includes the curated images, labels, portable split files, annotation JSONs
+and best checkpoints as ordinary files (no Git LFS pointers). Full raw clips,
+environments and generated videos remain local. A checkout can train/evaluate
+from the curated originals without those raw clips. Image hashes still verify
+the curated bytes; raw-source hashes are also checked whenever raw files exist.
+
+Split paths beginning `./` are relative to their split file. The dataset YAML
+uses its own directory as the root, so it works outside the original Mac path.
+
 Reviewed native-pixel annotation JSONs live in
 `models/evaluation/obstacle_labels/session_*/annotations.json`. Rebuild using:
 
@@ -78,9 +87,16 @@ leaks before publishing labels. It preserves explicit selections without samplin
 them again. A removed/excluded annotation is removed from the active curated
 split while its raw screenshot remains intact.
 
-No training was run during preparation. The retained `barriers_640` checkpoint
-still has the original three classes. Train a new six-class checkpoint before
-expecting the observer to detect bushes, small obstacles or pillars:
+The retained `barriers_640` checkpoint still has the original three classes.
+A subsequent 12-epoch run produced `models/training/weights/best.pt` with all six
+classes (saved-checkpoint validation mAP50 0.6386, mAP50-95 0.40699). Use the new
+checkpoint explicitly for live observation:
+
+```bash
+.venv/bin/python scripts/observe_live.py --checkpoint models/training/weights/best.pt
+```
+
+Start another training run with:
 
 ```bash
 .venv/bin/python scripts/train.py

@@ -1,0 +1,4192 @@
+{
+  "session": "session_1795570539890370000",
+  "class_names": [
+    "train",
+    "ground_barrier",
+    "overhead_barrier",
+    "bush",
+    "small_obstacle",
+    "pillar"
+  ],
+  "frames": [
+    {
+      "image": "frame_000033.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            349,
+            245,
+            1038,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            734,
+            272,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            589,
+            248,
+            632,
+            295
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; manually corrected drafts and added missed purple train fronts, roofs, and contiguous train bodies. All independently recognizable targets boxed. Coins, signals, player, side scenery excluded. Center attached ramp and visible train body share one train union box.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000053.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            419,
+            665,
+            701,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            645,
+            279,
+            966,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            604,
+            287,
+            668,
+            427
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            582,
+            277,
+            621,
+            320
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; manually corrected drafts and added missed purple train fronts, roofs, and contiguous train bodies. All independently recognizable targets boxed. Coins, signals, player, side scenery excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000073.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            570,
+            534,
+            833,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            613,
+            279,
+            695,
+            419
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            567,
+            276,
+            605,
+            320
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            605,
+            278,
+            626,
+            323
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; manually corrected drafts and added missed purple train fronts, roofs, and contiguous train bodies. All independently recognizable targets boxed. Coins, signals, player, side scenery excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000093.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            377,
+            278,
+            630,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            571,
+            540,
+            820,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            615,
+            279,
+            694,
+            405
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; manually corrected drafts and added missed purple train fronts, roofs, and contiguous train bodies. All independently recognizable targets boxed. Coins, signals, player, side scenery excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000113.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            550,
+            491,
+            824,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            614,
+            279,
+            686,
+            386
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            573,
+            276,
+            618,
+            305
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; manually corrected drafts and added missed purple train fronts, roofs, and contiguous train bodies. All independently recognizable targets boxed. Coins, signals, player, side scenery excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000133.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            555,
+            438,
+            818,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            650,
+            279,
+            870,
+            605
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            614,
+            278,
+            686,
+            379
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            573,
+            276,
+            617,
+            305
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; manually corrected drafts and added missed purple train fronts, roofs, and contiguous train bodies. All independently recognizable targets boxed. Coins, signals, player, side scenery excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000153.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            557,
+            425,
+            819,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            614,
+            276,
+            684,
+            378
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            563,
+            276,
+            598,
+            313
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; manually corrected drafts and added missed purple train fronts, roofs, and contiguous train bodies. All independently recognizable targets boxed. Coins, signals, player, side scenery excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000173.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            509,
+            285,
+            629,
+            545
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            560,
+            414,
+            817,
+            824
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; manually corrected drafts and added missed purple train fronts, roofs, and contiguous train bodies. All independently recognizable targets boxed. Coins, signals, player, side scenery excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000193.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            590,
+            277,
+            619,
+            322
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            616,
+            276,
+            681,
+            318
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            616,
+            294,
+            640,
+            319
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; manually corrected drafts and added missed purple train fronts, roofs, and contiguous train bodies. All independently recognizable targets boxed. Coins, signals, player, side scenery excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000213.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            560,
+            211,
+            631,
+            307
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            642,
+            209,
+            753,
+            295
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            628,
+            229,
+            674,
+            292
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; manually corrected drafts and added missed purple train fronts, roofs, and contiguous train bodies. All independently recognizable targets boxed. Coins, signals, player, side scenery excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000233.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            207,
+            622,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            697,
+            208,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            617,
+            211,
+            679,
+            284
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            594,
+            355,
+            775,
+            507
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            672,
+            209,
+            712,
+            287
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; manually corrected drafts and added missed purple train fronts, roofs, and contiguous train bodies. All independently recognizable targets boxed. Coins, signals, player, side scenery excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000253.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            484,
+            207,
+            686,
+            501
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            682,
+            213,
+            845,
+            459
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; manually corrected drafts and added missed purple train fronts, roofs, and contiguous train bodies. All independently recognizable targets boxed. Coins, signals, player, side scenery excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000313.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            230,
+            355,
+            626,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            550,
+            411,
+            825,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            730,
+            365,
+            1147,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            559,
+            277,
+            635,
+            378
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            682,
+            291,
+            755,
+            391
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            609,
+            274,
+            640,
+            319
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable targets manually boxed; model drafts corrected where wrong or incomplete. Coins, signals, player and side scenery omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000333.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            212,
+            634,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            822,
+            266,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            629,
+            213,
+            688,
+            301
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable targets manually boxed; model drafts corrected where wrong or incomplete. Coins, signals, player and side scenery omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000353.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            209,
+            626,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            586,
+            211,
+            644,
+            286
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            635,
+            209,
+            682,
+            288
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            684,
+            238,
+            704,
+            273
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable targets manually boxed; model drafts corrected where wrong or incomplete. Coins, signals, player and side scenery omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000373.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            614,
+            238,
+            640,
+            269
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            637,
+            231,
+            676,
+            273
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            669,
+            209,
+            1015,
+            612
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            855,
+            207,
+            1000,
+            340
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable targets manually boxed; model drafts corrected where wrong or incomplete. Coins, signals, player and side scenery omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000393.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            918,
+            512,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            648,
+            216,
+            695,
+            274
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            688,
+            215,
+            748,
+            279
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            609,
+            215,
+            648,
+            280
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable targets manually boxed; model drafts corrected where wrong or incomplete. Coins, signals, player and side scenery omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000413.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            692,
+            209,
+            817,
+            369
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            803,
+            210,
+            1029,
+            423
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            598,
+            203,
+            700,
+            360
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable targets manually boxed; model drafts corrected where wrong or incomplete. Coins, signals, player and side scenery omitted. Only a tiny top-bar fragment behind right train is visible; unrecognizable barrier fragment omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000433.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            667,
+            207,
+            824,
+            375
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            573,
+            333,
+            715,
+            438
+          ],
+          "appearance": "domed_bin"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects manually boxed. Coins, player, powerups and sidewalk scenery excluded. Domed striped trashbin is compact solid low jump object, class4 per agreed convention.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000453.jpg",
+      "boxes": [],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects manually boxed. Coins, player, powerups and sidewalk scenery excluded. Verified background: side columns and collectible powerup only; no target obstacles.",
+      "verified_background": true
+    },
+    {
+      "image": "frame_000473.jpg",
+      "boxes": [
+        {
+          "class_id": 3,
+          "xyxy": [
+            603,
+            276,
+            624,
+            292
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            658,
+            276,
+            691,
+            293
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            671,
+            276,
+            682,
+            292
+          ],
+          "appearance": "orange_warning_box"
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            627,
+            271,
+            643,
+            289
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects manually boxed. Coins, player, powerups and sidewalk scenery excluded. Distant target cluster inspected again with enlarged native crop; foliage, orange warning box and small framed hurdle recognized.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000491.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            652,
+            234,
+            722,
+            315
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            597,
+            250,
+            615,
+            278
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            606,
+            263,
+            628,
+            288
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            617,
+            280,
+            654,
+            312
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            715,
+            294,
+            770,
+            322
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            736,
+            293,
+            755,
+            321
+          ],
+          "appearance": "orange_warning_box"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Orange warning box and foliage union boxed separately.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000493.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            651,
+            234,
+            738,
+            328
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            598,
+            249,
+            616,
+            280
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            605,
+            263,
+            631,
+            291
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            618,
+            285,
+            659,
+            318
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            734,
+            300,
+            779,
+            328
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            746,
+            302,
+            765,
+            327
+          ],
+          "appearance": "orange_warning_box"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region. Coins, player, powerups, sidewalks, side shrubs and side columns excluded. Orange warning box and foliage union separately boxed.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000495.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            650,
+            237,
+            765,
+            356
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            594,
+            247,
+            615,
+            283
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            605,
+            262,
+            634,
+            294
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            618,
+            290,
+            663,
+            330
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            778,
+            314,
+            795,
+            338
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            759,
+            308,
+            779,
+            337
+          ],
+          "appearance": "orange_warning_box"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Orange warning box and foliage union boxed separately.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000497.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            650,
+            233,
+            801,
+            402
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            593,
+            245,
+            614,
+            282
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            604,
+            262,
+            636,
+            292
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            619,
+            295,
+            668,
+            335
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            796,
+            323,
+            812,
+            349
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region. Coins, player, powerups, sidewalks, side shrubs and side columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000499.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            654,
+            227,
+            870,
+            479
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            591,
+            245,
+            615,
+            284
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            603,
+            257,
+            640,
+            290
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            619,
+            294,
+            670,
+            339
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000501.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            655,
+            217,
+            1077,
+            742
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            597,
+            240,
+            618,
+            280
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            608,
+            253,
+            641,
+            287
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            617,
+            293,
+            677,
+            340
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region. Coins, player, powerups, sidewalks, side shrubs and side columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000503.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            664,
+            212,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            600,
+            236,
+            621,
+            275
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            610,
+            250,
+            640,
+            282
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            616,
+            299,
+            681,
+            344
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000505.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            664,
+            210,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            600,
+            232,
+            624,
+            277
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            614,
+            247,
+            646,
+            285
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            610,
+            312,
+            687,
+            366
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region. Coins, player, powerups, sidewalks, side shrubs and side columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000507.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            670,
+            209,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            658,
+            224,
+            682,
+            269
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            600,
+            229,
+            623,
+            274
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            614,
+            247,
+            646,
+            285
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            614,
+            329,
+            695,
+            395
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Distant coin/player-occluded fragments that cannot be recognized independently are omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000509.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            681,
+            207,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            658,
+            226,
+            685,
+            274
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            604,
+            348,
+            701,
+            438
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region. Coins, player, powerups, sidewalks, side shrubs and side columns excluded. Coins hide distant barrier; unrecognizable fragments omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000511.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            697,
+            213,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            654,
+            223,
+            692,
+            273
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            652,
+            254,
+            678,
+            307
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            570,
+            387,
+            710,
+            506
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Distant coin/player-occluded fragments that cannot be recognized independently are omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000513.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            729,
+            220,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            660,
+            224,
+            699,
+            274
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            653,
+            259,
+            680,
+            312
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            539,
+            446,
+            722,
+            612
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Distant coin/player-occluded fragments that cannot be recognized independently are omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000515.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            789,
+            264,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            654,
+            225,
+            706,
+            276
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            655,
+            262,
+            685,
+            318
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            758,
+            262,
+            835,
+            328
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            460,
+            580,
+            745,
+            824
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Distant coin/player-occluded fragments that cannot be recognized independently are omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000533.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            553,
+            207,
+            635,
+            320
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            656,
+            209,
+            756,
+            299
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            629,
+            251,
+            678,
+            292
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects manually boxed. Coins, player, powerups and sidewalk scenery excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000553.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            209,
+            630,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            617,
+            212,
+            680,
+            285
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            713,
+            209,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            556,
+            435,
+            820,
+            650
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects manually boxed. Coins, player, powerups and sidewalk scenery excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000613.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            461,
+            324,
+            719,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            719,
+            586,
+            1051,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            580,
+            277,
+            634,
+            326
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            630,
+            277,
+            695,
+            341
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            431,
+            545,
+            556,
+            638
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            570,
+            302,
+            604,
+            334
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects manually boxed. Coins, player, powerups and sidewalk scenery excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000633.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            511,
+            316,
+            649,
+            667
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            655,
+            330,
+            902,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            580,
+            274,
+            610,
+            316
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            552,
+            289,
+            571,
+            319
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            485,
+            402,
+            559,
+            460
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; manually boxed every independently recognizable target. Purple train fronts and visible contiguous carriage bodies labeled train; side scenery excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000653.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            622,
+            286,
+            730,
+            573
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            575,
+            274,
+            623,
+            337
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            571,
+            707,
+            812,
+            824
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; manually boxed every independently recognizable target. Purple train fronts and visible contiguous carriage bodies labeled train; side scenery excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000673.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            482,
+            302,
+            716,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            665,
+            289,
+            827,
+            562
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            628,
+            280,
+            649,
+            303
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            816,
+            460,
+            905,
+            532
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; manually boxed every independently recognizable target. Purple train fronts and visible contiguous carriage bodies labeled train; side scenery excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000693.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            645,
+            265,
+            690,
+            316
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            603,
+            265,
+            633,
+            311
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; manually boxed every independently recognizable target. Purple train fronts and visible contiguous carriage bodies labeled train; side scenery excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000713.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            703,
+            208,
+            822,
+            349
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            627,
+            207,
+            684,
+            297
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; manually boxed every independently recognizable target. Purple train fronts and visible contiguous carriage bodies labeled train; side scenery excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000733.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            680,
+            207,
+            891,
+            302
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            416,
+            272,
+            970,
+            824
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            609,
+            166,
+            642,
+            276
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; manually boxed every independently recognizable target. Purple train fronts and visible contiguous carriage bodies labeled train; side scenery excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000749.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            579,
+            230,
+            605,
+            277
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            630,
+            109,
+            675,
+            287
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Central sandstone stems only; crossbeams and sidewalk columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000751.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            581,
+            224,
+            613,
+            275
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            634,
+            95,
+            679,
+            294
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region. Coins, player, powerups, sidewalks, side shrubs and side columns excluded. Central stone stems only; crossbeams excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000753.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            579,
+            220,
+            620,
+            276
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            636,
+            82,
+            685,
+            308
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Central sandstone stems only; crossbeams and sidewalk columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000755.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            581,
+            216,
+            623,
+            280
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            637,
+            70,
+            691,
+            312
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region. Coins, player, powerups, sidewalks, side shrubs and side columns excluded. Central stone stems only; crossbeams excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000757.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            576,
+            213,
+            628,
+            285
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            637,
+            56,
+            700,
+            319
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Central sandstone stems only; crossbeams and sidewalk columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000759.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            572,
+            210,
+            632,
+            291
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            638,
+            29,
+            707,
+            342
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region. Coins, player, powerups, sidewalks, side shrubs and side columns excluded. Central stone stems only; crossbeams excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000761.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            558,
+            207,
+            632,
+            308
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            630,
+            0,
+            717,
+            369
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Central sandstone stems only; crossbeams and sidewalk columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000763.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            537,
+            207,
+            632,
+            339
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            631,
+            0,
+            727,
+            400
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region. Coins, player, powerups, sidewalks, side shrubs and side columns excluded. Central stone stems only; crossbeams excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000765.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            499,
+            208,
+            630,
+            382
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            617,
+            0,
+            737,
+            445
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Central sandstone stems only; crossbeams and sidewalk columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000767.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            340,
+            209,
+            550,
+            493
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            527,
+            0,
+            701,
+            525
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region. Coins, player, powerups, sidewalks, side shrubs and side columns excluded. Central stone stems only; crossbeams excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000769.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            225,
+            401,
+            824
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            327,
+            0,
+            628,
+            672
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            594,
+            158,
+            625,
+            277
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Central sandstone stems only; crossbeams and sidewalk columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000771.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            491,
+            209,
+            566,
+            375
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            0,
+            0,
+            563,
+            824
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            593,
+            150,
+            626,
+            279
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Central sandstone stems only; crossbeams and sidewalk columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000773.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            212,
+            534,
+            790
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            591,
+            145,
+            628,
+            276
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; manually boxed every independently recognizable target. Purple train fronts and visible contiguous carriage bodies labeled train; side scenery excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000781.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            577,
+            233,
+            602,
+            275
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            630,
+            115,
+            670,
+            284
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Central sandstone stems only; crossbeams and sidewalk columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000783.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            579,
+            229,
+            605,
+            274
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            632,
+            105,
+            674,
+            293
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region. Coins, player, powerups, sidewalks, side shrubs and side columns excluded. Central stone stems only; crossbeams excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000785.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            581,
+            225,
+            609,
+            275
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            635,
+            93,
+            683,
+            300
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Central sandstone stems only; crossbeams and sidewalk columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000787.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            582,
+            220,
+            614,
+            274
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            635,
+            81,
+            685,
+            304
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region. Coins, player, powerups, sidewalks, side shrubs and side columns excluded. Central stone stems only; crossbeams excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000789.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            579,
+            217,
+            623,
+            278
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            640,
+            62,
+            695,
+            317
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Central sandstone stems only; crossbeams and sidewalk columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000791.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            576,
+            212,
+            625,
+            285
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            638,
+            35,
+            701,
+            327
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region. Coins, player, powerups, sidewalks, side shrubs and side columns excluded. Central stone stems only; crossbeams excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000793.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            572,
+            210,
+            629,
+            295
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            634,
+            6,
+            716,
+            347
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Central sandstone stems only; crossbeams and sidewalk columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000795.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            558,
+            208,
+            630,
+            309
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            634,
+            0,
+            719,
+            374
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region. Coins, player, powerups, sidewalks, side shrubs and side columns excluded. Central stone stems only; crossbeams excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000797.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            527,
+            209,
+            624,
+            344
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            0,
+            725,
+            410
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Central sandstone stems only; crossbeams and sidewalk columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000799.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            433,
+            209,
+            572,
+            404
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            550,
+            0,
+            692,
+            461
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region. Coins, player, powerups, sidewalks, side shrubs and side columns excluded. Central stone stems only; crossbeams excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000801.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            242,
+            214,
+            469,
+            522
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            451,
+            0,
+            640,
+            535
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Central sandstone stems only; crossbeams and sidewalk columns excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000803.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            236,
+            351,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            568,
+            243,
+            578,
+            274
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            594,
+            281,
+            632,
+            324
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            269,
+            0,
+            602,
+            714
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region. Coins, player, powerups, sidewalks, side shrubs and side columns excluded. Central stone stems only; crossbeams excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000805.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            457,
+            210,
+            551,
+            417
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            554,
+            237,
+            576,
+            275
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            592,
+            283,
+            632,
+            338
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            0,
+            0,
+            563,
+            824
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region. Coins, player, powerups, sidewalks, side shrubs and side columns excluded. Central stone stems only; crossbeams excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000813.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            574,
+            228,
+            608,
+            272
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            607,
+            249,
+            642,
+            276
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            606,
+            242,
+            626,
+            266
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original and distant target crops; manually boxed every independently recognizable target. Purple fronts and contiguous carriage bodies labeled train; side scenery and pickups excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000833.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            525,
+            211,
+            589,
+            295
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            591,
+            220,
+            624,
+            261
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            587,
+            257,
+            641,
+            310
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            624,
+            219,
+            661,
+            280
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original and distant target crops; manually boxed every independently recognizable target. Purple fronts and contiguous carriage bodies labeled train; side scenery and pickups excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000853.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            208,
+            566,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            562,
+            209,
+            644,
+            335
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            638,
+            218,
+            657,
+            295
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            648,
+            204,
+            729,
+            334
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original and distant target crops; manually boxed every independently recognizable target. Purple fronts and contiguous carriage bodies labeled train; side scenery and pickups excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000913.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            555,
+            321,
+            811,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            220,
+            551,
+            579,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            577,
+            274,
+            622,
+            344
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            614,
+            274,
+            643,
+            320
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            752,
+            512,
+            876,
+            614
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            653,
+            301,
+            688,
+            325
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original and distant target crops; manually boxed every independently recognizable target. Purple fronts and contiguous carriage bodies labeled train; side scenery and pickups excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000933.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            488,
+            341,
+            705,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            645,
+            277,
+            875,
+            739
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            598,
+            275,
+            647,
+            317
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            797,
+            414,
+            864,
+            479
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original and distant target crops; manually boxed every independently recognizable target. Purple fronts and contiguous carriage bodies labeled train; side scenery and pickups excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000953.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            608,
+            280,
+            755,
+            615
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            576,
+            275,
+            623,
+            344
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            619,
+            278,
+            647,
+            327
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original and distant target crops; manually boxed every independently recognizable target. Purple fronts and contiguous carriage bodies labeled train; side scenery and pickups excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000973.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            454,
+            338,
+            704,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            670,
+            306,
+            944,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            592,
+            276,
+            621,
+            316
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            632,
+            276,
+            675,
+            317
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            878,
+            536,
+            986,
+            648
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original and distant target crops; manually boxed every independently recognizable target. Purple fronts and contiguous carriage bodies labeled train; side scenery and pickups excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000993.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            575,
+            252,
+            629,
+            325
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            622,
+            252,
+            649,
+            297
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            644,
+            251,
+            728,
+            323
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original and distant target crops; manually boxed every independently recognizable target. Purple fronts and contiguous carriage bodies labeled train; side scenery and pickups excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001013.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            242,
+            218,
+            610,
+            676
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            697,
+            208,
+            1139,
+            675
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            625,
+            210,
+            708,
+            323
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            583,
+            222,
+            609,
+            254
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            597,
+            252,
+            625,
+            295
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            608,
+            229,
+            628,
+            256
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original and distant target crops; manually boxed every independently recognizable target. Purple fronts and contiguous carriage bodies labeled train; side scenery and pickups excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001030.jpg",
+      "boxes": [
+        {
+          "class_id": 1,
+          "xyxy": [
+            437,
+            498,
+            768,
+            761
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            612,
+            209,
+            678,
+            297
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            708,
+            210,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            712,
+            208,
+            1367,
+            338
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            670,
+            209,
+            714,
+            285
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region, clipped where necessary. Coins, player, powerups and side decoration excluded. T crossbeam excluded; only recognizable solid stem labeled. T stem is occluded by train/barrier; its crossbeam alone is not a target.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001032.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            611,
+            210,
+            684,
+            312
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            720,
+            215,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            716,
+            208,
+            1367,
+            278
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            675,
+            209,
+            720,
+            291
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region, clipped where necessary. Coins, player, powerups and side decoration excluded. T crossbeam excluded; only recognizable solid stem labeled. T stem is occluded by train/barrier; its crossbeam alone is not a target.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001033.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            612,
+            210,
+            686,
+            320
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            725,
+            215,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            717,
+            208,
+            1367,
+            278
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            675,
+            208,
+            723,
+            295
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region, clipped where necessary. Coins, player, powerups and side decoration excluded. T crossbeam excluded; only recognizable solid stem labeled. T stem is occluded by train/barrier; its crossbeam alone is not a target.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001034.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            610,
+            210,
+            689,
+            328
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            730,
+            218,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            722,
+            207,
+            1367,
+            279
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            679,
+            207,
+            729,
+            301
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region, clipped where necessary. Coins, player, powerups and side decoration excluded. T crossbeam excluded; only recognizable solid stem labeled. T stem is occluded by train/barrier; its crossbeam alone is not a target.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001036.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            605,
+            210,
+            697,
+            352
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            757,
+            241,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            732,
+            208,
+            892,
+            317
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            684,
+            205,
+            743,
+            312
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region, clipped where necessary. Coins, player, powerups and side decoration excluded. T crossbeam excluded; only recognizable solid stem labeled. T stem is occluded by train/barrier; its crossbeam alone is not a target.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001038.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            587,
+            210,
+            705,
+            390
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            812,
+            301,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            735,
+            209,
+            955,
+            390
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            690,
+            204,
+            755,
+            323
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region, clipped where necessary. Coins, player, powerups and side decoration excluded. T crossbeam excluded; only recognizable solid stem labeled. T stem is occluded by train/barrier; its crossbeam alone is not a target.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001040.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            568,
+            207,
+            710,
+            434
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            1060,
+            535,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            757,
+            209,
+            1011,
+            438
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            692,
+            204,
+            766,
+            341
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region, clipped where necessary. Coins, player, powerups and side decoration excluded. T crossbeam excluded; only recognizable solid stem labeled. T stem is occluded by train/barrier; its crossbeam alone is not a target.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001042.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            430,
+            206,
+            654,
+            532
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            735,
+            209,
+            1073,
+            529
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            658,
+            204,
+            755,
+            360
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            634,
+            195,
+            671,
+            269
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region, clipped where necessary. Coins, player, powerups and side decoration excluded. T crossbeam excluded; only recognizable solid stem labeled.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001044.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            204,
+            632,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            717,
+            211,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            618,
+            206,
+            745,
+            403
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            628,
+            190,
+            662,
+            214
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region, clipped where necessary. Coins, player, powerups and side decoration excluded. T crossbeam excluded; only recognizable solid stem labeled.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001046.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            208,
+            614,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            722,
+            209,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            606,
+            210,
+            757,
+            437
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            621,
+            189,
+            664,
+            215
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region, clipped where necessary. Coins, player, powerups and side decoration excluded. T crossbeam excluded; only recognizable solid stem labeled.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001048.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            208,
+            615,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            731,
+            209,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            574,
+            220,
+            801,
+            554
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            623,
+            183,
+            675,
+            231
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region, clipped where necessary. Coins, player, powerups and side decoration excluded. T crossbeam excluded; only recognizable solid stem labeled.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001050.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            210,
+            614,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            731,
+            209,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            496,
+            247,
+            887,
+            756
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            622,
+            180,
+            675,
+            266
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            630,
+            252,
+            676,
+            267
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region, clipped where necessary. Coins, player, powerups and side decoration excluded. T crossbeam excluded; only recognizable solid stem labeled.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001052.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            214,
+            606,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            740,
+            211,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            92,
+            371,
+            1300,
+            824
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            620,
+            176,
+            680,
+            297
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            626,
+            254,
+            683,
+            307
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region, clipped where necessary. Coins, player, powerups and side decoration excluded. T crossbeam excluded; only recognizable solid stem labeled.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001053.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            216,
+            602,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            748,
+            215,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            622,
+            173,
+            684,
+            304
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            628,
+            256,
+            688,
+            311
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region, clipped where necessary. Coins, player, powerups and side decoration excluded. T crossbeam excluded; only recognizable solid stem labeled.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001054.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            220,
+            596,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            756,
+            221,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            622,
+            171,
+            689,
+            307
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            629,
+            259,
+            689,
+            315
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Solid illuminated T stem only; crossbeam excluded; separate jump barrier retained.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001056.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            238,
+            570,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            785,
+            237,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            622,
+            166,
+            696,
+            317
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            628,
+            264,
+            698,
+            326
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region, clipped where necessary. Coins, player, powerups and side decoration excluded. T crossbeam excluded; only recognizable solid stem labeled.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001058.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            276,
+            517,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            840,
+            265,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            626,
+            158,
+            702,
+            336
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            627,
+            272,
+            702,
+            346
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Solid illuminated T stem only; crossbeam excluded; separate jump barrier retained.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001060.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            404,
+            318,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            968,
+            397,
+            1367,
+            824
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            626,
+            154,
+            705,
+            347
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            621,
+            282,
+            710,
+            364
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region, clipped where necessary. Coins, player, powerups and side decoration excluded. T crossbeam excluded; only recognizable solid stem labeled.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001061.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            574,
+            241,
+            594,
+            274
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            628,
+            149,
+            718,
+            365
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            620,
+            294,
+            717,
+            380
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Solid illuminated T stem only; crossbeam excluded; separate jump barrier retained.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001062.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            575,
+            243,
+            593,
+            276
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            614,
+            147,
+            708,
+            379
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            604,
+            305,
+            712,
+            397
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Solid illuminated T stem only; crossbeam excluded; separate jump barrier retained.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001064.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            552,
+            134,
+            667,
+            425
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            540,
+            327,
+            672,
+            449
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region, clipped where necessary. Coins, player, powerups and side decoration excluded. T crossbeam excluded; only recognizable solid stem labeled.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001066.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            470,
+            130,
+            638,
+            491
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            444,
+            376,
+            620,
+            538
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Solid illuminated T stem only; crossbeam excluded; separate jump barrier retained.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001068.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            345,
+            93,
+            634,
+            621
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            278,
+            470,
+            590,
+            736
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region, clipped where necessary. Coins, player, powerups and side decoration excluded. T crossbeam excluded; only recognizable solid stem labeled.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001070.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            34,
+            0,
+            634,
+            824
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            0,
+            735,
+            423,
+            824
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Solid illuminated T stem only; crossbeam excluded; separate jump barrier retained.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001072.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            0,
+            0,
+            634,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            629,
+            344,
+            643,
+            383
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region, clipped where necessary. Coins, player, powerups and side decoration excluded. T crossbeam excluded; only recognizable solid stem labeled.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001073.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            0,
+            0,
+            634,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            629,
+            356,
+            643,
+            395
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region, clipped where necessary. Coins, player, powerups and side decoration excluded. T crossbeam excluded; only recognizable solid stem labeled.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001074.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            0,
+            0,
+            634,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            627,
+            372,
+            647,
+            412
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all recognizable target objects boxed. Coins, player, side decoration, powerups excluded. Visible regions boxed, including clipped objects. Solid illuminated T stem only; crossbeam excluded; separate jump barrier retained.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001076.jpg",
+      "boxes": [
+        {
+          "class_id": 5,
+          "xyxy": [
+            0,
+            0,
+            619,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            629,
+            391,
+            650,
+            438
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original; all independently recognizable target objects boxed by visible region, clipped where necessary. Coins, player, powerups and side decoration excluded. T crossbeam excluded; only recognizable solid stem labeled. Distant red sliver is ambiguous ramp/container and omitted.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001113.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            674,
+            288,
+            1113,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            616,
+            277,
+            688,
+            406
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            573,
+            275,
+            604,
+            312
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            606,
+            275,
+            673,
+            339
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            575,
+            322,
+            622,
+            363
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original and distant target crops; manually boxed every independently recognizable target. Purple fronts and contiguous carriage bodies labeled train; side scenery and pickups excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_001133.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            568,
+            375,
+            805,
+            824
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            569,
+            274,
+            631,
+            379
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            655,
+            274,
+            758,
+            401
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            627,
+            310,
+            658,
+            336
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Reviewed native original and distant target crops; manually boxed every independently recognizable target. Purple fronts and contiguous carriage bodies labeled train; side scenery and pickups excluded.",
+      "verified_background": false
+    }
+  ],
+  "excluded": [
+    {
+      "image": "frame_001078.jpg",
+      "reason": "Inspected native original; distant red ramp/container structure is ambiguous with no clear attached train body, so full frame excluded."
+    },
+    {
+      "image": "frame_001080.jpg",
+      "reason": "Inspected native original; central standalone ramp has no clear attached train body, so full frame excluded rather than labeling as train or small obstacle."
+    },
+    {
+      "image": "frame_000273.jpg",
+      "reason": "Native-inspected frame contains standalone or ambiguously attached ramp structures; full frame excluded because ramp-versus-train union cannot be established confidently."
+    },
+    {
+      "image": "frame_000293.jpg",
+      "reason": "Native-inspected frame contains standalone or ambiguously attached ramp structures; full frame excluded because ramp-versus-train union cannot be established confidently."
+    },
+    {
+      "image": "frame_000573.jpg",
+      "reason": "Native-inspected frame contains an ambiguously attached red ramp/container; full frame excluded instead of inventing a train label."
+    },
+    {
+      "image": "frame_000593.jpg",
+      "reason": "Native-inspected frame contains an ambiguously attached red ramp/container; full frame excluded instead of inventing a train label."
+    },
+    {
+      "image": "frame_000873.jpg",
+      "reason": "Inspected native original; central red container/ramp structure has an ambiguous vehicle attachment, so full frame excluded rather than inventing a train or small-obstacle label."
+    },
+    {
+      "image": "frame_000893.jpg",
+      "reason": "Inspected native original; central red container/ramp structure has an ambiguous vehicle attachment, so full frame excluded rather than inventing a train or small-obstacle label."
+    },
+    {
+      "image": "frame_001093.jpg",
+      "reason": "Inspected native original; red container/ramp structure has an ambiguous vehicle attachment, so full frame excluded rather than inventing a train or small-obstacle label."
+    },
+    {
+      "image": "frame_001153.jpg",
+      "reason": "Inspected native original; red container/ramp structure has an ambiguous vehicle attachment, so full frame excluded rather than inventing a train or small-obstacle label."
+    }
+  ],
+  "pending": [],
+  "method": "AI-assisted visual review; not verified human ground truth"
+}

@@ -10,6 +10,17 @@ from scripts import train
 
 
 class DatasetTests(unittest.TestCase):
+    def test_shared_curated_image_can_be_verified_without_optional_raw_clip(self):
+        with tempfile.TemporaryDirectory() as folder:
+            batch = Path(folder)
+            (batch / 'images').mkdir()
+            image = batch / 'images/frame.jpg'
+            image.write_bytes(b'original pixels')
+            frame = dict(image=image.name, source=str(batch/'unshared_raw/frame.jpg'),
+                         sha256=hashlib.sha256(image.read_bytes()).hexdigest())
+            (batch/'manifest.json').write_text(json.dumps(dict(frames=[frame])))
+            self.assertEqual(train.verify_images(batch), 1)
+
     def test_new_obstacle_classes_are_valid_but_unknown_classes_are_rejected(self):
         with tempfile.TemporaryDirectory() as folder:
             label = Path(folder) / 'objects.txt'
