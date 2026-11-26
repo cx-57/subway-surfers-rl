@@ -1,6 +1,6 @@
 import unittest
 
-from agent.player_motion import VisualPlayerCalibration
+from agent.player import VisualPlayerCalibration
 from agent.player import PlayerEstimator
 
 
