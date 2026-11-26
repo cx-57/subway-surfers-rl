@@ -2,10 +2,21 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Observe live",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run.py",
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": true
+    },
+    {
       "name": "Record gameplay",
       "type": "debugpy",
       "request": "launch",
-      "program": "${workspaceFolder}/scripts/gameplay.py",
+      "program": "${workspaceFolder}/run.py",
+      "args": ["record"],
       "python": "${workspaceFolder}/.venv/bin/python",
       "console": "integratedTerminal",
       "cwd": "${workspaceFolder}",

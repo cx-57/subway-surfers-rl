@@ -27,6 +27,7 @@ Recordings are saved in unique `models/evaluation/engine_live_<ID>/` folders:
 - `benchmark.json`: measured runtime and processing latency
 
 **No keypresses are sent by default.** Press Q/Esc to stop the live preview.
+In VS Code, **F5 → Observe live** launches the same command; **F5 → Record gameplay** records raw frames.
 
 ## All commands
 
