@@ -1,0 +1,23 @@
+{
+  "session_id": "session_1795724241854738000",
+  "start_timestamp": "2026-11-26T20:17:31.867374+00:00",
+  "end_timestamp": "2026-11-26T20:18:31.868029+00:00",
+  "requested_fps": 10,
+  "requested_duration": 60,
+  "countdown": 10,
+  "monitor": 1,
+  "region": {
+    "left": 38,
+    "top": 12,
+    "width": 1354,
+    "height": 823
+  },
+  "jpeg_quality": 95,
+  "frames_saved": 590,
+  "frame_width": 1354,
+  "frame_height": 823,
+  "actual_duration": 60.00102708299528,
+  "actual_fps": 9.83316500872383,
+  "status": "completed",
+  "reason": null
+}
