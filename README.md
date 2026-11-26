@@ -43,6 +43,7 @@ Run with `.venv/bin/python run.py [command]`:
 | `run.py replay data/raw/session_<ID> --video` | Analyze saved gameplay without playing |
 | `run.py controls` | **Explicitly opted-in** fixed six-key control check |
 | `run.py test` | Run all unit tests |
+| `run.py player-eval ...` | Test reviewed player calibration on recorded frames |
 | `run.py evaluate models/training/weights/best.pt data/training/dataset.yaml val` | Evaluate detector |
 | `run.py train` | Train a detector with the existing training script |
 
@@ -52,6 +53,37 @@ through `run.py`; no separate launch or workflow scripts need memorizing.
 For the control check, start the game in the center lane and keep Chrome in
 front. Mac Accessibility/Automation permissions may be required. Expected
 movement is **not verified** player position.
+
+## Reviewed player session: fit and held-out test
+
+The uploaded 60-second recording has 590 images. We reviewed **53 sampled
+original frames** (35 calibration references, 18 later held-out checks), with
+approximate upper-body centers, lanes, movement and scene context:
+
+- `data/reviews/session_1795724241854738000_player.json` contains the reviewed
+  labels; the other 537 frames are **not** ground truth.
+- `config/player_calibration_session_1795724241854738000.json` is a **draft**
+  scene-specific fit derived from the reviewed ground frames. `validated=false`.
+- `scripts/evaluate_player_session.py` runs the existing real player localizer
+  on all 590 original screenshots, and scores only held-out labels. Failures
+  and unknown results are counted rather than excluded as successes.
+
+To repeat the evaluation locally:
+
+```bash
+.venv/bin/python run.py player-eval \
+  data/raw/session_1795724241854738000 \
+  --calibration config/player_calibration_session_1795724241854738000.json \
+  --labels data/reviews/session_1795724241854738000_player.json
+```
+
+Results are saved in `models/evaluation/player_session_session_1795724241854738000/`.
+The same evaluation also runs on the main-branch GitHub Actions workflow and
+uploads `metrics.json` and `frame_predictions.jsonl` as an artifact.
+
+The held-out block belongs to the **same game run**, not a separate recording.
+Do not set `validated=true` based on this split alone. The model cannot
+establish physical ground contact, train-roof state or safe control deadlines.
 
 ## The two active perception tasks
 

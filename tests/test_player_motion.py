@@ -54,6 +54,28 @@ class PlayerMotionTests(unittest.TestCase):
         changed = model.predict(bbox(0.8, 0.7), 1.1, (100, 120))
         self.assertIsNone(changed["lane"])
 
+    def test_realistic_narrow_spaced_lanes_can_be_calibrated(self):
+        real = calibration()
+        real["aspect_ratio"] = 1354 / 823
+        real["lane_x"] = [0.44535, 0.50295, 0.55170]
+        real["max_x_error"] = 0.033
+        real["lane_margin"] = 0.012
+        real["running_y"] = [0.726, 0.697, 0.713]
+        real["pose_offsets"] = {
+            "RUNNING": 0.0, "JUMPING": -0.2466, "ROLLING": 0.0802
+        }
+        model = VisualPlayerCalibration(real)
+        center_x = 0.55170 * 1354
+        center_y = 0.713 * 823
+        for t in (0.0, 0.1, 0.2):
+            result = model.predict(
+                (center_x - 25, center_y - 30, center_x + 25, center_y + 30),
+                t, (823, 1354),
+            )
+        self.assertEqual(result["lane"], 2)
+        self.assertEqual(result["pose"], "RUNNING")
+        self.assertFalse(result["validated"])
+
     def test_invalid_reference_data_rejected(self):
         for modifications in (
             {"lane_x": [0.5, 0.5, 0.8]},

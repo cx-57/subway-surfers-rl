@@ -16,8 +16,8 @@ class VisualPlayerCalibration:
             or not isinstance(anchors, list)
             or len(anchors) != 3
             or any(not self._unit(value) for value in anchors)
-            or not 0.08 <= anchors[1] - anchors[0]
-            or not 0.08 <= anchors[2] - anchors[1]
+            or not 0.035 <= anchors[1] - anchors[0]
+            or not 0.035 <= anchors[2] - anchors[1]
         ):
             raise ValueError("Player lane calibration needs reviewed provenance and three separated normalized lane_x anchors")
         self.anchors = anchors

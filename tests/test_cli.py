@@ -25,6 +25,7 @@ class RunTests(unittest.TestCase):
             ("calibrate", "scripts/calibrate_player.py"),
             ("replay", "scripts/replay_gameplay.py"),
             ("test", "unittest"),
+            ("player-eval", "scripts/evaluate_player_session.py"),
         ):
             with self.subTest(name=name):
                 self.assertIn(suffix, run.build_command([name]))

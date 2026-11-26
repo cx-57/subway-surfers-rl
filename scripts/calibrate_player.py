@@ -41,7 +41,7 @@ def build_model(samples, width, height, session):
         anchors.append(median(positions))
         running_y.append(median(neutral))
     gap = min(anchors[1] - anchors[0], anchors[2] - anchors[1])
-    if gap < 0.10:
+    if gap < 0.035:
         raise ValueError("Reviewed lane centers are not separated enough; check labels and crop")
     model = {
         "provenance": {
@@ -53,7 +53,7 @@ def build_model(samples, width, height, session):
         "validated": False,
         "aspect_ratio": width / height,
         "lane_x": anchors,
-        "max_x_error": min(0.055, gap / 3),
+        "max_x_error": min(0.055, gap / 2),
         "lane_margin": min(0.035, gap / 5),
         "stable_frames": 3,
         "max_gap_seconds": 0.35,

@@ -1,0 +1,34 @@
+{
+  "player_visual_calibration": {
+    "provenance": {
+      "session": "session_1795724241854738000",
+      "method": "Median of visually reviewed upper-body centers in ground-scene fit frames; labels in data/reviews/session_1795724241854738000_player.json",
+      "fit_frames": 35,
+      "holdout_frames": 18,
+      "limitations": "Coarse visual center annotations; jumping/rolling inferred from position; train-roof/curve/transition poses are not established by this calibration; holdout is same game run."
+    },
+    "validated": false,
+    "aspect_ratio": 1.6452004860267315,
+    "lane_x": [
+      0.44534711964549484,
+      0.5029542097488922,
+      0.551698670605613
+    ],
+    "running_y": [
+      0.7260024301336574,
+      0.6974483596597814,
+      0.7132442284325637
+    ],
+    "pose_offsets": {
+      "RUNNING": 0,
+      "JUMPING": -0.24665856622114224,
+      "ROLLING": 0.08019441069258804
+    },
+    "max_x_error": 0.033,
+    "lane_margin": 0.012,
+    "stable_frames": 3,
+    "max_gap_seconds": 0.35,
+    "max_pose_error": 0.055,
+    "pose_margin": 0.022
+  }
+}

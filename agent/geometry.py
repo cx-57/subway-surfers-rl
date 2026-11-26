@@ -261,7 +261,7 @@ class Geometry:
         return LaneEstimate(
             tuple(candidates),
             "UNKNOWN",
-            "Provisional box-width lane overlap; physical blocking footprint unverified",
+            "provisional box-width lane overlap; physical blocking footprint unverified",
             depth,
             ((left + right) / 2, depth),
         )

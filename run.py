@@ -24,6 +24,7 @@ COMMANDS = {
     "evaluate": ["scripts/evaluate.py"],
     "train": ["scripts/train.py"],
     "test": ["-m", "unittest", "discover", "-v"],
+    "player-eval": ["scripts/evaluate_player_session.py"],
 }
 
 USAGE = """Usage: python run.py [command] [options]
@@ -37,6 +38,7 @@ USAGE = """Usage: python run.py [command] [options]
   evaluate     Evaluate a detector checkpoint
   train        Train a detector
   test         Run the Python unit tests
+  player-eval  Evaluate reviewed draft player calibration on recorded gameplay
 
 Examples:
   python run.py
