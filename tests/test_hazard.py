@@ -28,24 +28,6 @@ class HazardTests(unittest.TestCase):
         self.assertEqual(h.feasible_actions, [])
         self.assertEqual(h.urgency, "HIGH")
 
-    def test_reviewed_multilane_occupancy_threatens_each_covered_lane(self):
-        obstacle = track()
-        obstacle.lane = LaneEstimate((0, 1), "KNOWN", depth=0.8)
-        evaluator = HazardEstimator()
-        for lane in (0, 1):
-            self.assertEqual(
-                evaluator.estimate(
-                    [obstacle], PlayerState(lane, "RUNNING"), (100, 100), 0, True
-                )[0].status,
-                "THREAT",
-            )
-        self.assertEqual(
-            evaluator.estimate(
-                [obstacle], PlayerState(2, "RUNNING"), (100, 100), 0, True
-            )[0].status,
-            "CLEAR",
-        )
-
     def test_neighbor_clear(self):
         self.assertEqual(
             HazardEstimator()

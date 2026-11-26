@@ -35,7 +35,7 @@ class HazardEstimator:
                 track.missed
                 or track.association_ambiguous
                 or track.lane.status != "KNOWN"
-                or not track.lane.candidates
+                or len(track.lane.candidates) != 1
             ):
                 hazard.reason = "Missing track or uncertain footprint/association"
                 continue

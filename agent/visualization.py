@@ -122,27 +122,19 @@ def render(image, state, geometry=None, toggles=None):
             match = "" if player.match_score is None else f" NCC={player.match_score:.2f}"
             _label(output, f"Player {player.bbox_kind}{match}", x1, y1 - 6, (80, 255, 80))
         candidates = ",".join(map(str, player.lane_candidates)) or "?"
+        if player.lane is not None:
+            shown_lane = ("LEFT", "CENTER", "RIGHT")[player.lane] + " REVIEWED"
+        elif player.estimated_lane is not None:
+            shown_lane = ("LEFT", "CENTER", "RIGHT")[player.estimated_lane] + " ESTIMATED"
+        else:
+            shown_lane = "? (transition or uncertain)"
         _label(
             output,
-            f'Player lane {player.lane if player.lane is not None else "?"} '
-            f"candidate={candidates} {player.movement} ({player.source})",
+            f"Player lane {shown_lane} | candidate={candidates} | {player.movement}",
             6,
-            h - 28,
+            h - 10,
             INFERRED,
         )
-        visual = player.localization.get("visual_calibration", {})
-        if visual:
-            lane = visual.get("lane")
-            pose = visual.get("pose", "UNKNOWN")
-            label = "VERIFIED CALIBRATION" if visual.get("validated") else "DRAFT / NOT VALIDATED"
-            _label(
-                output,
-                f'Visual {label}: lane={lane if lane is not None else "?"} pose={pose} '
-                f'stable={visual.get("stable", False)}',
-                6,
-                h - 10,
-                INFERRED,
-            )
     if switches["status"]:
         recommendation = state.recommendation
         timings = state.timings

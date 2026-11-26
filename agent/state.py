@@ -5,9 +5,8 @@ import math
 
 from .detection import CLASS_NAMES
 
-# v3 keeps six classes and records reviewed multi-lane occupancy in each covered lane.
-# v1/v2 logs cannot be silently reinterpreted as v3.
-OBSERVATION_SCHEMA_VERSION = 3
+# v2 includes all six classes; do not interpret 113-value v1 logs as v2.
+OBSERVATION_SCHEMA_VERSION = 2
 
 ACTIONS = ("NO_OP", "LEFT", "RIGHT", "JUMP", "ROLL")
 MOVEMENTS = ("RUNNING", "JUMPING", "ROLLING", "ON_TRAIN")
@@ -71,7 +70,7 @@ def _unit(value, scale=1.0):
 
 
 def _known_lane(track):
-    return track.lane.status == "KNOWN" and bool(track.lane.candidates)
+    return track.lane.status == "KNOWN" and len(track.lane.candidates) == 1
 
 
 def _nearest_first(track):
@@ -131,6 +130,7 @@ class PlayerState:
     lane_candidates: tuple[int, ...] = ()
     lane_reason: str = "Player location unavailable"
     localization: dict = field(default_factory=dict)
+    estimated_lane: int | None = None  # Provisional x-coordinate estimate; NOT a verified ground lane.
 
 
 @dataclass
@@ -181,7 +181,7 @@ class GameState:
         return asdict(self)
 
     def to_vector(self):
-        """Schema v3: 137 float32 values; multi-lane objects occupy each reviewed lane."""
+        """Schema v1: 113 float32 values. Missing numeric values have explicit masks."""
         import numpy as np
 
         player = self.player
@@ -229,7 +229,7 @@ class GameState:
         for lane in range(3):
             tracks = []
             for track in self.tracks:
-                if _known_lane(track) and lane in track.lane.candidates:
+                if _known_lane(track) and track.lane.candidates[0] == lane:
                     tracks.append(track)
             tracks.sort(key=_nearest_first)
             for slot in range(2):

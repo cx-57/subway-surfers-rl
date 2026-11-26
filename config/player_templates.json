@@ -90,6 +90,16 @@
       "reference_width": 1412
     }
   ],
+  "lane_tracking": {
+    "provenance": "Approximate horizontal player positions visually inspected from session_1795724241854738000 (left/center/right), for provisional screen-space tracking only; not validated ground-contact labels",
+    "centers": [0.4453, 0.5030, 0.5517],
+    "aspect_ratio": 1.6452,
+    "aspect_tolerance": 0.08,
+    "max_error": 0.035,
+    "boundary_margin": 0.012,
+    "stable_frames": 2,
+    "max_gap_seconds": 0.35
+  },
   "enable_flow": true,
   "ncc_refresh_interval": 0.15,
   "flow_max_gap": 0.2,

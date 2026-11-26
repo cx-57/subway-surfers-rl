@@ -1,6 +1,7 @@
 """Scoped, piecewise-linear lane calibration. Boxes are not occupancy maps.
 
-Rows and measured footprint points are normalized to the original image. An unreviewed object box supplies possible occupied lanes, never a known lane.
+Rows and measured footprint points are normalized to the original image. A box
+bottom-center supplies only a provisional barrier candidate, never a known lane.
 """
 
 import math
@@ -229,43 +230,6 @@ class Geometry:
             reason += "; no intersection with supported ground lane regions"
         return LaneEstimate(candidates, "AMBIGUOUS" if len(candidates) > 1 else "UNKNOWN", reason)
 
-    def _provisional_occupancy(self, bbox, image_shape):
-        """Project the entire visible box width onto calibrated lane intervals.
-
-        This estimates *possible* occupied lanes, not physical ground contact.
-        A clipped box or depth outside observed rails cannot safely define a
-        collision footprint. Multiple candidates are not proof of multiple blocks.
-        """
-        h, w = image_shape[:2]
-        x1, y1, x2, y2 = bbox
-        if x1 <= 0 or x2 >= w or y2 >= h:
-            return LaneEstimate(reason="Clipped detection; obstacle occupancy unverified")
-        depth = y2 / h
-        centers = self.lane_centers(depth)
-        if centers is None:
-            return LaneEstimate(reason="Obstacle bottom outside calibrated depth")
-        boundaries = self._lane_boundaries(centers)
-        left, right = x1 / w, x2 / w
-        candidates = []
-        for lane in range(3):
-            lane_width = boundaries[lane + 1] - boundaries[lane]
-            overlap = min(right, boundaries[lane + 1]) - max(left, boundaries[lane])
-            if overlap > 0 and overlap >= 0.12 * lane_width:
-                candidates.append(lane)
-        if not candidates:
-            return LaneEstimate(
-                reason="No supported lane overlap; obstacle occupancy unverified",
-                depth=depth,
-                footprint=((left + right) / 2, depth),
-            )
-        return LaneEstimate(
-            tuple(candidates),
-            "UNKNOWN",
-            "provisional box-width lane overlap; physical blocking footprint unverified",
-            depth,
-            ((left + right) / 2, depth),
-        )
-
     def assign(self, detection, image_shape, frame_id="", footprint=None):
         reason = self._scope_reason(image_shape, frame_id)
         if reason:
@@ -277,29 +241,6 @@ class Geometry:
             return LaneEstimate(reason="Invalid detection box")
         if not _finite((x1, y1, x2, y2)) or x2 <= x1 or y2 <= y1:
             return LaneEstimate(reason="Invalid detection box")
-        if detection.class_id not in (0, 1, 2, 3, 4, 5, -1):
-            return LaneEstimate(reason="Unsupported object class")
-        # Explicitly reviewed *multi-lane* occupancy is supported. A detector box
-        # alone never receives KNOWN status, irrespective of confidence or history.
-        if detection.class_id >= 0:
-            for item in self.config.get("occupied_lanes", {}).get(Path(frame_id).name, []):
-                if not isinstance(item, dict):
-                    continue
-                if tuple(item.get("bbox", [])) != tuple(detection.bbox):
-                    continue
-                lanes = item.get("lanes")
-                if not item.get("provenance") or not isinstance(lanes, list):
-                    continue
-                if (
-                    not lanes
-                    or any(type(lane) is not int or lane not in (0, 1, 2) for lane in lanes)
-                    or len(set(lanes)) != len(lanes)
-                ):
-                    continue
-                status = "UNKNOWN" if self.config.get("provisional") else "KNOWN"
-                return LaneEstimate(
-                    tuple(sorted(lanes)), status, "Reviewed occupied lanes", y2 / h
-                )
         measured = footprint is not None
         if footprint is None:
             for item in self.config.get("footprints", {}).get(Path(frame_id).name, []):
@@ -308,9 +249,17 @@ class Geometry:
                     measured = footprint is not None
                     break
         if footprint is None:
-            if detection.class_id == -1:
-                return LaneEstimate(reason="Player ground footpoint missing")
-            return self._provisional_occupancy((x1, y1, x2, y2), image_shape)
+            if detection.class_id == 0:
+                return LaneEstimate(
+                    reason="Train rectangle does not establish visible track footprint"
+                )
+            # A new obstacle's box bottom gives only a provisional lane candidate.
+            # It is not verified ground contact or blocking geometry.
+            if detection.class_id not in (1, 2, 3, 4, 5):
+                return LaneEstimate(reason="Unsupported object class")
+            if x1 <= 0 or x2 >= w or y2 >= h:
+                return LaneEstimate(reason="Clipped barrier needs reviewed visible footprint")
+            footprint = ((x1 + x2) / (2 * w), y2 / h)
         try:
             x, y = map(float, footprint)
         except (TypeError, ValueError):
