@@ -25,6 +25,12 @@ class EmptyDetector:
 
 
 class RuntimeTests(unittest.TestCase):
+    def test_new_six_class_checkpoint_is_default(self):
+        with patch("sys.argv", ["observe_live.py"]):
+            args = live_arguments()
+        self.assertEqual(args.checkpoint.name, "best.pt")
+        self.assertEqual(args.checkpoint.parent.parent.name, "training")
+
     def test_live_defaults_keep_video_on_and_controls_off(self):
         with patch("sys.argv", ["observe_live.py"]):
             args = live_arguments()

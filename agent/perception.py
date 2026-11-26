@@ -7,7 +7,7 @@ from time import perf_counter
 
 import numpy as np
 from .state import Detection
-from .detection import CONFIDENCE, IncompleteNMS, complete_nms
+from .detection import CONFIDENCE, IncompleteNMS, complete_nms, validate_checkpoint_classes
 
 
 def _load_model(path):
@@ -21,7 +21,7 @@ def _load_model(path):
 class Detector:
     def __init__(
         self,
-        checkpoint="models/barriers_640/weights/best.pt",
+        checkpoint="models/training/weights/best.pt",
         device="auto",
         imgsz=640,
         confidence=CONFIDENCE,
@@ -41,6 +41,7 @@ class Detector:
         self.fallback_reason = None
         try:
             self.model = _load_model(path)
+            self.class_names = validate_checkpoint_classes(self.model.names)
         except Exception as exc:
             raise RuntimeError(f"Cannot load detector {path}: {exc}") from exc
 
@@ -94,6 +95,8 @@ class Detector:
         for class_id, confidence, box in zip(
             boxes.cls.cpu().numpy(), boxes.conf.cpu().numpy(), boxes.xyxy.cpu().numpy()
         ):
+            if int(class_id) < 0 or int(class_id) >= len(self.class_names):
+                raise RuntimeError(f"Unexpected detector class ID {class_id}")
             detection = Detection(
                 int(class_id), float(confidence), tuple(map(float, box)), float(timestamp)
             )

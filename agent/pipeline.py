@@ -13,7 +13,7 @@ from .hazard import HazardEstimator
 from .perception import Detector
 from .player import PlayerEstimator
 from .rule_policy import ShadowPolicy
-from .state import Detection, GameState, OBSERVATION_FIELDS
+from .state import Detection, GameState, OBSERVATION_FIELDS, OBSERVATION_SCHEMA_VERSION
 from .tracking import ObstacleTracker
 from .detection import nearby_indexes
 
@@ -161,7 +161,7 @@ class StateLog:
         self.stream.write(
             json.dumps(
                 dict(
-                    schema_version=1,
+                    schema_version=OBSERVATION_SCHEMA_VERSION,
                     frame_id=str(frame_id),
                     state=state.to_dict(),
                     observation=state.to_vector().tolist(),
@@ -178,7 +178,7 @@ class StateLog:
 def write_schema(path):
     Path(path).write_text(
         json.dumps(
-            dict(version=1, fields=OBSERVATION_FIELDS, shape=[len(OBSERVATION_FIELDS)]), indent=2
+            dict(version=OBSERVATION_SCHEMA_VERSION, fields=OBSERVATION_FIELDS, shape=[len(OBSERVATION_FIELDS)]), indent=2
         )
         + "\n"
     )

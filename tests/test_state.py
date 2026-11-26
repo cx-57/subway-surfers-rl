@@ -21,6 +21,28 @@ class StateTests(unittest.TestCase):
         self.assertEqual(values["fresh"], 0)
         self.assertEqual(values["lane0.slot0.depth_known"], 0)
 
+    def test_all_six_classes_have_distinct_observation_flags(self):
+        self.assertEqual(len(OBSERVATION_FIELDS), 137)
+        names = ("train", "ground", "overhead", "bush", "small_obstacle", "pillar")
+        for class_id, expected in enumerate(names):
+            with self.subTest(class_id=class_id):
+                track = Track(1, class_id, (0, 0, 10, 10), 0.8, 0, 1,
+                              lane=LaneEstimate((1,), "KNOWN", depth=0.8))
+                values = dict(zip(
+                    OBSERVATION_FIELDS,
+                    GameState(1, (100, 100), tracks=[track]).to_vector()
+                ))
+                for name in names:
+                    self.assertEqual(values["lane1.slot0." + name], float(name == expected))
+
+    def test_unlocated_new_class_remains_visible_without_inventing_a_lane(self):
+        track = Track(7, 3, (10, 20, 30, 40), 0.9, 0, 1)
+        state = GameState(1, (100, 100), tracks=[track])
+        values = dict(zip(OBSERVATION_FIELDS, state.to_vector()))
+        self.assertGreater(values["unlocated.bush"], 0.0)
+        self.assertEqual(values["lane0.slot0.present"], 0.0)
+        self.assertEqual(values["lane1.slot0.present"], 0.0)
+
     def test_empty_vector_is_finite_fixed_size_and_unknown_is_masked(self):
         state = GameState(0.0, (793, 1284))
         vector = state.to_vector()

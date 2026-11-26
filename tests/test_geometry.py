@@ -42,6 +42,18 @@ class GeometryTests(unittest.TestCase):
             "UNKNOWN",
         )
 
+    def test_new_obstacle_classes_produce_candidates_not_certified_lanes(self):
+        geometry = Geometry(calibration())
+        for class_id in (3, 4, 5):
+            with self.subTest(class_id=class_id):
+                lane = geometry.assign(
+                    Detection(class_id, 0.9, (40, 30, 60, 80), 0),
+                    (100, 100), "frame_001.jpg"
+                )
+                self.assertEqual(lane.candidates, (1,))
+                self.assertEqual(lane.status, "UNKNOWN")
+                self.assertIn("unverified", lane.reason)
+
     def test_barrier_proxy_is_explicitly_uncertain(self):
         g = Geometry(calibration())
         estimate = g.assign(Detection(1, 0.9, (40, 30, 60, 80), 0), (100, 100), "frame_001.jpg")
