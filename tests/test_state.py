@@ -6,6 +6,20 @@ from agent.state import GameState, Track, LaneEstimate, Hazard, OBSERVATION_FIEL
 
 
 class StateTests(unittest.TestCase):
+    def test_reviewed_multilane_obstacle_appears_in_each_occupied_lane(self):
+        track = Track(
+            7, 0, (25, 40, 60, 80), 0.9, 0.0, 1.0,
+            lane=LaneEstimate((0, 1), "KNOWN", depth=0.8),
+        )
+        values = dict(zip(
+            OBSERVATION_FIELDS,
+            GameState(1.0, (100, 100), tracks=[track]).to_vector()
+        ))
+        self.assertEqual(values["lane0.slot0.train"], 1)
+        self.assertEqual(values["lane1.slot0.train"], 1)
+        self.assertEqual(values["lane2.slot0.present"], 0)
+        self.assertEqual(values["unlocated.train"], 0)
+
     def test_unknown_visibility_differs_from_known_occlusion(self):
         state = GameState(0.0, (100, 100), lane_visibility=[None, False, True])
         values = dict(zip(OBSERVATION_FIELDS, state.to_vector()))

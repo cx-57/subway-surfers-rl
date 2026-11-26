@@ -65,7 +65,7 @@ class ShadowPolicy:
                 track.missed
                 or track.association_ambiguous
                 or track.lane.status != "KNOWN"
-                or len(track.lane.candidates) != 1
+                or not track.lane.candidates
             ):
                 return Recommendation(reason="Uncertain obstacle occupancy")
         threats = []

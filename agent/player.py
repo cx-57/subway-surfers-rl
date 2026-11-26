@@ -3,6 +3,7 @@
 import math
 from pathlib import Path
 from .state import PlayerState
+from .player_motion import VisualPlayerCalibration
 
 
 class PlayerEstimator:
@@ -10,6 +11,10 @@ class PlayerEstimator:
         self.config = config or {}
         self.localizer = localizer
         self.visual = visual
+        self.visual_model = (
+            VisualPlayerCalibration(self.config["player_visual_calibration"])
+            if self.config.get("player_visual_calibration") else None
+        )
         self.last_diagnostics = {}
         self.localizer_error = None
 
@@ -17,13 +22,19 @@ class PlayerEstimator:
         self.last_diagnostics = {}
         reviewed = self._reviewed(timestamp, frame_id)
         if reviewed is not None:
+            if self.visual_model is not None:
+                self.visual_model.reset()
             return reviewed
         unknown = PlayerState(timestamp=timestamp)
         if image is None or not self.visual:
+            if self.visual_model is not None:
+                self.visual_model.reset()
             return unknown
         if self.localizer is None:
             if self.localizer_error is not None:
                 unknown.lane_reason = self.localizer_error
+                if self.visual_model is not None:
+                    self.visual_model.reset()
                 return unknown
             try:
                 from .player_vision import PlayerLocalizer
@@ -32,11 +43,15 @@ class PlayerEstimator:
             except (ValueError, OSError) as error:
                 self.localizer_error = f"Player templates unavailable: {error}"
                 unknown.lane_reason = self.localizer_error
+                if self.visual_model is not None:
+                    self.visual_model.reset()
                 return unknown
         observation = self.localizer.locate(image, timestamp)
         self.last_diagnostics = dict(self.localizer.last_diagnostics)
         if observation is None:
             unknown.lane_reason = self.last_diagnostics.get("reason", "Character match unavailable")
+            if self.visual_model is not None:
+                self.visual_model.reset()
             return unknown
         unknown.bbox = tuple(observation["bbox"])
         unknown.bbox_kind = observation.get("bbox_kind", "upperbody")
@@ -62,7 +77,24 @@ class PlayerEstimator:
             unknown.lane_reason = (
                 "Visual upperbody located; no verified ground contact or lane geometry"
             )
-        # Template/flow scores are not probabilities or movement evidence.
+        if self.visual_model is not None:
+            prediction = self.visual_model.predict(
+                unknown.bbox, timestamp, image_shape or image.shape[:2]
+            )
+            unknown.localization["visual_calibration"] = prediction
+            if prediction["candidates"]:
+                unknown.lane_candidates = prediction["candidates"]
+                unknown.lane_reason = prediction["reason"]
+            if prediction["validated"] and prediction["stable"]:
+                # Only a human-reviewed *and held-out validated* calibration
+                # is allowed to promote hypotheses into the game state.
+                unknown.lane = prediction["lane"]
+                unknown.movement = prediction["pose"]
+                unknown.transitioning = prediction["transitioning"]
+                unknown.source = "validated scene-specific visual lane/pose estimates"
+            elif self.visual_model is not None:
+                unknown.lane_reason += "; not held-out validated"
+        # NCC scores are correlations; visual pose estimates are not ground truth.
         return unknown
 
     def _reviewed(self, timestamp, frame_id):

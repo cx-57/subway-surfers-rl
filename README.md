@@ -1,13 +1,15 @@
 # Subway Surfers vision
 
 Read-only gameplay observation: YOLO obstacle detection, distance filtering,
-tracking, player localization, provisional lane estimates, overlays and video.
+tracking, player localization, provisional multi-lane obstacle occupancy and
+scene-specific visual player lane/pose calibration, overlays and video.
 Normal observation does not press keys or train an RL agent. An explicit
 control-validation mode can send a bounded sequence of test arrow taps.
 
 The standing requirements are in the [implementation task](docs/live_state_engine_task.md).
 See the [engine report](docs/game_state_engine.md),
 [player tracking results](docs/player_tracking.md),
+[player/obstacle lane calibration and test procedure](docs/player_and_obstacle_lanes.md),
 [distance-filter evaluation](docs/proximity_results.md), and
 [code audit](docs/code_audit.md) when resuming work.
 
@@ -30,7 +32,7 @@ stops it. B/L/P/H/S toggle boxes, lanes, player, hazards and status overlays.
 Video saves by default. Each new `models/evaluation/engine_live_<run ID>/` contains:
 
 - `observation.mp4` and `observation.json`: annotated 15 FPS review copy and timing metadata.
-- `states.jsonl`: detections, tracks, player/lane estimates and fixed 137-value v2 observations.
+- `states.jsonl`: detections, tracks, player/lane estimates and fixed 137-value v3 observations.
 - `observation_schema.json` and `benchmark.json`: field ordering and measured performance.
 
 Video has no audio, is capped at 960px width without stretching, and holds frames
@@ -138,8 +140,8 @@ The dataset now includes bush, small-obstacle and central-pillar classes. See
 The default observer uses the six-class `models/training/weights/best.pt`.
 For a legacy three-class comparison, specify
 `--checkpoint models/barriers_640/weights/best.pt`.
-Class IDs are validated at model load. The 137-value v2 observation schema is
-not interchangeable with older 113-value v1 logs. Neither checkpoint establishes
+Class IDs are validated at model load. The 137-value v3 observation schema records reviewed multi-lane occupancy and
+is not interchangeable with older v1/v2 logs. Neither checkpoint establishes
 confirmed lane occupancy or calibrated collision timing.
 Earlier distance-filter AP50 reports use the older frozen dataset and must not be
 compared directly with six-class results. `scripts/distance_map.py` deliberately
@@ -178,6 +180,9 @@ versions; current measurements do not assume a future Mac's performance.
 
 ## Next milestone
 
-Validate player ground contact/animation and lane estimates through manual lane
-changes, then obstacle footprints and collision/action timing on a fresh recording.
+Use the new [lane/pose calibration procedure](docs/player_and_obstacle_lanes.md)
+and test draft predictions on an independent gameplay recording. Unreviewed
+obstacle boxes now suggest possible occupied lanes, not verified collision masks.
+Validate player ground contact and pose, then obstacle footprints and
+collision/action timing before automatic control.
 Automatic controls, a Gymnasium environment and DQN training follow that validation.

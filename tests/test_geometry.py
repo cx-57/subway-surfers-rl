@@ -76,6 +76,38 @@ class GeometryTests(unittest.TestCase):
             g.assign(d, (100, 100), "frame_001.jpg", footprint=(0.5, 0.99)).status, "UNKNOWN"
         )
 
+    def test_box_width_produces_multiple_unverified_occupied_lane_candidates(self):
+        geometry = Geometry(calibration())
+        # At this depth the box visibly overlaps left and center corridors.
+        box = (25, 40, 60, 80)
+        for class_id in (0, 1, 2, 3, 4, 5):
+            with self.subTest(class_id=class_id):
+                estimate = geometry.assign(
+                    Detection(class_id, 0.9, box, 0), (100, 100), "frame_001.jpg"
+                )
+                self.assertEqual(estimate.candidates, (0, 1))
+                self.assertEqual(estimate.status, "UNKNOWN")
+                self.assertIn("unverified", estimate.reason)
+
+    def test_reviewed_multilane_occupancy_is_distinct_from_box_guess(self):
+        config = calibration()
+        box = (25, 40, 60, 80)
+        config["occupied_lanes"] = {
+            "frame_001.jpg": [
+                {"bbox": list(box), "lanes": [0, 1], "provenance": "manual inspected example"}
+            ]
+        }
+        result = Geometry(config).assign(
+            Detection(0, 0.9, box, 0), (100, 100), "frame_001.jpg"
+        )
+        self.assertEqual(result.status, "KNOWN")
+        self.assertEqual(result.candidates, (0, 1))
+        self.assertEqual(
+            Geometry(dict(config, provisional=True)).assign(
+                Detection(0, 0.9, box, 0), (100, 100), "frame_001.jpg"
+            ).status, "UNKNOWN"
+        )
+
     def test_aspect_ratio_change_rejected(self):
         g = Geometry(calibration(aspect_ratio=1))
         self.assertEqual(

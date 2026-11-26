@@ -127,9 +127,22 @@ def render(image, state, geometry=None, toggles=None):
             f'Player lane {player.lane if player.lane is not None else "?"} '
             f"candidate={candidates} {player.movement} ({player.source})",
             6,
-            h - 10,
+            h - 28,
             INFERRED,
         )
+        visual = player.localization.get("visual_calibration", {})
+        if visual:
+            lane = visual.get("lane")
+            pose = visual.get("pose", "UNKNOWN")
+            label = "VERIFIED CALIBRATION" if visual.get("validated") else "DRAFT / NOT VALIDATED"
+            _label(
+                output,
+                f'Visual {label}: lane={lane if lane is not None else "?"} pose={pose} '
+                f'stable={visual.get("stable", False)}',
+                6,
+                h - 10,
+                INFERRED,
+            )
     if switches["status"]:
         recommendation = state.recommendation
         timings = state.timings
