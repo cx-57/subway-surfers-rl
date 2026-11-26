@@ -79,9 +79,9 @@ press **F5 → Record gameplay**, or run:
 ```
 
 Bring Chrome forward during the first countdown. Select two corners, press Enter,
-then return to Chrome during the 15-second countdown. R redoes selection; Esc
+then return to Chrome during the 10-second countdown. R redoes selection; Esc
 cancels. Recording stops after 60 seconds; Ctrl+C stops early. Every run creates a
-new `data/raw/session_<ID>/` with original JPEGs and metadata. Target FPS is 20;
+new `data/raw/session_<ID>/` with original JPEGs and metadata. Target FPS is 10;
 metadata reports actual rate, dimensions and completion status. Recorder settings
 are at the top of `scripts/gameplay.py`; it has no CLI options.
 
@@ -162,9 +162,9 @@ versions; current measurements do not assume a future Mac's performance.
 ## Data and development rules
 
 - Preserve source-image bytes, dimensions and aspect ratios. Keep overlays/crops separate.
-- `data/training/` holds the curated originals, labels and explicit 510/273 train/validation lists. `data/raw/` is for new recordings. See `data/README.md` for the cleanup record and folder layout.
+- `data/training/` holds the curated originals, labels and explicit 607/322 train/validation lists. `data/raw/` is for new recordings. See `data/README.md` for the cleanup record and folder layout.
 - Label only recognizable visible extents; preserve correct labels, record corrections/provenance, and exclude ambiguous frames. Predictions are review candidates, not ground truth.
-- Keep chronological training <=780, validation >=850 and the gap. Never train on validation or newer recordings. Inspected recordings are regression data, not untouched independent tests.
+- Keep the legacy chronological split and its gap. Assign each newly reviewed recording entirely to training or validation using the manifest; never train on validation. Inspected recordings are regression data, not untouched independent tests.
 - Use real screenshots. Compare one training change at a time with matched seeds/budgets; avoid significant rotation, perspective warp and vertical flips. Never paste objects permanently into datasets.
 - Empty-label negatives need visual confirmation. Paused, obscured or ambiguous frames are not verified negatives.
 - Preserve earlier checkpoints and compare partial/small-object recall, false positives and latency alongside AP. Never claim gains from relabeling alone or training accuracy.

@@ -1,0 +1,2048 @@
+{
+  "session": "session_1795666372799776000",
+  "class_names": [
+    "train",
+    "ground_barrier",
+    "overhead_barrier",
+    "bush",
+    "small_obstacle",
+    "pillar"
+  ],
+  "frames": [
+    {
+      "image": "frame_000025.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            501,
+            238,
+            523,
+            268
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            512,
+            245,
+            534,
+            266
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            540,
+            257,
+            562,
+            268
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            568,
+            247,
+            598,
+            266
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000033.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            504,
+            231,
+            525,
+            257
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            514,
+            249,
+            538,
+            269
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            526,
+            232,
+            553,
+            256
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            550,
+            252,
+            571,
+            268
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            578,
+            244,
+            611,
+            267
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000041.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            506,
+            226,
+            532,
+            258
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            513,
+            247,
+            542,
+            270
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            536,
+            220,
+            573,
+            264
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            566,
+            251,
+            580,
+            267
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            586,
+            246,
+            624,
+            270
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000049.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            518,
+            219,
+            541,
+            252
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            509,
+            250,
+            545,
+            276
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            537,
+            210,
+            591,
+            270
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            584,
+            251,
+            598,
+            271
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            596,
+            247,
+            641,
+            276
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000057.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            514,
+            213,
+            543,
+            251
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            505,
+            249,
+            543,
+            283
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            539,
+            203,
+            602,
+            292
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            601,
+            251,
+            657,
+            284
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000065.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            482,
+            198,
+            614,
+            384
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            611,
+            259,
+            681,
+            309
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            609,
+            243,
+            623,
+            262
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000081.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            204,
+            612,
+            822
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            598,
+            364,
+            797,
+            493
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            608,
+            254,
+            660,
+            292
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000101.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            362,
+            190,
+            496,
+            398
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            611,
+            314,
+            735,
+            397
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            508,
+            211,
+            550,
+            273
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            554,
+            225,
+            585,
+            267
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000121.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            532,
+            201,
+            589,
+            301
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            585,
+            212,
+            647,
+            272
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000141.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            524,
+            205,
+            693,
+            486
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            692,
+            205,
+            751,
+            298
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000161.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            424,
+            272,
+            698,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            591,
+            260,
+            688,
+            352
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            654,
+            260,
+            812,
+            403
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            744,
+            290,
+            950,
+            580
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000181.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            185,
+            722,
+            500,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            495,
+            336,
+            802,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            640,
+            312,
+            1340,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            550,
+            268,
+            609,
+            323
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            522,
+            281,
+            539,
+            300
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000201.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            641,
+            299,
+            900,
+            818
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            586,
+            269,
+            623,
+            314
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            945,
+            656,
+            1277,
+            822
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000221.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            592,
+            263,
+            751,
+            468
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000241.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            650,
+            337,
+            1098,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            632,
+            273,
+            681,
+            344
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000261.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            600,
+            409,
+            867,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            565,
+            270,
+            642,
+            342
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000281.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            628,
+            267,
+            915,
+            786
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            554,
+            266,
+            578,
+            300
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000301.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            560,
+            231,
+            584,
+            268
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            580,
+            225,
+            619,
+            262
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            595,
+            219,
+            644,
+            270
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000321.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            556,
+            204,
+            605,
+            274
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            598,
+            218,
+            656,
+            269
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            648,
+            203,
+            710,
+            284
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000341.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            563,
+            202,
+            638,
+            311
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            631,
+            201,
+            717,
+            280
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            711,
+            205,
+            837,
+            354
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000361.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            473,
+            202,
+            706,
+            586
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            684,
+            194,
+            996,
+            510
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            991,
+            235,
+            1340,
+            822
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000381.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            809,
+            438,
+            1340,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            456,
+            323,
+            695,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            583,
+            273,
+            716,
+            427
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            697,
+            281,
+            808,
+            434
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            557,
+            267,
+            595,
+            298
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000401.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            673,
+            219,
+            1340,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            384,
+            231,
+            581,
+            501
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            481,
+            218,
+            827,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            559,
+            215,
+            677,
+            248
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000421.jpg",
+      "boxes": [
+        {
+          "class_id": 1,
+          "xyxy": [
+            721,
+            495,
+            828,
+            588
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            537,
+            311,
+            582,
+            352
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            504,
+            360,
+            797,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            574,
+            262,
+            640,
+            369
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            787,
+            765,
+            1141,
+            822
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000441.jpg",
+      "boxes": [
+        {
+          "class_id": 1,
+          "xyxy": [
+            557,
+            427,
+            655,
+            499
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            626,
+            307,
+            911,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            550,
+            274,
+            575,
+            302
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            575,
+            272,
+            605,
+            309
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000481.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            628,
+            255,
+            687,
+            326
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            581,
+            254,
+            629,
+            318
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            532,
+            282,
+            556,
+            300
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            552,
+            287,
+            582,
+            321
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            626,
+            251,
+            666,
+            286
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000501.jpg",
+      "boxes": [
+        {
+          "class_id": 1,
+          "xyxy": [
+            516,
+            252,
+            589,
+            333
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            680,
+            202,
+            823,
+            373
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            584,
+            202,
+            684,
+            336
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            537,
+            244,
+            580,
+            267
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            676,
+            197,
+            760,
+            244
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000521.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            724,
+            257,
+            1340,
+            822
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            564,
+            268,
+            648,
+            320
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            621,
+            208,
+            670,
+            276
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000541.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            662,
+            198,
+            1338,
+            822
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            225,
+            744,
+            789,
+            822
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000553.jpg",
+      "boxes": [],
+      "reviewed": true,
+      "notes": "Verified empty lane view at the portal approach. Coins, raised red-carpet paths and side columns are scenery or pickups.",
+      "verified_background": true
+    },
+    {
+      "image": "frame_000561.jpg",
+      "boxes": [],
+      "reviewed": true,
+      "notes": "Verified empty lane view alongside the portal's raised red-carpet paths. Side columns and sidewalk landscaping are outside the lane obstacle classes.",
+      "verified_background": true
+    },
+    {
+      "image": "frame_000585.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            505,
+            237,
+            522,
+            259
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            517,
+            249,
+            535,
+            259
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            544,
+            235,
+            566,
+            262
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            572,
+            252,
+            586,
+            266
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            583,
+            250,
+            593,
+            265
+          ],
+          "appearance": "orange_warning_box"
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            593,
+            254,
+            602,
+            268
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000593.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            503,
+            235,
+            529,
+            267
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            529,
+            235,
+            563,
+            268
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            558,
+            236,
+            578,
+            269
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            513,
+            257,
+            540,
+            276
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            580,
+            264,
+            594,
+            278
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            593,
+            261,
+            604,
+            277
+          ],
+          "appearance": "orange_warning_box"
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            603,
+            265,
+            615,
+            279
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000601.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            510,
+            232,
+            534,
+            267
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            534,
+            232,
+            588,
+            286
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            576,
+            231,
+            593,
+            271
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            514,
+            263,
+            543,
+            290
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            588,
+            272,
+            605,
+            289
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            604,
+            268,
+            616,
+            289
+          ],
+          "appearance": "orange_warning_box"
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            615,
+            274,
+            627,
+            292
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000609.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            514,
+            229,
+            541,
+            270
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            532,
+            224,
+            600,
+            303
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            599,
+            231,
+            621,
+            274
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            509,
+            267,
+            544,
+            296
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            599,
+            284,
+            619,
+            307
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            618,
+            281,
+            633,
+            305
+          ],
+          "appearance": "orange_warning_box"
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            632,
+            284,
+            647,
+            306
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000617.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            518,
+            227,
+            543,
+            266
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            518,
+            224,
+            613,
+            381
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            595,
+            226,
+            617,
+            272
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            495,
+            274,
+            525,
+            314
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            607,
+            300,
+            631,
+            329
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            630,
+            298,
+            651,
+            328
+          ],
+          "appearance": "orange_warning_box"
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            651,
+            303,
+            670,
+            330
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000621.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            442,
+            210,
+            604,
+            483
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            600,
+            209,
+            631,
+            272
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            606,
+            297,
+            639,
+            329
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            637,
+            294,
+            664,
+            329
+          ],
+          "appearance": "orange_warning_box"
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            662,
+            302,
+            685,
+            331
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000625.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            205,
+            603,
+            822
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            601,
+            211,
+            640,
+            280
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            606,
+            313,
+            644,
+            355
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            642,
+            303,
+            675,
+            352
+          ],
+          "appearance": "orange_warning_box"
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            676,
+            331,
+            700,
+            355
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000629.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            202,
+            601,
+            822
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            600,
+            208,
+            643,
+            282
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            605,
+            343,
+            656,
+            401
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            652,
+            341,
+            693,
+            399
+          ],
+          "appearance": "orange_warning_box"
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            692,
+            350,
+            718,
+            363
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000633.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            204,
+            600,
+            822
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            598,
+            202,
+            656,
+            281
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            472,
+            200,
+            541,
+            216
+          ]
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            599,
+            406,
+            663,
+            484
+          ]
+        },
+        {
+          "class_id": 4,
+          "xyxy": [
+            659,
+            401,
+            719,
+            484
+          ],
+          "appearance": "orange_warning_box"
+        },
+        {
+          "class_id": 3,
+          "xyxy": [
+            714,
+            430,
+            761,
+            484
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000641.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            220,
+            588,
+            822
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            460,
+            198,
+            540,
+            251
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            608,
+            196,
+            683,
+            312
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            554,
+            215,
+            601,
+            261
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000649.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            398,
+            200,
+            510,
+            368
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            623,
+            200,
+            725,
+            366
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            508,
+            208,
+            554,
+            269
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            549,
+            210,
+            587,
+            270
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000661.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            919,
+            288,
+            1340,
+            822
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            0,
+            282,
+            408,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            536,
+            201,
+            595,
+            288
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            586,
+            209,
+            633,
+            286
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000681.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            343,
+            206,
+            595,
+            496
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            586,
+            199,
+            689,
+            384
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000701.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            146,
+            451,
+            551,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            523,
+            305,
+            788,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            526,
+            266,
+            574,
+            325
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            572,
+            268,
+            597,
+            310
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000721.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            208,
+            270,
+            596,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            569,
+            270,
+            668,
+            417
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            507,
+            671,
+            775,
+            822
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000741.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            522,
+            265,
+            553,
+            303
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            550,
+            262,
+            574,
+            304
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            576,
+            269,
+            657,
+            378
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            556,
+            411,
+            838,
+            822
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000761.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            552,
+            262,
+            659,
+            458
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            682,
+            350,
+            1070,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            617,
+            275,
+            675,
+            348
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    },
+    {
+      "image": "frame_000777.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            269,
+            609,
+            822
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            574,
+            241,
+            747,
+            632
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            553,
+            247,
+            610,
+            299
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed visible lane obstacles. Box extents are approximate native pixels."
+    }
+  ]
+}

@@ -209,7 +209,7 @@ def integrate(root=ROOT):
     report = dict(classes=list(CLASS_NAMES), splits={}, source_sessions=imported,
                   counting='Labeled boxes and labeled frames; repeated views are not distinct physical obstacles.',
                   label_quality='AI-assisted visual drafts; not independently human-verified.',
-                  validation_note='Third new clip is held out. Recordings appear to continue the same game, so this is not an independent unseen test.')
+                  validation_note='Whole recordings stay in one split. Clips may continue or revisit the same game, so this is not an independent unseen test.')
     for split in ('train', 'val'):
         counts, image_counts = {}, {}
         appearance_counts = {}

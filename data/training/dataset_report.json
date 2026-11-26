@@ -9,48 +9,50 @@
   ],
   "splits": {
     "train": {
-      "images": 510,
+      "images": 607,
       "boxes": {
-        "train": 991,
-        "ground_barrier": 258,
-        "overhead_barrier": 140,
-        "bush": 46,
-        "small_obstacle": 13,
-        "pillar": 192
+        "train": 1230,
+        "ground_barrier": 323,
+        "overhead_barrier": 170,
+        "bush": 75,
+        "small_obstacle": 26,
+        "pillar": 213
       },
       "frames_by_class": {
-        "train": 473,
-        "ground_barrier": 215,
-        "overhead_barrier": 130,
-        "bush": 37,
-        "small_obstacle": 13,
-        "pillar": 157
+        "train": 567,
+        "ground_barrier": 260,
+        "overhead_barrier": 157,
+        "bush": 49,
+        "small_obstacle": 24,
+        "pillar": 178
       },
       "appearances": {
-        "orange_warning_box": 12,
-        "domed_bin": 1
+        "orange_warning_box": 25,
+        "domed_bin": 1,
+        "illuminated_central_stem": 16
       }
     },
     "val": {
-      "images": 273,
+      "images": 322,
       "boxes": {
-        "train": 622,
-        "ground_barrier": 116,
-        "overhead_barrier": 148,
-        "bush": 10,
-        "small_obstacle": 2,
+        "train": 720,
+        "ground_barrier": 139,
+        "overhead_barrier": 177,
+        "bush": 38,
+        "small_obstacle": 11,
         "pillar": 74
       },
       "frames_by_class": {
-        "train": 258,
-        "ground_barrier": 115,
-        "overhead_barrier": 147,
-        "bush": 10,
-        "small_obstacle": 2,
+        "train": 303,
+        "ground_barrier": 129,
+        "overhead_barrier": 167,
+        "bush": 24,
+        "small_obstacle": 11,
         "pillar": 63
       },
       "appearances": {
-        "domed_bin": 2
+        "domed_bin": 2,
+        "orange_warning_box": 9
       }
     }
   },
@@ -58,9 +60,13 @@
     "session_1795570315962077000": 132,
     "session_1795570539890370000": 108,
     "session_1795570682988894000": 129,
-    "session_1795570876212146000": 70
+    "session_1795570876212146000": 70,
+    "session_1795666372799776000": 49,
+    "session_1795666505136434000": 53,
+    "session_1795666809314546000": 11,
+    "session_1795666972776391000": 33
   },
   "counting": "Labeled boxes and labeled frames; repeated views are not distinct physical obstacles.",
   "label_quality": "AI-assisted visual drafts; not independently human-verified.",
-  "validation_note": "Third new clip is held out. Recordings appear to continue the same game, so this is not an independent unseen test."
+  "validation_note": "Whole recordings stay in one split. Clips may continue or revisit the same game, so this is not an independent unseen test."
 }

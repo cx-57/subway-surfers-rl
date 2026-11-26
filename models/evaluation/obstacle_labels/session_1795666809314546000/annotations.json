@@ -1,0 +1,434 @@
+{
+  "session": "session_1795666809314546000",
+  "class_names": [
+    "train",
+    "ground_barrier",
+    "overhead_barrier",
+    "bush",
+    "small_obstacle",
+    "pillar"
+  ],
+  "frames": [
+    {
+      "image": "frame_000001.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            733,
+            246,
+            1349,
+            826
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            258,
+            733,
+            801,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            595,
+            213,
+            680,
+            280
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            589,
+            268,
+            662,
+            319
+          ]
+        }
+      ],
+      "reviewed": true,
+      "verified_background": false,
+      "notes": "AI-assisted visual draft reviewed using aspect-preserved full-frame sheets and native-coordinate crops. Orange box and individual lane bushes labeled separately; police, coins and sidewalk decorations excluded."
+    },
+    {
+      "image": "frame_000041.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            500,
+            227,
+            629,
+            434
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            623,
+            301,
+            697,
+            346
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            618,
+            265,
+            640,
+            292
+          ]
+        }
+      ],
+      "reviewed": true,
+      "verified_background": false,
+      "notes": "AI-assisted visual draft reviewed using aspect-preserved full-frame sheets and native-coordinate crops. Orange box and individual lane bushes labeled separately; police, coins and sidewalk decorations excluded."
+    },
+    {
+      "image": "frame_000301.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            671,
+            203,
+            1350,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            1,
+            251,
+            540,
+            826
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            550,
+            209,
+            603,
+            286
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            598,
+            207,
+            671,
+            298
+          ]
+        }
+      ],
+      "reviewed": true,
+      "verified_background": false,
+      "notes": "AI-assisted visual draft reviewed using aspect-preserved full-frame sheets and native-coordinate crops. Orange box and individual lane bushes labeled separately; police, coins and sidewalk decorations excluded."
+    },
+    {
+      "image": "frame_000321.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            464,
+            215,
+            739,
+            613
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            670,
+            211,
+            1349,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            577,
+            210,
+            643,
+            239
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            637,
+            213,
+            665,
+            239
+          ]
+        }
+      ],
+      "reviewed": true,
+      "verified_background": false,
+      "notes": "AI-assisted visual draft reviewed using aspect-preserved full-frame sheets and native-coordinate crops. Orange box and individual lane bushes labeled separately; police, coins and sidewalk decorations excluded."
+    },
+    {
+      "image": "frame_000341.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            584,
+            209,
+            739,
+            452
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            717,
+            210,
+            1350,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            208,
+            602,
+            826
+          ]
+        }
+      ],
+      "reviewed": true,
+      "verified_background": false,
+      "notes": "AI-assisted visual draft reviewed using aspect-preserved full-frame sheets and native-coordinate crops. Orange box and individual lane bushes labeled separately; police, coins and sidewalk decorations excluded."
+    },
+    {
+      "image": "frame_000361.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            586,
+            208,
+            744,
+            462
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            550,
+            217,
+            600,
+            275
+          ]
+        }
+      ],
+      "reviewed": true,
+      "verified_background": false,
+      "notes": "AI-assisted visual draft reviewed using aspect-preserved full-frame sheets and native-coordinate crops. Orange box and individual lane bushes labeled separately; police, coins and sidewalk decorations excluded."
+    },
+    {
+      "image": "frame_000401.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            477,
+            277,
+            612,
+            532
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            595,
+            273,
+            673,
+            394
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            666,
+            326,
+            698,
+            355
+          ]
+        }
+      ],
+      "reviewed": true,
+      "verified_background": false,
+      "notes": "AI-assisted visual draft reviewed using aspect-preserved full-frame sheets and native-coordinate crops. Orange box and individual lane bushes labeled separately; police, coins and sidewalk decorations excluded."
+    },
+    {
+      "image": "frame_000421.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            217,
+            620,
+            826
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            591,
+            548,
+            911,
+            748
+          ]
+        }
+      ],
+      "reviewed": true,
+      "verified_background": false,
+      "notes": "AI-assisted visual draft reviewed using aspect-preserved full-frame sheets and native-coordinate crops. Orange box and individual lane bushes labeled separately; police, coins and sidewalk decorations excluded."
+    },
+    {
+      "image": "frame_000501.jpg",
+      "boxes": [
+        {
+          "class_id": 1,
+          "xyxy": [
+            477,
+            558,
+            634,
+            672
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            797,
+            573,
+            920,
+            671
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            627,
+            316,
+            709,
+            453
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            618,
+            469,
+            872,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            555,
+            273,
+            589,
+            313
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            589,
+            273,
+            647,
+            323
+          ]
+        }
+      ],
+      "reviewed": true,
+      "verified_background": false,
+      "notes": "AI-assisted visual draft reviewed using aspect-preserved full-frame sheets and native-coordinate crops. Orange box and individual lane bushes labeled separately; police, coins and sidewalk decorations excluded."
+    },
+    {
+      "image": "frame_000521.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            582,
+            231,
+            663,
+            353
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            661,
+            231,
+            796,
+            331
+          ]
+        }
+      ],
+      "reviewed": true,
+      "verified_background": false,
+      "notes": "AI-assisted visual draft reviewed using aspect-preserved full-frame sheets and native-coordinate crops. Orange box and individual lane bushes labeled separately; police, coins and sidewalk decorations excluded."
+    },
+    {
+      "image": "frame_000541.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            717,
+            212,
+            1350,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            233,
+            555,
+            826
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            595,
+            209,
+            689,
+            335
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            550,
+            225,
+            581,
+            271
+          ]
+        }
+      ],
+      "reviewed": true,
+      "verified_background": false,
+      "notes": "AI-assisted visual draft reviewed using aspect-preserved full-frame sheets and native-coordinate crops. Orange box and individual lane bushes labeled separately; police, coins and sidewalk decorations excluded."
+    }
+  ]
+}

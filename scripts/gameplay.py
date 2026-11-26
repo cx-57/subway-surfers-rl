@@ -13,9 +13,9 @@ import mss
 import numpy as np
 
 # Change these settings when needed.
-FPS = 20
+FPS = 10
 DURATION = 60
-START_DELAY = 15
+START_DELAY = 10
 SELECTION_DELAY = 5
 MONITOR = 1
 OUTPUT = Path(__file__).resolve().parents[1] / "data/raw"

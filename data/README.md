@@ -1,9 +1,10 @@
 # Gameplay dataset
 
-The curated dataset contains **783 images: 510 training and 273 validation**.
-It combines the previous 344 labeled images with 439 reviewed frames from all
-four new recordings. All **4,649 new source screenshots remain unchanged** in
-`raw/`; unselected frames are preserved but are not silently treated as negatives.
+The curated dataset contains **929 images: 607 training and 322 validation**.
+It combines the previous 783 labeled images with **146 reviewed images** from
+the four latest recordings. All **7,657 source screenshots across eight clips**
+remain unchanged in `raw/`; unselected frames are preserved and are not silently
+treated as negatives. The empty recording folder is not a training example.
 
 ## Folders
 
@@ -23,16 +24,17 @@ not independently human-verified ground truth.
 
 | ID | Class | Training boxes | Validation boxes |
 | --- | --- | ---: | ---: |
-| 0 | train | 991 | 622 |
-| 1 | ground_barrier | 258 | 116 |
-| 2 | overhead_barrier | 140 | 148 |
-| 3 | bush | 46 | 10 |
-| 4 | small_obstacle | 13 | 2 |
-| 5 | pillar | 192 | 74 |
+| 0 | train | 1230 | 720 |
+| 1 | ground_barrier | 323 | 139 |
+| 2 | overhead_barrier | 170 | 177 |
+| 3 | bush | 75 | 38 |
+| 4 | small_obstacle | 26 | 11 |
+| 5 | pillar | 213 | 74 |
 
-The small-obstacle class contains 12 orange warning-box views (all training)
-and three domed-bin views (one training, two validation). There are currently
-no orange warning-box views in validation.
+The small-obstacle class now contains **25 orange warning-box boxes in training
+and nine in validation**, plus three domed-bin boxes (one training, two validation).
+Individual visible bushes flanking a warning box are labeled separately from
+each other and from the box; coins and the pursuing guard are excluded.
 
 `bush` means free-standing foliage in a playable lane. `small_obstacle` includes
 orange warning boxes and low domed bins that must be jumped. A warning box amid
@@ -45,7 +47,7 @@ ramps are excluded rather than assigned a made-up class.
 All 344 older retained images were reviewed for the new classes. No additional
 bush, small-obstacle or blocking-pillar examples were identified there.
 
-## Four-recording selection
+## First four recordings
 
 | Recording suffix | Split | Reviewed images added | Ambiguous selected images excluded |
 | --- | --- | ---: | ---: |
@@ -61,8 +63,35 @@ has been annotated. Pause/countdown/editor/death-overlay frames are kept out of
 curated lists. Empty labels require a specific visual background review.
 
 The third clip stays entirely in validation. These clips appear to continue one
-ongoing game, so the holdout is not an independent unseen gameplay run. Only two
-validation boxes represent small obstacles; that class needs more varied examples.
+ongoing game, so the holdout is not an independent unseen gameplay run.
+
+## Four latest recordings
+
+| Recording suffix | Split | Reviewed images added |
+| --- | --- | ---: |
+| 1795666372799776000 | validation | 49 |
+| 1795666505136434000 | train | 53 |
+| 1795666809314546000 | train | 11 |
+| 1795666972776391000 | train | 33 |
+
+These four clips contain 3,008 original screenshots. Selection preserves scene
+changes and multiple distances for orange warning boxes, individual low bushes
+and blocking pillar stems, while avoiding dense runs of nearly identical frames.
+The illuminated T divider contributes stem labels; its overhead crossbeam is
+excluded from the pillar box. Golden central blocking columns are also pillars;
+decorative sidewalk columns and potted shrubs are not.
+
+Collision/revive/countdown screens, reward screens, advertisements and editor
+captures are excluded from the curated splits. The warning-box clip held out for
+validation is different from the new training clips. Entire recordings stay in
+one split, but recurring layouts and continued games still limit independence.
+These are visually reviewed AI-assisted drafts, including one tiny heavily
+occluded barrier marked medium confidence in its annotation notes.
+
+The source images are never painted or resized. `data/raw/` remains ignored,
+with zero raw files tracked by Git; the selected originals, separate labels,
+portable lists and annotation provenance are Git-visible. The current checkpoint
+has not been retrained on these 146 additions.
 
 ## Rebuild and train
 
@@ -105,7 +134,7 @@ Start another training run with:
 Existing checkpoints remain intact. The script prints the new checkpoint path.
 Earlier mAP reports refer to older labels/class sets and are historical results.
 
-Record additional clips with `.venv/bin/python scripts/gameplay.py`: 20 FPS target,
-60 seconds, with 15 seconds after selection to return to the game. Actual FPS is
+Record additional clips with `.venv/bin/python scripts/gameplay.py`: 10 FPS target,
+60 seconds, with 10 seconds after selection to return to the game. Actual FPS is
 stored in session metadata. Review overlays/crops are separate derivatives under
 `models/evaluation/`; no source image was painted, stretched or annotated in place.

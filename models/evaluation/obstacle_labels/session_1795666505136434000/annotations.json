@@ -1,0 +1,2552 @@
+{
+  "session": "session_1795666505136434000",
+  "class_names": [
+    "train",
+    "ground_barrier",
+    "overhead_barrier",
+    "bush",
+    "small_obstacle",
+    "pillar"
+  ],
+  "frames": [
+    {
+      "image": "frame_000001.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            652,
+            201,
+            853,
+            414
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            583,
+            199,
+            659,
+            305
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            577,
+            295,
+            685,
+            383
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The red ramp and its attached cars share a train box. The officer and dog are excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000011.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            664,
+            198,
+            1132,
+            759
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            578,
+            198,
+            677,
+            304
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            504,
+            398,
+            723,
+            592
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The officer partly occludes the low barricade. Visible red, white and base pixels define its box.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000021.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            662,
+            243,
+            1370,
+            821
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            741,
+            236,
+            814,
+            300
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            591,
+            243,
+            685,
+            394
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The officer and the player partly occlude the red ramp wagon.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000031.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            717,
+            343,
+            810,
+            479
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            552,
+            288,
+            831,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            644,
+            267,
+            672,
+            301
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            602,
+            267,
+            643,
+            368
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            432,
+            355,
+            620,
+            751
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. Near left ramp wagon, near center passenger carriage and two separable distant train silhouettes.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000041.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            861,
+            440,
+            1027,
+            647
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            686,
+            321,
+            1085,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            683,
+            273,
+            723,
+            330
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            639,
+            271,
+            724,
+            357
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            432,
+            355,
+            776,
+            821
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The officer occludes the ramp wagon and is excluded. The striped side hurdle is an overhead barrier.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000051.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            679,
+            409,
+            1033,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            629,
+            269,
+            727,
+            384
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            576,
+            264,
+            611,
+            310
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            699,
+            276,
+            745,
+            351
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            434,
+            367,
+            678,
+            821
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. Near left passenger roof is visible behind the officer. The distant red ramp wagon is separate.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000061.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            614,
+            271,
+            692,
+            444
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            160,
+            358,
+            621,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            559,
+            266,
+            601,
+            318
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            646,
+            268,
+            753,
+            388
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            610,
+            720,
+            838,
+            821
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The center foreground roof is a clipped train. The distant purple passenger train sits to the right of the red ramp.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000071.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            320,
+            578,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            612,
+            233,
+            724,
+            463
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            715,
+            239,
+            802,
+            376
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            561,
+            231,
+            609,
+            294
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. ",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000081.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            563,
+            201,
+            801,
+            666
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            785,
+            205,
+            900,
+            416
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. Red ramp and yellow-front passenger train fill much of the center and right lanes.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000101.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            535,
+            273,
+            620,
+            444
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            530,
+            575,
+            828,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            609,
+            266,
+            647,
+            320
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            647,
+            267,
+            675,
+            320
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            687,
+            334,
+            805,
+            473
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            703,
+            366,
+            1105,
+            821
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. A red wagon and purple passenger train are separately visible on the right; the striped overhead barrier is in the street ahead.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000111.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            470,
+            270,
+            616,
+            588
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            709,
+            346,
+            1111,
+            821
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            638,
+            269,
+            670,
+            327
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            575,
+            269,
+            634,
+            329
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            696,
+            348,
+            867,
+            522
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The red right-lane wagon and near purple passenger train have distinct visible roofs.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000121.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            747,
+            448,
+            1118,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            206,
+            280,
+            617,
+            821
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            652,
+            271,
+            691,
+            336
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            589,
+            271,
+            662,
+            366
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. ",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000141.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            637,
+            277,
+            788,
+            488
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            725,
+            292,
+            791,
+            373
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            480,
+            276,
+            723,
+            821
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. Visible red cars continue behind the runner. Right-lane striped barrier is overhead.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000151.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            642,
+            286,
+            888,
+            699
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            767,
+            329,
+            853,
+            442
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            594,
+            270,
+            644,
+            332
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            501,
+            328,
+            726,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            621,
+            265,
+            713,
+            313
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. A distant round-front left train and a second square-front train are visible beyond the nearest trains.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000161.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            735,
+            419,
+            886,
+            616
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            248,
+            432,
+            601,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            561,
+            271,
+            621,
+            358
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            623,
+            272,
+            708,
+            342
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            546,
+            316,
+            824,
+            821
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            617,
+            291,
+            645,
+            322
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. A distant center low barricade is visible between passenger trains.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000171.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            536,
+            379,
+            822,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            552,
+            307,
+            625,
+            396
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            671,
+            285,
+            735,
+            370
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            615,
+            300,
+            651,
+            340
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The center red-and-white crosspiece is the low barricade. Bright round coins are excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000181.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            654,
+            276,
+            773,
+            430
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            520,
+            275,
+            626,
+            477
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            553,
+            541,
+            820,
+            821
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            620,
+            317,
+            665,
+            365
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. A low center-lane barricade is visible just in front of the glow from a collectible.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000191.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            711,
+            285,
+            928,
+            551
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            555,
+            296,
+            723,
+            669
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            672,
+            348,
+            730,
+            397
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            688,
+            268,
+            723,
+            292
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            624,
+            255,
+            722,
+            311
+          ],
+          "appearance": "illuminated_central_stem"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The distant yellow-front train and vertical stem are visible beyond the near train roof.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000201.jpg",
+      "boxes": [
+        {
+          "class_id": 1,
+          "xyxy": [
+            694,
+            407,
+            772,
+            485
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            460,
+            314,
+            757,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            739,
+            312,
+            1217,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            620,
+            263,
+            658,
+            299
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            573,
+            246,
+            665,
+            294
+          ],
+          "appearance": "illuminated_central_stem"
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            594,
+            277,
+            624,
+            296
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The train roof is separate from the glowing key. The first visible portion of the stem is behind the rail signal.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000211.jpg",
+      "boxes": [
+        {
+          "class_id": 1,
+          "xyxy": [
+            598,
+            558,
+            751,
+            668
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            236,
+            370,
+            628,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            701,
+            332,
+            1068,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            611,
+            273,
+            653,
+            316
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            578,
+            246,
+            668,
+            313
+          ],
+          "appearance": "illuminated_central_stem"
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            593,
+            296,
+            619,
+            315
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. Foreground low barricade plus a tiny visible barricade at the stem, behind two collectible effects.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000221.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            29,
+            529,
+            519,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            692,
+            421,
+            947,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            617,
+            274,
+            662,
+            320
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            595,
+            296,
+            622,
+            313
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            578,
+            252,
+            661,
+            312
+          ],
+          "appearance": "illuminated_central_stem"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The foreground key and center pogo pickup are excluded. Distant stem and visible low barricade have separate boxes.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000231.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            871,
+            460,
+            1372,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            642,
+            223,
+            698,
+            286
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            602,
+            255,
+            632,
+            283
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            581,
+            221,
+            697,
+            285
+          ],
+          "appearance": "illuminated_central_stem"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. Clipped train roof at near right and active lane stem farther ahead. Both pickups are excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000241.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            657,
+            205,
+            729,
+            276
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            605,
+            242,
+            649,
+            275
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            589,
+            196,
+            699,
+            277
+          ],
+          "appearance": "illuminated_central_stem"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The recognizable low barricade and the stem are separate. The train hides the second barricade.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000247.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            667,
+            201,
+            751,
+            291
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            617,
+            240,
+            652,
+            277
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            649,
+            241,
+            668,
+            276
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            599,
+            180,
+            704,
+            277
+          ],
+          "appearance": "illuminated_central_stem"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The right train partly occludes the second low barricade. Orange-based glowing pogo is a collectible.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000257.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            733,
+            200,
+            854,
+            324
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            663,
+            243,
+            716,
+            285
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            706,
+            244,
+            732,
+            285
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            632,
+            168,
+            784,
+            281
+          ],
+          "appearance": "illuminated_central_stem"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. Both low barricades are visible at the base of the illuminated stem. The overhead crosspiece is excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000267.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            724,
+            203,
+            902,
+            401
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            576,
+            223,
+            621,
+            275
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            634,
+            260,
+            710,
+            319
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            703,
+            258,
+            729,
+            317
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            623,
+            155,
+            792,
+            313
+          ],
+          "appearance": "illuminated_central_stem"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The stem blocks lanes and its two low barricades are separately visible. Left distant red freight car is visible.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000272.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            787,
+            205,
+            1093,
+            495
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            599,
+            221,
+            644,
+            275
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            673,
+            272,
+            763,
+            347
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            755,
+            272,
+            803,
+            346
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            646,
+            145,
+            873,
+            340
+          ],
+          "appearance": "illuminated_central_stem"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The nearer right train hides the rest of the right barricade. Pillar box follows the illuminated vertical stem.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000277.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            824,
+            210,
+            1372,
+            771
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            592,
+            216,
+            643,
+            269
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            663,
+            298,
+            787,
+            396
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            776,
+            299,
+            835,
+            396
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            644,
+            136,
+            935,
+            375
+          ],
+          "appearance": "illuminated_central_stem"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. Pillar stem and separate ground barricades. The near train is clipped at the right edge.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000282.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            948,
+            234,
+            1371,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            607,
+            228,
+            660,
+            278
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            693,
+            345,
+            877,
+            480
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            840,
+            347,
+            981,
+            481
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            662,
+            121,
+            1051,
+            440
+          ],
+          "appearance": "illuminated_central_stem"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. Both low barricades and the vertical stem behind them are visible. Near right train is clipped.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000287.jpg",
+      "boxes": [
+        {
+          "class_id": 1,
+          "xyxy": [
+            737,
+            448,
+            1081,
+            690
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            950,
+            443,
+            1372,
+            687
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            618,
+            282,
+            662,
+            339
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            675,
+            91,
+            1372,
+            472
+          ],
+          "appearance": "illuminated_central_stem"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. Two separately visible foreground barricades. The pillar stem clips on the right, and the crosspiece is excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000292.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            616,
+            332,
+            673,
+            387
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            608,
+            341,
+            634,
+            384
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            1019,
+            757,
+            1318,
+            821
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            685,
+            0,
+            1372,
+            821
+          ],
+          "appearance": "illuminated_central_stem"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The last visible corner of the right ground barricade is clipped by the image edge. The stem fills the right side.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000302.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            633,
+            367,
+            695,
+            435
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            604,
+            376,
+            637,
+            433
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            713,
+            0,
+            1372,
+            821
+          ],
+          "appearance": "illuminated_central_stem"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The close stem is clipped top, right and bottom. Two separate red train silhouettes are visible ahead.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000312.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            652,
+            307,
+            725,
+            391
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            598,
+            318,
+            657,
+            395
+          ]
+        },
+        {
+          "class_id": 5,
+          "xyxy": [
+            848,
+            0,
+            1372,
+            821
+          ],
+          "appearance": "illuminated_central_stem"
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The right edge is the receding stem, with the tunnel opening and two red trains visible to its left.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000321.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            649,
+            214,
+            745,
+            333
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            584,
+            216,
+            652,
+            334
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            570,
+            239,
+            589,
+            278
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. Only a narrow striped portion of the distant overhead barrier is visible beside the ramp wagon.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000331.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            634,
+            202,
+            782,
+            406
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            534,
+            201,
+            640,
+            385
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            518,
+            235,
+            539,
+            280
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The tiny recognizable striped hurdle remains by the left edge of the ramp wagon.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000341.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            683,
+            203,
+            1371,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            505,
+            201,
+            738,
+            631
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. ",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000351.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            697,
+            226,
+            1335,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            328,
+            835,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            618,
+            224,
+            703,
+            346
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            651,
+            225,
+            726,
+            309
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The visible connected wagons and ramp form the near train boxes. A yellow-front train is partly visible ahead.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000361.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            606,
+            274,
+            707,
+            447
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            686,
+            285,
+            836,
+            555
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            566,
+            462,
+            815,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            225,
+            342,
+            617,
+            821
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            567,
+            307,
+            606,
+            362
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            547,
+            270,
+            620,
+            324
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The partially visible striped panel ahead is separate from the red freight wagon and the far passenger train.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000371.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            697,
+            322,
+            1022,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            600,
+            280,
+            746,
+            612
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            583,
+            269,
+            648,
+            322
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            559,
+            292,
+            587,
+            313
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            566,
+            273,
+            595,
+            309
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            232,
+            383,
+            614,
+            821
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            536,
+            344,
+            619,
+            449
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The wide left freight cars form a connected group. The near tall barrier and far low barricade have separate boxes.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000381.jpg",
+      "boxes": [
+        {
+          "class_id": 2,
+          "xyxy": [
+            284,
+            458,
+            476,
+            688
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            589,
+            530,
+            958,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            561,
+            266,
+            619,
+            308
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            629,
+            393,
+            787,
+            655
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            598,
+            265,
+            633,
+            305
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            285,
+            292,
+            646,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            0,
+            676,
+            290,
+            821
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            536,
+            303,
+            576,
+            329
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The cropped left red train is visible in the bottom corner. Near and distant striped barriers are labeled separately.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000391.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            516,
+            347,
+            829,
+            821
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            562,
+            296,
+            592,
+            321
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            614,
+            272,
+            678,
+            358
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            859,
+            710,
+            1176,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            584,
+            263,
+            630,
+            326
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            640,
+            267,
+            672,
+            294
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The distant overhead barrier is mostly occluded, with a recognizable striped upper fragment.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000401.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            659,
+            304,
+            756,
+            468
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            673,
+            512,
+            995,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            618,
+            274,
+            696,
+            354
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            586,
+            309,
+            625,
+            340
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            577,
+            265,
+            613,
+            316
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            664,
+            277,
+            700,
+            320
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. Recognizable stripes above the red wagon belong to the right overhead barrier. Coins are excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000411.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            695,
+            349,
+            880,
+            668
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            628,
+            265,
+            731,
+            390
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            618,
+            330,
+            663,
+            365
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            715,
+            271,
+            760,
+            343
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            589,
+            259,
+            627,
+            304
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The rail signal is excluded. The low left hurdle is partly obscured by the runner.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000421.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            632,
+            263,
+            778,
+            456
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            599,
+            352,
+            671,
+            406
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            583,
+            256,
+            617,
+            310
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            743,
+            295,
+            808,
+            400
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            611,
+            256,
+            649,
+            312
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            727,
+            498,
+            1108,
+            821
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The near wagon is clipped at the bottom. The rail signal and coins are excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000431.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            652,
+            201,
+            928,
+            499
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            580,
+            305,
+            702,
+            396
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            835,
+            197,
+            946,
+            327
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            592,
+            215,
+            629,
+            273
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            619,
+            211,
+            653,
+            274
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. Runner and signal pole are excluded. The overhead barrier sits right of the large train.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000441.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            672,
+            202,
+            1371,
+            821
+          ]
+        },
+        {
+          "class_id": 1,
+          "xyxy": [
+            495,
+            437,
+            746,
+            600
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            596,
+            207,
+            646,
+            286
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            639,
+            208,
+            686,
+            268
+          ]
+        },
+        {
+          "class_id": 2,
+          "xyxy": [
+            1022,
+            223,
+            1320,
+            310
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The large train hides the legs and most of the body of the right overhead barrier.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000451.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            575,
+            241,
+            636,
+            340
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            655,
+            387,
+            1078,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            632,
+            240,
+            734,
+            318
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. ",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000461.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            551,
+            270,
+            622,
+            430
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            618,
+            269,
+            725,
+            381
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            540,
+            635,
+            827,
+            821
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The runner and board are excluded. No low barricade is present under the runner.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000471.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            578,
+            217,
+            698,
+            436
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            684,
+            213,
+            840,
+            352
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The right ramp and its visible connected red cars form a single box.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000481.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            341,
+            220,
+            799,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            680,
+            216,
+            1019,
+            475
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. Two separate red trains with ramps. The runner and board are excluded.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000491.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            721,
+            297,
+            1371,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            484,
+            280,
+            717,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            617,
+            274,
+            724,
+            389
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            682,
+            267,
+            759,
+            367
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. The distant red ramp and boxcar are separate from the nearest trains.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000501.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            721,
+            330,
+            1236,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            311,
+            401,
+            636,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            571,
+            273,
+            641,
+            416
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            634,
+            271,
+            705,
+            407
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. Red trains on adjacent lanes, including a deliberately partial box for the partly hidden center ramp.",
+      "verified_background": false
+    },
+    {
+      "image": "frame_000511.jpg",
+      "boxes": [
+        {
+          "class_id": 0,
+          "xyxy": [
+            490,
+            271,
+            606,
+            523
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            675,
+            297,
+            753,
+            415
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            605,
+            278,
+            685,
+            487
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            718,
+            405,
+            1119,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            176,
+            695,
+            483,
+            821
+          ]
+        },
+        {
+          "class_id": 0,
+          "xyxy": [
+            591,
+            259,
+            627,
+            278
+          ]
+        }
+      ],
+      "reviewed": true,
+      "notes": "Visually reviewed against the original capture. Distinct red trains at varying distances. The street fixture and runner are excluded.",
+      "verified_background": false
+    }
+  ],
+  "excluded": [],
+  "method": "AI-assisted visual draft. Used model proposals as a starting point, checked visually at half resolution and at native scale for ambiguous regions, and corrected class assignments and native-pixel bounds. Unselected frames remain unlabeled."
+}
