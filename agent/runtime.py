@@ -7,7 +7,10 @@ import math
 import os
 from pathlib import Path
 import platform
-import resource
+try:
+    import resource
+except ImportError:
+    resource = None
 import statistics
 import subprocess
 from time import monotonic, sleep, time_ns
@@ -46,7 +49,7 @@ def hardware_info():
     else:
         try:
             info["ram_bytes"] = os.sysconf("SC_PAGE_SIZE") * os.sysconf("SC_PHYS_PAGES")
-        except (ValueError, OSError):
+        except (AttributeError, ValueError, OSError):
             info["ram_bytes"] = None
     return info
 
@@ -75,7 +78,14 @@ class Metrics:
 
     def summary(self):
         elapsed = monotonic() - self.started
-        rss = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+        if resource is not None:
+            rss = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+            rss_bytes = rss if platform.system() == "Darwin" else rss * 1024
+        else:
+            # Windows exposes peak working-set memory through psutil.
+            import psutil
+
+            rss_bytes = psutil.Process().memory_info().peak_wset
         means = {}
         medians = {}
         warm_means = {}
@@ -89,7 +99,7 @@ class Metrics:
             processed_frames=self.count,
             elapsed_seconds=elapsed,
             processed_fps=self.count / elapsed if elapsed else 0.0,
-            peak_process_rss_bytes=rss if platform.system() == "Darwin" else rss * 1024,
+            peak_process_rss_bytes=rss_bytes,
             mean_ms=means,
             median_last_512_ms=medians,
             steady_frames=max(0, self.count - 3),

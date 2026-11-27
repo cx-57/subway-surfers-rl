@@ -15,6 +15,14 @@ See the [engine report](docs/game_state_engine.md),
 
 Open Subway Surfers in Chrome, then run:
 
+On Windows (PowerShell), use the project environment:
+
+```powershell
+.\.venv\Scripts\python.exe scripts/observe_live.py
+```
+
+On macOS/Linux:
+
 ```bash
 .venv/bin/python scripts/observe_live.py
 ```
