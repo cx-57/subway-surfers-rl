@@ -125,7 +125,9 @@ def render(image, state, geometry=None, toggles=None):
         if player.lane is not None:
             shown_lane = ("LEFT", "CENTER", "RIGHT")[player.lane] + " REVIEWED"
         elif player.estimated_lane is not None:
-            shown_lane = ("LEFT", "CENTER", "RIGHT")[player.estimated_lane] + " ESTIMATED"
+            stable = player.localization.get("screen_lane", {}).get("stable", False)
+            status = "STABLE SCREEN ESTIMATE" if stable else "SCREEN CANDIDATE"
+            shown_lane = ("LEFT", "CENTER", "RIGHT")[player.estimated_lane] + " " + status
         else:
             shown_lane = "? (transition or uncertain)"
         screen = player.localization.get("screen_lane", {})
