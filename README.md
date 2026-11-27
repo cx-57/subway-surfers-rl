@@ -30,7 +30,7 @@ stops it. B/L/P/H/S toggle boxes, lanes, player, hazards and status overlays.
 Video saves by default. Each new `models/evaluation/engine_live_<run ID>/` contains:
 
 - `observation.mp4` and `observation.json`: annotated 15 FPS review copy and timing metadata.
-- `states.jsonl`: detections, tracks, player/lane estimates and fixed 137-value v2 observations.
+- `states.jsonl`: detections, tracks, player/lane estimates and fixed 141-value v3 observations.
 - `observation_schema.json` and `benchmark.json`: field ordering and measured performance.
 
 Video has no audio, is capped at 960px width without stretching, and holds frames
@@ -125,15 +125,17 @@ postprocessor in `agent/player.py` now estimates LEFT/CENTER/RIGHT from those sa
 boxes when the player is near the reviewed screen-column anchors, with two
 consecutive matching observations required for a stable provisional estimate.
 The preview prints **ESTIMATED**, and `states.jsonl` records
-`player.estimated_lane` and `player.localization.screen_lane`. The anchors are
-in `config/player_templates.json`; they were approximately inspected in
+`player.estimated_lane` and `player.localization.screen_lane`. The provisional boundaries are 46.8% and 52.3% of gameplay crop width
+(`config/player_templates.json`). They were approximately inspected in
 `session_1795724241854738000` and apply only to comparable camera framing.
+This PLAYER lane estimate is independent of rail geometry. The observer displays
+the result and the normalized x coordinate in its bottom overlay.
 Mid-lane transitions, missing matches, gaps or incompatible viewport sizes
 return unknown instead of recycling an old lane.
 
 **Estimated does not mean confirmed**: `player.lane` remains null unless
-independent reviewed ground-contact evidence exists. The 137-value v2
-observation mask therefore stays unchanged. Running/jumping/rolling/train-roof
+independent reviewed ground-contact evidence exists. The 141-value v3 observation appends the three provisional screen-lane flags
+and a separate availability mask; the confirmed lane mask stays unchanged. Running/jumping/rolling/train-roof
 states remain UNKNOWN, and no automatic actions are enabled. Compare the
 **estimated lane** shown in the original observer video with the actual lane
 during deliberate lane changes before using it for control. Templates and rail

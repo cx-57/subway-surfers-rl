@@ -301,7 +301,9 @@ def run(frames, args, mode, mailbox=None):
                     print(
                         f"{metrics.count} frames | "
                         f"{metrics.count/(monotonic()-metrics.started):.1f} FPS | "
-                        f"rail geometry: {geometry_status} | player: {player_status}",
+                        f"player: {player_status}"
+                        + (" (SCREEN ESTIMATE)" if state.player.estimated_lane is not None else "")
+                        + f" | rail geometry: {geometry_status}",
                         flush=True,
                     )
     except KeyboardInterrupt:

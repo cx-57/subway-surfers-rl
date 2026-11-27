@@ -122,6 +122,7 @@ class PlayerTests(unittest.TestCase):
         self.assertTrue(stable.localization["screen_lane"]["provisional"])
         vector = GameState(1.1, (823, 1354), player=stable).to_vector()
         self.assertEqual(list(vector[:4]), [0.0, 0.0, 0.0, 0.0])
+        self.assertEqual(list(vector[-4:]), [0.0, 1.0, 0.0, 1.0])
 
         localizer.bbox = (685, 530, 745, 615)
         transitional = player.update(object(), 1.2, image_shape=(823, 1354))
@@ -140,6 +141,39 @@ class PlayerTests(unittest.TestCase):
         self.assertIsNone(player.update(object(), 2.5, image_shape=(823, 1354)).estimated_lane)
         self.assertEqual(player.update(object(), 2.6, image_shape=(823, 1354)).estimated_lane, 0)
 
+    def test_screen_lane_independent_of_rail_geometry(self):
+        reference = dict(
+            provenance="reviewed gameplay",
+            centers=[0.4453, 0.5030, 0.5517],
+            boundaries=[0.468, 0.523],
+            aspect_ratio=1000 / 600,
+            stable_frames=2,
+        )
+
+        class Localizer:
+            config = {"lane_tracking": reference}
+            last_diagnostics = {}
+            x = 0.443
+
+            def locate(self, image, timestamp):
+                center = self.x * 1000
+                return dict(bbox=(center - 30, 300, center + 30, 400),
+                            bbox_kind="upperbody")
+
+        loc = Localizer()
+        estimator = PlayerEstimator(localizer=loc)
+        for n, (x, lane) in enumerate(((0.443, 0), (0.493, 1), (0.553, 2))):
+            loc.x = x
+            a = estimator.update(object(), 1.0 + 0.3 * n, image_shape=(600, 1000))
+            b = estimator.update(object(), 1.1 + 0.3 * n, image_shape=(600, 1000))
+            self.assertIsNone(a.estimated_lane)
+            self.assertEqual(b.estimated_lane, lane)
+            self.assertIsNone(b.lane)
+        loc.x = 0.523
+        transition = estimator.update(object(), 2.0, image_shape=(600, 1000))
+        self.assertIsNone(transition.estimated_lane)
+        self.assertTrue(transition.localization["screen_lane"]["transitioning"])
+
     def test_invalid_lane_reference_and_viewport_fail_closed(self):
         reference = {
             "provenance": "reviewed example", "centers": [0.4453, 0.5030, 0.5517],
@@ -152,6 +186,7 @@ class PlayerTests(unittest.TestCase):
         )
         for bad in (
             dict(reference, centers=[0.5, 0.5, 0.5]),
+            dict(reference, boundaries=[0.6, 0.7]),
             dict(reference, max_gap_seconds=0),
             dict(reference, provenance=""),
         ):

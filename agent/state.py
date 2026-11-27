@@ -6,7 +6,7 @@ import math
 from .detection import CLASS_NAMES
 
 # v2 includes all six classes; do not interpret 113-value v1 logs as v2.
-OBSERVATION_SCHEMA_VERSION = 2
+OBSERVATION_SCHEMA_VERSION = 3
 
 ACTIONS = ("NO_OP", "LEFT", "RIGHT", "JUMP", "ROLL")
 MOVEMENTS = ("RUNNING", "JUMPING", "ROLLING", "ON_TRAIN")
@@ -62,6 +62,13 @@ for lane in range(3):
     for slot in range(2):
         for name in SLOT_FIELDS:
             observation_fields.append(f"lane{lane}.slot{slot}.{name}")
+# Keep the 137 legacy fields in their original order.
+observation_fields += [
+    "player.screen_left",
+    "player.screen_center",
+    "player.screen_right",
+    "player.screen_lane_available",
+]
 OBSERVATION_FIELDS = tuple(observation_fields)
 
 
@@ -181,7 +188,7 @@ class GameState:
         return asdict(self)
 
     def to_vector(self):
-        """Schema v1: 113 float32 values. Missing numeric values have explicit masks."""
+        """Schema v3: 141 float32 values with separate provisional screen-lane mask."""
         import numpy as np
 
         player = self.player
@@ -258,4 +265,10 @@ class GameState:
                     float(urgency in ("LOW", "MEDIUM", "HIGH")),
                     float(not track.association_ambiguous),
                 ]
+        # This estimate does not establish running pose or verified ground contact.
+        screen_lane = player.estimated_lane
+        screen_valid = type(screen_lane) is int and screen_lane in (0, 1, 2)
+        for lane in range(3):
+            values.append(float(screen_valid and screen_lane == lane))
+        values.append(float(screen_valid))
         return np.asarray(values, dtype=np.float32)

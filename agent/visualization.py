@@ -128,9 +128,12 @@ def render(image, state, geometry=None, toggles=None):
             shown_lane = ("LEFT", "CENTER", "RIGHT")[player.estimated_lane] + " ESTIMATED"
         else:
             shown_lane = "? (transition or uncertain)"
+        screen = player.localization.get("screen_lane", {})
+        x = screen.get("normalized_x")
+        x_label = f" | x={x * 100:.1f}%" if isinstance(x, (int, float)) else ""
         _label(
             output,
-            f"Player lane {shown_lane} | candidate={candidates} | {player.movement}",
+            f"Player lane {shown_lane}{x_label} | {player.movement}",
             6,
             h - 10,
             INFERRED,

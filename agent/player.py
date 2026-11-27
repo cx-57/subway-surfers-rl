@@ -30,6 +30,25 @@ class PlayerLaneTracker:
         ):
             raise ValueError("Player lane centers must be three ordered screen columns")
         self.centers = tuple(centers)
+        boundaries = config.get("boundaries")
+        if boundaries is None:
+            boundaries = [
+                (centers[0] + centers[1]) / 2,
+                (centers[1] + centers[2]) / 2,
+            ]
+        if (
+            not isinstance(boundaries, (list, tuple))
+            or len(boundaries) != 2
+            or any(
+                not isinstance(value, (float, int)) or isinstance(value, bool)
+                or not math.isfinite(value)
+                for value in boundaries
+            )
+            or not centers[0] < boundaries[0] < centers[1]
+            or not centers[1] < boundaries[1] < centers[2]
+        ):
+            raise ValueError("Lane boundaries must separate reviewed screen positions")
+        self.boundaries = tuple(boundaries)
         self.aspect_ratio = float(config.get("aspect_ratio", 0))
         self.aspect_tolerance = float(config.get("aspect_tolerance", 0.08))
         self.max_error = float(config.get("max_error", 0.035))
@@ -91,21 +110,30 @@ class PlayerLaneTracker:
         for lane, center in enumerate(self.centers):
             distances.append((abs(x - center), lane))
         distances.sort()
-        error, lane = distances[0]
-        separation = distances[1][0] - error
+        error = distances[0][0]
+        left_boundary, right_boundary = self.boundaries
         result["normalized_x"] = x
+        result["boundaries"] = self.boundaries
         result["anchor_error"] = error
         if error > self.max_error:
             self.last_lane, self.streak = None, 0
-            result["reason"] = "Player outside lane anchor positions"
+            result["reason"] = "Player outside reviewed screen positions"
             result["transitioning"] = True
             return result
-        if separation < self.margin:
+        # Deadbands prevent a mid-swipe box being called a stable lane.
+        if abs(x - left_boundary) <= self.margin:
             self.last_lane, self.streak = None, 0
-            result["candidates"] = tuple(sorted((lane, distances[1][1])))
-            result["reason"] = "Player between lane anchors"
+            result["candidates"] = (0, 1)
+            result["reason"] = "Player crossing left/center screen boundary"
             result["transitioning"] = True
             return result
+        if abs(x - right_boundary) <= self.margin:
+            self.last_lane, self.streak = None, 0
+            result["candidates"] = (1, 2)
+            result["reason"] = "Player crossing center/right screen boundary"
+            result["transitioning"] = True
+            return result
+        lane = 0 if x < left_boundary else 1 if x < right_boundary else 2
         result["candidates"] = (lane,)
         if geometry_candidates:
             result["geometry_agrees"] = lane in geometry_candidates
@@ -204,9 +232,10 @@ class PlayerEstimator:
                 unknown.lane_candidates,
             )
             unknown.localization["screen_lane"] = estimated
-            if estimated["candidates"]:
-                unknown.lane_candidates = estimated["candidates"]
-                unknown.lane_reason = estimated["reason"]
+            # Screen coordinates are primary for player lane; rail candidates
+            # remain only a diagnostic cross-check, not a requirement.
+            unknown.lane_candidates = estimated["candidates"]
+            unknown.lane_reason = estimated["reason"]
             if estimated["stable"]:
                 unknown.estimated_lane = estimated["lane"]
         # Preserve Codex's actual localizer, verified-lane semantics and UNKNOWN pose.

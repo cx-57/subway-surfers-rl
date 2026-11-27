@@ -2,10 +2,22 @@
 
 import unittest
 import numpy as np
-from agent.state import GameState, Track, LaneEstimate, Hazard, OBSERVATION_FIELDS
+from agent.state import GameState, Track, LaneEstimate, Hazard, PlayerState, OBSERVATION_FIELDS, OBSERVATION_SCHEMA_VERSION
 
 
 class StateTests(unittest.TestCase):
+    def test_provisional_screen_lane_is_separately_masked(self):
+        state = GameState(1, (600, 1000), player=PlayerState(estimated_lane=2))
+        fields = dict(zip(OBSERVATION_FIELDS, state.to_vector()))
+        self.assertEqual(fields["player.lane_known"], 0)
+        self.assertEqual(fields["player.right"], 0)
+        self.assertEqual(fields["player.screen_right"], 1)
+        self.assertEqual(fields["player.screen_lane_available"], 1)
+        state.player.estimated_lane = None
+        fields = dict(zip(OBSERVATION_FIELDS, state.to_vector()))
+        self.assertEqual(fields["player.screen_right"], 0)
+        self.assertEqual(fields["player.screen_lane_available"], 0)
+
     def test_unknown_visibility_differs_from_known_occlusion(self):
         state = GameState(0.0, (100, 100), lane_visibility=[None, False, True])
         values = dict(zip(OBSERVATION_FIELDS, state.to_vector()))
@@ -22,7 +34,8 @@ class StateTests(unittest.TestCase):
         self.assertEqual(values["lane0.slot0.depth_known"], 0)
 
     def test_all_six_classes_have_distinct_observation_flags(self):
-        self.assertEqual(len(OBSERVATION_FIELDS), 137)
+        self.assertEqual(OBSERVATION_SCHEMA_VERSION, 3)
+        self.assertEqual(len(OBSERVATION_FIELDS), 141)
         names = ("train", "ground", "overhead", "bush", "small_obstacle", "pillar")
         for class_id, expected in enumerate(names):
             with self.subTest(class_id=class_id):

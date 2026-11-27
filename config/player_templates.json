@@ -93,6 +93,7 @@
   "lane_tracking": {
     "provenance": "Approximate horizontal player positions visually inspected from session_1795724241854738000 (left/center/right), for provisional screen-space tracking only; not validated ground-contact labels",
     "centers": [0.4453, 0.5030, 0.5517],
+    "boundaries": [0.468, 0.523],
     "aspect_ratio": 1.6452,
     "aspect_tolerance": 0.08,
     "max_error": 0.035,
