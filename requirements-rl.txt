@@ -1,0 +1,4 @@
+-r requirements.txt
+gymnasium==1.4.0
+stable-baselines3==2.9.2
+PyAutoGUI==0.9.54

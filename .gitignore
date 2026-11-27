@@ -40,3 +40,5 @@ data/**/*.cache
 
 *.[jJ][pP][gG]
 *.[jJ][pP][eE][gG]
+config/rl.local*.json
+config/rl.local*.png

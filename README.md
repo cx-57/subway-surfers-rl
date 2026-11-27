@@ -200,11 +200,28 @@ versions; current measurements do not assume a future Mac's performance.
 - Use real screenshots. Compare one training change at a time with matched seeds/budgets; avoid significant rotation, perspective warp and vertical flips. Never paste objects permanently into datasets.
 - Empty-label negatives need visual confirmation. Paused, obscured or ambiguous frames are not verified negatives.
 - Preserve earlier checkpoints and compare partial/small-object recall, false positives and latency alongside AP. Never claim gains from relabeling alone or training accuracy.
-- Keep resource use bounded and code simple. Preserve UNKNOWN rather than inventing lanes, confidence or seconds. No automatic controls or RL training in this milestone.
+- Keep resource use bounded and code simple. Preserve UNKNOWN rather than inventing lanes, confidence or seconds. Observation stays read-only; automated controls and training use the separate explicit RL commands.
 - Prefer ordinary loops, descriptive names and one statement per line. Avoid comprehensions and anonymous functions in production code. Comment important timing, geometry, file-writing and control behavior. Keep necessary NumPy/OpenCV operations instead of reimplementing image processing.
 
-## Next milestone
+## Reinforcement learning
+
+A minimal live Gymnasium/SB3 DQN subsystem is available. It uses screen-space
+player/obstacle boxes and approach velocities without requiring confirmed lanes.
+See [setup, training and random-baseline evaluation](docs/reinforcement_learning.md).
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r requirements-rl.txt
+.\.venv\Scripts\python.exe scripts/rl.py setup
+.\.venv\Scripts\python.exe scripts/rl.py check
+.\.venv\Scripts\python.exe scripts/rl.py train --steps 10000 --output models/rl/first_run
+```
+
+The RL commands enable automated controls. Configure the game-over image and
+reset sequence with `setup`, then verify them with `check` before training.
+
+## Perception validation follow-up
 
 Validate player ground contact/animation and lane estimates through manual lane
 changes, then obstacle footprints and collision/action timing on a fresh recording.
-Automatic controls, a Gymnasium environment and DQN training follow that validation.
+The separate RL subsystem above can train on screen-space features while that
+perception validation continues; it does not depend on confirmed lane estimates.
