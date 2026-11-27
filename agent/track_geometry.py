@@ -17,8 +17,15 @@ class TrackGeometry:
         self.config = config or {}
         self.last_diagnostics = {}
 
-    def _reject(self, reason, groups=None):
-        self.last_diagnostics = {"accepted": False, "reason": reason, "rail_groups": groups or []}
+    def _reject(self, reason, groups=None, method=None):
+        if method is not None:
+            reason = method + ": " + reason
+        self.last_diagnostics = {
+            "accepted": False,
+            "reason": reason,
+            "method": method,
+            "rail_groups": groups or [],
+        }
         geometry = Geometry()
         geometry.reason = "Automatic rail geometry unavailable: " + reason
         return geometry
@@ -46,9 +53,31 @@ class TrackGeometry:
         edges = cv2.Canny(cv2.cvtColor(image, cv2.COLOR_BGR2GRAY), 40, 100)
         edges[: int(h * 0.42)] = 0
         edges[int(h * 0.95) :] = 0
-        # One-degree bins retain the inspected rail fans with much less CPU work.
+
+        # Grayscale edges may follow the outside of thick colored rails.
+        # Retry on their colored interiors without loosening the perspective gates.
+        colors = image.astype(np.int16)
+        blue, green, red = colors[:, :, 0], colors[:, :, 1], colors[:, :, 2]
+        pink_rails = (
+            (red - green > 16)
+            & (red - blue > 16)
+            & (np.abs(blue - green) < 20)
+            & (red > 115)
+        ).astype(np.uint8) * 255
+        pink_rails[: int(h * 0.42)] = 0
+        pink_rails[int(h * 0.95) :] = 0
+
+        for method, pixels in (("grayscale edges", edges), ("pink rail mask", pink_rails)):
+            geometry = self._estimate_from_lines(image, frame_id, reference_y, pixels, method)
+            if geometry.valid:
+                return geometry
+        return geometry
+
+    def _estimate_from_lines(self, image, frame_id, reference_y, pixels, method):
+        h, w = image.shape[:2]
         lines = cv2.HoughLinesP(
-            edges, 1, np.pi / 180, 45, minLineLength=round(h * 0.17), maxLineGap=round(h * 0.025)
+            pixels, 1, np.pi / 180, 45,
+            minLineLength=round(h * 0.17), maxLineGap=round(h * 0.025)
         )
         candidates = []
         for ((x1, y1, x2, y2),) in ([] if lines is None else lines):
@@ -98,23 +127,28 @@ class TrackGeometry:
         # confidence votes. Shared observed depth and perspective gates below
         # determine whether the six distinct rail groups support geometry.
         if len(groups) != 6:
-            return self._reject("Six independently supported visible rails not found", summary)
+            return self._reject(
+                f"Expected 6 distinct visible rails, found {len(groups)} groups "
+                f"from {len(candidates)} material-matched segments",
+                summary,
+                method,
+            )
         positions = np.array(positions)
         slopes = np.array(slopes)
         slope_gaps = np.diff(slopes)
         if slopes[0] >= -0.05 or slopes[-1] <= 0.05 or np.any(slope_gaps <= 0.04):
-            return self._reject("Rail directions do not form an ordered perspective fan", summary)
+            return self._reject("Rail directions do not form an ordered perspective fan", summary, method)
         intersections = reference_y - np.diff(positions) / slope_gaps
         if (
             np.any(intersections < 0)
             or np.any(intersections > h * 0.65)
             or np.ptp(intersections) > h * 0.3
         ):
-            return self._reject("Inconsistent rail convergence or curved geometry", summary)
+            return self._reject("Inconsistent rail convergence or curved geometry", summary, method)
         low = max(tops) / h
         high = min(bottoms) / h
         if high - low < 0.15:
-            return self._reject("Insufficient shared observed rail depth", summary)
+            return self._reject("Insufficient shared observed rail depth", summary, method)
         rows = []
         for y in (low, (low + high) / 2, high):
             rails = positions + slopes * (y * h - reference_y)
@@ -130,7 +164,7 @@ class TrackGeometry:
                 or max(spacing) / min(spacing) > 1.4
                 or max(gaps) / min(gaps) > 1.8
             ):
-                return self._reject("Rail pair gauges or lane spacing inconsistent", summary)
+                return self._reject("Rail pair gauges or lane spacing inconsistent", summary, method)
             rows.append([float(y)] + (centers / w).tolist())
         geometry = Geometry(
             {
@@ -148,6 +182,7 @@ class TrackGeometry:
         self.last_diagnostics = {
             "accepted": geometry.valid,
             "reason": geometry.reason,
+            "method": method,
             "rail_groups": summary,
             "lane_rows": rows,
         }

@@ -192,6 +192,10 @@ def run(frames, args, mode, mailbox=None):
     wall_start = monotonic()
     first_timestamp = None
     stale_dropped = 0
+    geometry_valid_frames = 0
+    geometry_failure_reasons = {}
+    player_localized_frames = 0
+    player_estimated_lane_frames = 0
     video = VideoRecorder(output / "observation.mp4") if getattr(args, "video", False) else None
     print(f"{mode}: {detector.device}, logs -> {output}", flush=True)
     if video is not None:
@@ -223,6 +227,17 @@ def run(frames, args, mode, mailbox=None):
                     frame.captured_at += monotonic() - waiting
                     before = monotonic()
                 state = engine.process(frame)
+                if state.calibration_valid:
+                    geometry_valid_frames += 1
+                else:
+                    geometry_reason = state.calibration_reason
+                    geometry_failure_reasons[geometry_reason] = (
+                        geometry_failure_reasons.get(geometry_reason, 0) + 1
+                    )
+                if state.player.bbox is not None:
+                    player_localized_frames += 1
+                if state.player.estimated_lane in (0, 1, 2):
+                    player_estimated_lane_frames += 1
                 if mode == "live" and metrics.count == 0:
                     print(
                         f"OBSERVING — first frame processed ({frame.image.shape[1]}×{frame.image.shape[0]}). "
@@ -271,9 +286,22 @@ def run(frames, args, mode, mailbox=None):
                     validator.update(state, frame.frame_id)
                 metrics.add(dict(state.timings, loop_ms=(monotonic() - before) * 1000))
                 if metrics.count % 25 == 0:
+                    # Report vision outputs directly; the safety policy will
+                    # remain UNKNOWN until ground-contact and timing are verified.
+                    geometry_status = (
+                        "OK" if state.calibration_valid else state.calibration_reason
+                    )
+                    lane = state.player.lane
+                    if lane is None:
+                        lane = state.player.estimated_lane
+                    player_status = (
+                        ("LEFT", "CENTER", "RIGHT")[lane]
+                        if lane in (0, 1, 2) else "UNKNOWN"
+                    )
                     print(
-                        f"{metrics.count} frames | {metrics.count/(monotonic()-metrics.started):.1f} FPS | "
-                        f"{state.recommendation.action}: {state.recommendation.reason}",
+                        f"{metrics.count} frames | "
+                        f"{metrics.count/(monotonic()-metrics.started):.1f} FPS | "
+                        f"rail geometry: {geometry_status} | player: {player_status}",
                         flush=True,
                     )
     except KeyboardInterrupt:
@@ -309,6 +337,14 @@ def run(frames, args, mode, mailbox=None):
             model_load_ms=model_load_ms,
             timings=metrics.summary(),
             tracker=engine.tracker.metrics,
+            vision=dict(
+                geometry_valid_frames=geometry_valid_frames,
+                geometry_failed_frames=metrics.count - geometry_valid_frames,
+                geometry_failure_reasons=geometry_failure_reasons,
+                player_localized_frames=player_localized_frames,
+                player_estimated_lane_frames=player_estimated_lane_frames,
+                caveat="Estimated player lanes and automatic geometry are unverified; not control accuracy.",
+            ),
             stale_frames_skipped=stale_dropped,
             captured_frames=mailbox.captured if mailbox else None,
             capture_fps=(

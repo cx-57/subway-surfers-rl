@@ -1,6 +1,7 @@
 """Scene-specific rail hypotheses: geometric gates, not accuracy measurements."""
 
 import unittest
+from unittest.mock import patch
 import cv2
 import numpy as np
 from agent.track_geometry import TrackGeometry
@@ -33,6 +34,18 @@ class TrackGeometryTests(unittest.TestCase):
         self.assertLess(centers[0], centers[1])
         self.assertLess(centers[1], centers[2])
         self.assertFalse(g.validate_frame((500, 800), "session/frame_002.jpg")[0])
+
+    def test_pink_rail_interior_fallback_works_without_grayscale_edges(self):
+        estimator = TrackGeometry()
+        with patch("agent.track_geometry.cv2.Canny", return_value=np.zeros((500, 800), np.uint8)):
+            geometry = estimator.estimate(clear_rails(), "f")
+        self.assertTrue(geometry.valid, geometry.reason)
+        self.assertEqual(estimator.last_diagnostics["method"], "pink rail mask")
+
+    def test_rejection_reports_observed_rail_count(self):
+        geometry = TrackGeometry().estimate(np.zeros((500, 800, 3), np.uint8), "f")
+        self.assertFalse(geometry.valid)
+        self.assertIn("found 0 groups", geometry.reason)
 
     def test_occlusion_does_not_reuse_last_success(self):
         estimator = TrackGeometry()

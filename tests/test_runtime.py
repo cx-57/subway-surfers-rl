@@ -121,6 +121,25 @@ class RuntimeTests(unittest.TestCase):
         for n in range(2):
             yield Frame(np.zeros((60, 100, 3), np.uint8), float(n), monotonic(), frame_id=str(n))
 
+    def test_terminal_progress_exposes_actual_geometry_failure(self):
+        output_text = io.StringIO()
+        with tempfile.TemporaryDirectory() as folder, patch(
+            "agent.runtime.Detector", return_value=EmptyDetector()
+        ), redirect_stdout(output_text):
+            frames = []
+            for index in range(25):
+                frames.append(Frame(
+                    np.zeros((60, 100, 3), np.uint8), float(index), monotonic(),
+                    frame_id=f"frame_{index:06d}.jpg",
+                ))
+            output = run(frames, self.args(folder), "replay")
+            benchmark = json.loads((output / "benchmark.json").read_text())
+        self.assertIn("rail geometry: Automatic rail geometry unavailable: Image too small", output_text.getvalue())
+        self.assertIn("player: UNKNOWN", output_text.getvalue())
+        self.assertEqual(benchmark["vision"]["geometry_valid_frames"], 0)
+        self.assertEqual(benchmark["vision"]["geometry_failed_frames"], 25)
+        self.assertEqual(benchmark["vision"]["player_estimated_lane_frames"], 0)
+
     def test_headless_logs_real_states_and_writes_benchmark(self):
         with tempfile.TemporaryDirectory() as folder, patch(
             "agent.runtime.Detector", return_value=EmptyDetector()
