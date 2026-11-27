@@ -302,6 +302,23 @@ class PlayerLocalizer:
         )
         sh, sw = small.shape[:2]
         rx1, ry1, rx2, ry2 = self.config.get("roi", [0.15, 0.38, 0.85, 0.93])
+        # The old wide search sometimes locked onto underwater scenery far
+        # left of the runner, then propagated that false match by optical flow.
+        # Limit actor identity to the visually reviewed screen-lane corridor.
+        # This gate is intentionally independent of track/obstacle geometry.
+        allowed_x = None
+        lane_reference = self.config.get("lane_tracking", {})
+        if isinstance(lane_reference, dict):
+            centers = lane_reference.get("centers")
+            if isinstance(centers, list) and len(centers) == 3:
+                margin = float(lane_reference.get("max_error", 0.035)) + 0.015
+                allowed_x = (
+                    max(0.0, min(centers) - margin),
+                    min(1.0, max(centers) + margin),
+                )
+                # Leave room for the actor's box width around its center.
+                rx1 = max(rx1, allowed_x[0] - 0.06)
+                rx2 = min(rx2, allowed_x[1] + 0.06)
         ox, oy = int(rx1 * sw), int(ry1 * sh)
         roi = small[oy : int(ry2 * sh), ox : int(rx2 * sw)]
         if min(roi.shape[:2]) < 5:
@@ -326,6 +343,19 @@ class PlayerLocalizer:
                 template = cv2.resize(original, (tw, th), interpolation=cv2.INTER_AREA)
                 gray_template = cv2.cvtColor(template, cv2.COLOR_BGR2GRAY)
                 scores = cv2.matchTemplate(gray_roi, gray_template, cv2.TM_CCOEFF_NORMED)
+                if allowed_x is not None:
+                    # A match's center, not its top-left corner, must lie in
+                    # the plausible player corridor. Exclude out-of-scope
+                    # peaks BEFORE selecting the strongest candidates.
+                    low = max(0, int(np.ceil(allowed_x[0] * sw - ox - tw / 2)))
+                    high = min(
+                        scores.shape[1],
+                        int(np.floor(allowed_x[1] * sw - ox - tw / 2)) + 1,
+                    )
+                    if low >= high:
+                        continue
+                    scores[:, :low] = -1
+                    scores[:, high:] = -1
                 # Keep three spatially distinct peaks per template/scale.
                 for _ in range(3):
                     _, score, _, location = cv2.minMaxLoc(scores)
@@ -347,6 +377,7 @@ class PlayerLocalizer:
 
         candidates.sort(key=match_score, reverse=True)
         if not candidates:
+            self.last_diagnostics["reason"] = "No player template fits reviewed screen-lane corridor"
             return None
         score, box, entry = candidates[0]
         cx = (box[0] + box[2]) / 2

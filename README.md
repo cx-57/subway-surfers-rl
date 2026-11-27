@@ -138,8 +138,11 @@ The preview prints **ESTIMATED**, and `states.jsonl` records
 `session_1795724241854738000` and apply only to comparable camera framing.
 This PLAYER lane estimate is independent of rail geometry. The observer displays
 the result and the normalized x coordinate in its bottom overlay.
-Mid-lane transitions, missing matches, gaps or incompatible viewport sizes
-return unknown instead of recycling an old lane.
+A visible candidate lane is reported from the first accepted player box;
+the overlay distinguishes `SCREEN CANDIDATE` from `STABLE SCREEN ESTIMATE`
+(after two consecutive observations). Mid-lane transitions, missing matches,
+or incompatible viewports still return unknown. The lane remains provisional,
+even when stable; no autonomous keyboard actions are enabled.
 
 **Estimated does not mean confirmed**: `player.lane` remains null unless
 independent reviewed ground-contact evidence exists. The 141-value v3 observation appends the three provisional screen-lane flags

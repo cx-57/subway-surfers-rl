@@ -135,6 +135,10 @@ class PlayerLaneTracker:
             return result
         lane = 0 if x < left_boundary else 1 if x < right_boundary else 2
         result["candidates"] = (lane,)
+        # Report the current screen-position candidate immediately. It remains
+        # provisional until the required consecutive observations stabilize.
+        # Missing/transitioning frames still return lane=None.
+        result["lane"] = lane
         if geometry_candidates:
             result["geometry_agrees"] = lane in geometry_candidates
         if self.last_lane == lane:
@@ -143,7 +147,7 @@ class PlayerLaneTracker:
             self.last_lane = lane
             self.streak = 1
         if self.streak < self.stable_frames:
-            result["reason"] = "Waiting for consecutive lane observations"
+            result["reason"] = "Provisional screen lane; waiting for stability"
             result["transitioning"] = True
             return result
         result["lane"] = lane
@@ -236,7 +240,9 @@ class PlayerEstimator:
             # remain only a diagnostic cross-check, not a requirement.
             unknown.lane_candidates = estimated["candidates"]
             unknown.lane_reason = estimated["reason"]
-            if estimated["stable"]:
+            # Expose the provisional observation even on the first valid
+            # frame. The separate stable flag is retained in localization.
+            if estimated["lane"] in (0, 1, 2):
                 unknown.estimated_lane = estimated["lane"]
         # Preserve Codex's actual localizer, verified-lane semantics and UNKNOWN pose.
         return unknown
