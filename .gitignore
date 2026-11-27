@@ -37,3 +37,6 @@ data/**/*.cache
 .env
 .env.*
 !.env.example
+
+*.[jJ][pP][gG]
+*.[jJ][pP][eE][gG]
