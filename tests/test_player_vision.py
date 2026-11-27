@@ -39,6 +39,26 @@ class PlayerVisionTests(unittest.TestCase):
         self.assertEqual(result["movement"], "UNKNOWN")
         self.assertEqual(result["bbox_kind"], "fullbody")
 
+    def test_screen_lane_corridor_rejects_false_background_identity(self):
+        config = dict(self.config)
+        config["lane_tracking"] = {
+            "centers": [0.4453, 0.5030, 0.5517],
+            "max_error": 0.035,
+        }
+        image = np.zeros((100, 200, 3), np.uint8)
+        # Both patches are perfect NCC matches. Only the center-positioned
+        # patch can be the runner; the scenery patch must not compete.
+        image[40:70, 20:40] = self.template
+        image[40:70, 80:100] = self.template
+        localizer = PlayerLocalizer(config)
+        result = localizer.locate(image, 1.0)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["bbox"], (80.0, 40.0, 100.0, 70.0))
+        # Without the actual runner, a convincing background template must
+        # not seed a false character track or optical flow.
+        image[40:70, 80:100] = 0
+        self.assertIsNone(PlayerLocalizer(config).locate(image, 2.0))
+
     def test_no_match_does_not_propagate(self):
         localizer = PlayerLocalizer(self.config)
         image = np.zeros((100, 200, 3), dtype=np.uint8)

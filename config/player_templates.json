@@ -3,16 +3,16 @@
   "description": "Scene/character-specific color NCC upperbody localizer with bounded verified LK between strong NCC refreshes. NCC scores are correlations, not probabilities. Flow observations have score=null. No footpoint or pose classifier.",
   "working_width": 320,
   "roi": [
-    0.15,
-    0.38,
-    0.85,
-    0.93
+    0.34,
+    0.28,
+    0.66,
+    0.85
   ],
   "aspect_range": [
     1.35,
     1.85
   ],
-  "score_threshold": 0.73,
+  "score_threshold": 0.78,
   "margin_threshold": 0.07,
   "scales": [
     0.88,

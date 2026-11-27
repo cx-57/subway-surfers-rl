@@ -308,11 +308,14 @@ def run(frames, args, mode, mailbox=None):
                         ("LEFT", "CENTER", "RIGHT")[lane]
                         if lane in (0, 1, 2) else "UNKNOWN"
                     )
+                    player_detail = (
+                        " (SCREEN ESTIMATE)" if state.player.estimated_lane is not None
+                        else ": " + state.player.lane_reason
+                    )
                     print(
                         f"{metrics.count} frames | "
                         f"{metrics.count/(monotonic()-metrics.started):.1f} FPS | "
-                        f"player: {player_status}"
-                        + (" (SCREEN ESTIMATE)" if state.player.estimated_lane is not None else "")
+                        f"player: {player_status}{player_detail}"
                         + f" | rail geometry: {geometry_status}",
                         flush=True,
                     )
