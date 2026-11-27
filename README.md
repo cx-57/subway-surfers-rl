@@ -137,8 +137,11 @@ observation mask therefore stays unchanged. Running/jumping/rolling/train-roof
 states remain UNKNOWN, and no automatic actions are enabled. Compare the
 **estimated lane** shown in the original observer video with the actual lane
 during deliberate lane changes before using it for control. Templates and rail
-heuristics are appearance-specific; weak matches and unsupported themes yield
-UNKNOWN. Boxes do not directly identify occupied obstacle lanes.
+heuristics are appearance-specific. The automatic geometry now fits a
+perspective-constrained six-rail pattern from at least four independent visible
+material-matched rails, allowing some train occlusion; ambiguous rail phases,
+curves and unsupported themes still yield UNKNOWN. This is not verified lane
+accuracy. Boxes do not directly identify occupied obstacle lanes.
 
 After training, evaluate the new six-class checkpoint printed by the training script.
 For example (the run directory may have a numeric suffix):
