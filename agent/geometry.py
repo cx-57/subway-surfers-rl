@@ -8,6 +8,7 @@ import math
 from pathlib import Path
 import re
 
+from .detection import TRAIN_CLASS_IDS
 from .state import Detection, LaneEstimate
 
 
@@ -249,7 +250,7 @@ class Geometry:
                     measured = footprint is not None
                     break
         if footprint is None:
-            if detection.class_id == 0:
+            if detection.class_id in TRAIN_CLASS_IDS:
                 return LaneEstimate(
                     reason="Train rectangle does not establish visible track footprint"
                 )

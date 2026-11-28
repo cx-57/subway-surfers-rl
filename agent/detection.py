@@ -9,6 +9,9 @@ from contextlib import contextmanager
 CONFIDENCE = 0.5
 CLASS_NAMES = ('train', 'ground_barrier', 'overhead_barrier', 'bush', 'small_obstacle', 'pillar')
 LEGACY_CLASS_NAMES = CLASS_NAMES[:3]
+RAMP_TRAIN_ID = len(CLASS_NAMES)
+SPLIT_TRAIN_CLASS_NAMES = ("blocking_train",) + CLASS_NAMES[1:] + ("ramp_train",)
+TRAIN_CLASS_IDS = (0, RAMP_TRAIN_ID)
 
 
 def validate_checkpoint_classes(names):
@@ -25,10 +28,10 @@ def validate_checkpoint_classes(names):
         ordered = tuple(names)
     else:
         raise ValueError("Checkpoint is missing usable class names")
-    if ordered not in (LEGACY_CLASS_NAMES, CLASS_NAMES):
+    if ordered not in (LEGACY_CLASS_NAMES, CLASS_NAMES, SPLIT_TRAIN_CLASS_NAMES):
         raise ValueError(
             f"Checkpoint class IDs/names {ordered!r} are incompatible with "
-            f"expected {CLASS_NAMES!r}; do not run inference with a mismatched head"
+            f"expected a known class order, including {SPLIT_TRAIN_CLASS_NAMES!r}"
         )
     return ordered
 
@@ -36,6 +39,7 @@ def validate_checkpoint_classes(names):
 # Minimum normalized box bottom and width; proximity estimates, not meters.
 NEARBY_LIMITS = {0: (0.65, 0.12), 1: (0.55, 0.06), 2: (0.55, 0.06),
                  3: (0.55, 0.06), 4: (0.55, 0.06), 5: (0.55, 0.06)}
+NEARBY_LIMITS[RAMP_TRAIN_ID] = NEARBY_LIMITS[0]
 
 
 class IncompleteNMS(RuntimeError):

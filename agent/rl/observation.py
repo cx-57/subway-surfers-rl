@@ -2,7 +2,7 @@
 
 import math
 import numpy as np
-from agent.detection import CLASS_NAMES
+from agent.detection import CLASS_NAMES, RAMP_TRAIN_ID
 
 VERSION = 1
 MAX_OBSTACLES = 8
@@ -80,8 +80,9 @@ class ObservationEncoder:
                 finite(state.timestamp - track.last_seen, 0),
                 float(track.association_ambiguous),
             ])
+            track_class = 0 if track.class_id == RAMP_TRAIN_ID else track.class_id
             for class_id in range(len(CLASS_NAMES)):
-                values.append(float(track.class_id == class_id))
+                values.append(float(track_class == class_id))
         values.extend([0.0] * ((MAX_OBSTACLES - len(tracks)) * len(SLOT_FIELDS)))
         self.previous = (state.timestamp, box, state.image_shape)
         return np.asarray(values, dtype=np.float32)

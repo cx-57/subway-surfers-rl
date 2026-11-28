@@ -3,7 +3,7 @@
 from dataclasses import asdict, dataclass, field
 import math
 
-from .detection import CLASS_NAMES
+from .detection import CLASS_NAMES, RAMP_TRAIN_ID
 
 # v2 includes all six classes; do not interpret 113-value v1 logs as v2.
 OBSERVATION_SCHEMA_VERSION = 3
@@ -203,10 +203,11 @@ class GameState:
         unlocated_counts = [0] * len(CLASS_NAMES)
         hazards = {}
         for track in self.tracks:
+            class_id = 0 if track.class_id == RAMP_TRAIN_ID else track.class_id
             if not _known_lane(track):
                 unknown_tracks += 1
-                if not track.missed and 0 <= track.class_id < len(CLASS_NAMES):
-                    unlocated_counts[track.class_id] += 1
+                if not track.missed and 0 <= class_id < len(CLASS_NAMES):
+                    unlocated_counts[class_id] += 1
             if track.missed:
                 missing_tracks += 1
         for hazard in self.hazards:
@@ -249,8 +250,9 @@ class GameState:
                 ttc_known = ttc is not None and math.isfinite(ttc) and ttc >= 0
                 urgency = hazard.urgency if hazard else "UNKNOWN"
                 values += [1.0, float(not track.missed), 1.0]
+                track_class = 0 if track.class_id == RAMP_TRAIN_ID else track.class_id
                 for class_id in range(len(CLASS_NAMES)):
-                    values.append(float(track.class_id == class_id))
+                    values.append(float(track_class == class_id))
                 values += [
                     _unit(track.confidence),
                     _unit(track.lane.depth),

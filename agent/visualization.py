@@ -9,9 +9,10 @@ import textwrap
 
 import cv2
 import numpy as np
-from .detection import CLASS_NAMES as DETECTOR_CLASSES
+from .detection import CLASS_NAMES as DETECTOR_CLASSES, RAMP_TRAIN_ID
 
 CLASS_NAMES = dict(enumerate(DETECTOR_CLASSES))
+CLASS_NAMES[RAMP_TRAIN_ID] = "ramp_train"
 TOGGLE_KEYS = {"b": "boxes", "l": "lanes", "p": "player", "h": "hazards", "s": "status"}
 OBSERVED = (255, 220, 30)
 UPCOMING = (170, 140, 60)
