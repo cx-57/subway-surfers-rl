@@ -118,6 +118,16 @@ def add_common_options(parser):
         "--checkpoint", type=Path, default=ROOT / "models/training/weights/best.pt"
     )
     parser.add_argument("--calibration", type=Path)
+    player_checkpoint = ROOT / "models/player_detector/best.pt"
+    parser.add_argument(
+        "--player-checkpoint",
+        type=Path,
+        default=player_checkpoint if player_checkpoint.is_file() else None,
+        help="Player detector checkpoint (defaults to the installed player model)",
+    )
+    parser.add_argument(
+        "--template-player", action="store_true", help="Use the template tracker for comparison"
+    )
     parser.add_argument(
         "--settings", type=Path, help="Optional provisional engine/timing settings JSON"
     )
@@ -142,7 +152,7 @@ def live_arguments():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--region", type=int, nargs=4, metavar=("LEFT", "TOP", "WIDTH", "HEIGHT"))
     parser.add_argument("--monitor", type=int, default=1)
-    parser.add_argument("--capture-fps", type=float, default=60.0)
+    parser.add_argument("--capture-fps", type=float, default=20.0)
     parser.add_argument(
         "--duration", type=float, default=30.0, help="Bounded session duration in seconds"
     )
@@ -190,6 +200,10 @@ def run(frames, args, mode, mailbox=None):
     detector = Detector(args.checkpoint, device=args.device)
     model_load_ms = (monotonic() - started) * 1000
     engine = Engine(detector, calibration, settings)
+    if getattr(args, "player_checkpoint", None) and not getattr(args, "template_player", False):
+        from .player_vision import LearnedPlayerLocalizer
+
+        engine.player.localizer = LearnedPlayerLocalizer(args.player_checkpoint, detector.device)
     validator = None
     if control_check:
         from .control_validation import ControlValidation

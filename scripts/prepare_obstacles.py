@@ -13,7 +13,7 @@ if __package__ in (None, ''):
 
 import cv2
 from agent.detection import CLASS_NAMES
-from scripts.train import prepare_data, read_labels
+from scripts.train import prepare_data, read_labels, file_sha256
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -68,10 +68,10 @@ def integrate(root=ROOT):
         if name not in legacy_reviewed:
             raise ValueError('Legacy image has not been reviewed for new classes: ' + name)
         image_path = dataset / 'images' / name
-        if hashlib.sha256(image_path.read_bytes()).hexdigest() != frame['sha256']:
+        if file_sha256(image_path) != frame['sha256']:
             raise ValueError('Legacy original image changed: ' + name)
         source = frame.get('source')
-        if source and hashlib.sha256((root / source).read_bytes()).hexdigest() != frame['sha256']:
+        if source and file_sha256((root / source)) != frame['sha256']:
             raise ValueError('Legacy source image changed: ' + name)
         if name in legacy_uncertain:
             frame['annotation_uncertain'] = True
@@ -120,7 +120,7 @@ def integrate(root=ROOT):
                 if excluded['first'] <= number <= excluded['last']:
                     raise ValueError('Non-gameplay frame in reviewed labels: ' + name)
             source = source_folder / name
-            checksum = hashlib.sha256(source.read_bytes()).hexdigest()
+            checksum = file_sha256(source)
             if checksum != source_hashes[name]:
                 raise ValueError('Original image changed: ' + str(source))
             image = cv2.imread(str(source))
@@ -156,7 +156,7 @@ def integrate(root=ROOT):
             imported[session] += 1
             # Hard links retain original bytes and avoid duplicating large screenshots.
             if destination.exists():
-                if hashlib.sha256(destination.read_bytes()).hexdigest() != checksum:
+                if file_sha256(destination) != checksum:
                     raise ValueError('Existing curated image differs: ' + unique_name)
             else:
                 assets.append((source, destination))
@@ -181,7 +181,7 @@ def integrate(root=ROOT):
             raise ValueError('An identical screenshot occurs in training and validation')
     for frame in retired:
         source = root / frame['source']
-        if not source.is_file() or hashlib.sha256(source.read_bytes()).hexdigest() != frame['sha256']:
+        if not source.is_file() or file_sha256(source) != frame['sha256']:
             raise ValueError('Cannot retire a curated copy without its unchanged original')
 
     # Publish labels and split metadata only after every input has passed validation.

@@ -39,6 +39,18 @@ class PlayerVisionTests(unittest.TestCase):
         self.assertEqual(result["movement"], "UNKNOWN")
         self.assertEqual(result["bbox_kind"], "fullbody")
 
+    def test_default_search_region_includes_jump_height(self):
+        import json
+
+        path = Path(__file__).resolve().parents[1] / "config/player_templates.json"
+        roi = json.loads(path.read_text())["roi"]
+        localizer = PlayerLocalizer(dict(self.config, roi=roi))
+        image = np.zeros((100, 200, 3), dtype=np.uint8)
+        image[20:50, 90:110] = self.template
+        result = localizer.locate(image, 1.0)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["bbox"], (90.0, 20.0, 110.0, 50.0))
+
     def test_screen_lane_corridor_rejects_false_background_identity(self):
         config = dict(self.config)
         config["lane_tracking"] = {
@@ -147,7 +159,10 @@ class PlayerVisionTests(unittest.TestCase):
         self.assertIsNotNone(localizer.locate(image, 0))
         self.assertEqual(localizer.locate(image, 0.04)["source"], "opticalflow")
         self.assertEqual(localizer.locate(image, 0.08)["source"], "opticalflow")
-        self.assertIsNone(localizer.locate(image, 0.12))
+        self.assertEqual(localizer.locate(image, 0.12)["source"], "automatic color-template NCC")
+        # A failed flow update can reacquire even before the next scheduled refresh.
+        localizer._flow = lambda image, timestamp: None
+        self.assertEqual(localizer.locate(image, 0.16)["source"], "automatic color-template NCC")
 
     def test_flow_refresh_rejects_ambiguous_identity(self):
         localizer = PlayerLocalizer(self.flow_config())

@@ -27,6 +27,9 @@ On macOS/Linux:
 .venv/bin/python scripts/observe_live.py
 ```
 
+The observer automatically loads `models/player_detector/best.pt` when present.
+Use `--template-player` to compare with the original tracker.
+
 Click two opposite corners of the gameplay area and press **Enter**. Return to
 Chrome during the **15-second countdown**. Keep gameplay visible and move the
 observer window outside the selected area so it does not capture itself.

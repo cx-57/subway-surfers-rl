@@ -30,6 +30,12 @@ class PlayerTests(unittest.TestCase):
         self.assertIsNone(state.lane)
         self.assertEqual(state.movement, "UNKNOWN")
         self.assertIsNone(state.confidence)
+        self.assertIsNone(state.estimated_lane)
+        stable = estimator.update(object(), 1.1, geometry=Geometry(), image_shape=(100, 100))
+        self.assertEqual(stable.estimated_lane, 1)
+        self.assertIsNone(stable.lane)
+        stale = estimator.update(object(), 2.0, geometry=Geometry(), image_shape=(100, 100))
+        self.assertIsNone(stale.estimated_lane)
 
     def test_unknown_without_observation(self):
         self.assertIsNone(PlayerEstimator().update(None, 1).lane)

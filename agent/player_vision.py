@@ -13,6 +13,39 @@ import cv2
 import numpy as np
 
 
+class LearnedPlayerLocalizer:
+    """Detect the runner in the central gameplay corridor."""
+
+    def __init__(self, checkpoint, device):
+        from ultralytics import YOLO
+
+        self.model = YOLO(str(checkpoint))
+        if list(self.model.names.values()) != ["player"]:
+            raise ValueError("Player checkpoint must have one class named player")
+        self.device = device
+        config = Path(__file__).resolve().parents[1] / "config/player_templates.json"
+        self.config = json.loads(config.read_text())
+        self.last_diagnostics = {}
+
+    def locate(self, image, timestamp):
+        width = image.shape[1]
+        left, right = int(width * 0.28), int(width * 0.72)
+        boxes = self.model.predict(
+            image[:, left:right], imgsz=384, conf=0.15, max_det=1,
+            device=self.device, verbose=False,
+        )[0].boxes
+        if not len(boxes):
+            self.last_diagnostics = {"reason": "Player detector found no confident box"}
+            return None
+        x1, y1, x2, y2 = boxes.xyxy[0].tolist()
+        self.last_diagnostics = {"source": "player YOLO"}
+        return dict(
+            bbox=(x1 + left, y1, x2 + left, y2),
+            bbox_kind="fullbody", score=float(boxes.conf[0]),
+            source="player YOLO", footpoint_valid=False,
+        )
+
+
 class PlayerLocalizer:
     def __init__(self, config=None):
         root = Path(__file__).resolve().parents[1]
@@ -46,6 +79,8 @@ class PlayerLocalizer:
         self._flow_state = None
         self._last_ncc = None
         self._last_identity = None
+        self._template_sizes = {}
+        self._template_viewport = None
 
     def _validate_config(self):
         """Reject invalid search/timing settings before they reach OpenCV."""
@@ -174,12 +209,12 @@ class PlayerLocalizer:
         if not 0 < timestamp - previous_time <= self.config.get("flow_max_gap", 0.2):
             return None
         forward, status, error = cv2.calcOpticalFlowPyrLK(
-            previous, gray, points, None, winSize=(15, 15), maxLevel=2
+            previous, gray, points, None, winSize=(21, 21), maxLevel=3
         )
         if forward is None or status is None or error is None:
             return None
         backward, back_status, _ = cv2.calcOpticalFlowPyrLK(
-            gray, previous, forward, None, winSize=(15, 15), maxLevel=2
+            gray, previous, forward, None, winSize=(21, 21), maxLevel=3
         )
         if backward is None or back_status is None:
             return None
@@ -236,16 +271,15 @@ class PlayerLocalizer:
                 or timestamp - previous_time > self.config.get("flow_max_gap", 0.2)
             ):
                 self._clear_flow()
-        refresh = self._last_ncc is None or timestamp - self._last_ncc >= self.config.get(
+        identity_fresh = self._last_identity is not None and (
+            0 <= timestamp - self._last_identity <= self.config.get("flow_identity_ttl", 0.4)
+        )
+        refresh = not identity_fresh or self._last_ncc is None or timestamp - self._last_ncc >= self.config.get(
             "ncc_refresh_interval", 0.15
         )
         if refresh:
-            match = self._match(image, timestamp)
-            self._last_ncc = timestamp
+            match = self._refresh_identity(image, timestamp)
             if match is not None:
-                self._last_identity = timestamp
-                self._remember(image, timestamp, match)
-                self.last_diagnostics["source"] = "NCC"
                 return match
             # Two strong spatial candidates cannot establish the tracked identity.
             if self.last_diagnostics.get("second_score", 0) >= self.config.get(
@@ -255,18 +289,15 @@ class PlayerLocalizer:
             ):
                 self._clear_flow()
                 return None
-        if self._last_identity is None or timestamp - self._last_identity > self.config.get(
-            "flow_identity_ttl", 0.4
-        ):
+        if not identity_fresh:
             self._clear_flow()
-            self.last_diagnostics = {
-                "reason": "No recent strong identity match; flow identity expired"
-            }
             return None
         result = self._flow(image, timestamp)
         if result is None:
             self._clear_flow()
-            self.last_diagnostics = {"reason": "optical flow failed; identity discarded"}
+            # Recover on this frame instead of waiting for the next scheduled match.
+            if not refresh:
+                return self._refresh_identity(image, timestamp)
             return None
         self._remember(image, timestamp, result)
         self.last_diagnostics = dict(
@@ -278,6 +309,15 @@ class PlayerLocalizer:
             total_ms=(perf_counter() - started) * 1000,
         )
         return result
+
+    def _refresh_identity(self, image, timestamp):
+        match = self._match(image, timestamp)
+        self._last_ncc = timestamp
+        if match is not None:
+            self._last_identity = timestamp
+            self._remember(image, timestamp, match)
+            self.last_diagnostics["source"] = "NCC"
+        return match
 
     def _match(self, image, timestamp):
         """Find the best character template, rejecting weak or competing matches."""
@@ -301,6 +341,9 @@ class PlayerLocalizer:
             interpolation=cv2.INTER_AREA,
         )
         sh, sw = small.shape[:2]
+        if (h, w) != self._template_viewport:
+            self._template_sizes.clear()
+            self._template_viewport = (h, w)
         rx1, ry1, rx2, ry2 = self.config.get("roi", [0.15, 0.38, 0.85, 0.93])
         # The old wide search sometimes locked onto underwater scenery far
         # left of the runner, then propagated that false match by optical flow.
@@ -326,7 +369,7 @@ class PlayerLocalizer:
             return None
         gray_roi = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
         candidates = []
-        for entry, original in self.templates:
+        for index, (entry, original) in enumerate(self.templates):
             for scale in self.config.get("scales", [0.88, 1, 1.12]):
                 factor = (
                     (
@@ -340,8 +383,13 @@ class PlayerLocalizer:
                 tw, th = round(original.shape[1] * factor), round(original.shape[0] * factor)
                 if min(tw, th) < 5 or tw > roi.shape[1] or th > roi.shape[0]:
                     continue
-                template = cv2.resize(original, (tw, th), interpolation=cv2.INTER_AREA)
-                gray_template = cv2.cvtColor(template, cv2.COLOR_BGR2GRAY)
+                key = (index, tw, th)
+                if key not in self._template_sizes:
+                    template = cv2.resize(original, (tw, th), interpolation=cv2.INTER_AREA)
+                    self._template_sizes[key] = (
+                        template, cv2.cvtColor(template, cv2.COLOR_BGR2GRAY)
+                    )
+                template, gray_template = self._template_sizes[key]
                 scores = cv2.matchTemplate(gray_roi, gray_template, cv2.TM_CCOEFF_NORMED)
                 if allowed_x is not None:
                     # A match's center, not its top-left corner, must lie in

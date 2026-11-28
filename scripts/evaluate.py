@@ -1,8 +1,8 @@
 """Evaluate a checkpoint on fixed labels, with visible-object error counts."""
 
-import hashlib
 import json
 from pathlib import Path
+from operator import methodcaller
 import statistics
 import sys
 import time
@@ -10,7 +10,7 @@ import time
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from scripts.train import read_labels, verify_images
+from scripts.train import read_labels, verify_images, file_sha256
 from agent.detection import CLASS_NAMES, CONFIDENCE, NEARBY_LIMITS, nearby_indexes, overlap, complete_nms
 
 
@@ -26,19 +26,15 @@ def barrier_strokes(predictions, image_shape):
     return recommendations
 
 
-def numpy_scalar(value):
-    return value.item()
-
-
 def write_json(path, value):
     # Ultralytics includes NumPy integer scalars in some metric summaries.
-    path.write_text(json.dumps(value, indent=2, default=numpy_scalar) + "\n")
+    path.write_text(json.dumps(value, indent=2, default=methodcaller("item")) + "\n")
 
 
 def predict_frames(model, image_list, device):
     with complete_nms():
         # A Python list bypasses file-loader batching. Pass the split file itself.
-        for result in model.predict(
+        yield from model.predict(
             str(image_list),
             imgsz=640,
             batch=2,
@@ -50,8 +46,7 @@ def predict_frames(model, image_list, device):
             augment=False,
             stream=True,
             verbose=False,
-        ):
-            yield result
+        )
 
 
 def check_coverage(expected, seen):
@@ -126,7 +121,7 @@ def evaluate(checkpoint, dataset, split="val", output=None):
         files.append(batch / "partial_audit.json")
     fingerprints = {}
     for path in files:
-        fingerprints[str(path)] = hashlib.sha256(path.read_bytes()).hexdigest()
+        fingerprints[str(path)] = file_sha256(path)
     verify_images(batch)
     # Equal-size coordinate edits otherwise leave Ultralytics' scan cache stale.
     (batch / "labels.cache").unlink(missing_ok=True)
@@ -153,7 +148,7 @@ def evaluate(checkpoint, dataset, split="val", output=None):
         )
     summary = dict(
         checkpoint=str(checkpoint),
-        checkpoint_sha256=hashlib.sha256(checkpoint.read_bytes()).hexdigest(),
+        checkpoint_sha256=file_sha256(checkpoint),
         dataset=str(dataset),
         split=split,
         image_count=len(images),
@@ -270,7 +265,7 @@ def evaluate(checkpoint, dataset, split="val", output=None):
         subgroup_false_positives="FPs lack ground-truth visibility categories; reported per class and verified negative frame.",
     )
     for path in files:
-        if hashlib.sha256(path.read_bytes()).hexdigest() != fingerprints[str(path)]:
+        if file_sha256(path) != fingerprints[str(path)]:
             raise ValueError("Evaluation inputs changed during execution.")
     verify_images(batch)
     write_json(output / "summary.json", summary)

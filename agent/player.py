@@ -166,8 +166,12 @@ class PlayerEstimator:
         self.localizer_error = None
         self.lane_tracker = None
         self.lane_settings = self.config.get("lane_tracking")
+        self.last_rail_lane = None
+        self.last_rail_time = None
 
     def update(self, image, timestamp, frame_id="", image_shape=None, geometry=None):
+        previous_lane, previous_time = self.last_rail_lane, self.last_rail_time
+        self.last_rail_lane = self.last_rail_time = None
         self.last_diagnostics = {}
         reviewed = self._reviewed(timestamp, frame_id)
         if reviewed is not None:
@@ -230,6 +234,17 @@ class PlayerEstimator:
             unknown.lane_reason = (
                 "Visual upperbody located; no verified ground contact or lane geometry"
             )
+        if unknown.lane_candidates:
+            # A fixed screen column cannot resolve visibly ambiguous rails.
+            if self.lane_tracker is not None:
+                self.lane_tracker.reset()
+            if len(unknown.lane_candidates) == 1 and math.isfinite(timestamp):
+                lane = unknown.lane_candidates[0]
+                self.last_rail_lane, self.last_rail_time = lane, timestamp
+                if previous_lane == lane and 0 < timestamp - previous_time <= 0.35:
+                    unknown.estimated_lane = lane
+                    unknown.lane_reason = "Estimated from consecutive rail observations"
+            return unknown
         if self.lane_tracker is not None:
             estimated = self.lane_tracker.estimate(
                 unknown.bbox, timestamp, image_shape or image.shape[:2],

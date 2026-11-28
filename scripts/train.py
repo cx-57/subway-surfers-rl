@@ -14,7 +14,6 @@ from agent.detection import CLASS_NAMES, complete_nms
 
 # Keep settings here instead of adding command-line options.
 ROOT = Path(__file__).resolve().parents[1]
-BATCH = ROOT / "data/training"
 DATA = ROOT / "data/training"
 IMAGE_SIZE = 640
 BATCH_SIZE = 2
@@ -24,6 +23,11 @@ VAL_START = 850
 # Fine-tune the existing model; a separate run keeps the first model intact.
 MODEL = ROOT / "models/barriers_640/weights/best.pt"
 LEARNING_RATE = 0.0003
+
+
+def file_sha256(path):
+    with path.open("rb") as stream:
+        return hashlib.file_digest(stream, "sha256").hexdigest()
 
 
 def read_labels(path):
@@ -49,7 +53,7 @@ def read_labels(path):
     return rows
 
 
-def verify_images(batch=BATCH):
+def verify_images(batch=DATA):
     """Compare every original screenshot with its recorded SHA256 fingerprint."""
     manifest = json.loads((batch / "manifest.json").read_text())
     frames = manifest.get("all_source_frames", manifest["frames"])
@@ -61,9 +65,7 @@ def verify_images(batch=BATCH):
             if source.is_file() and source != paths[0]:
                 paths.append(source)
         for path in paths:
-            with path.open("rb") as source:
-                actual = hashlib.file_digest(source, "sha256").hexdigest()
-            if actual != frame["sha256"]:
+            if file_sha256(path) != frame["sha256"]:
                 raise ValueError(f"Original image changed: {path}")
     return len(frames)
 
@@ -75,7 +77,7 @@ def training_settings():
         patience=5,
         time=None,
         imgsz=IMAGE_SIZE,
-        batch=BATCH_SIZE,
+        batch=DATA_SIZE,
         seed=42,
         optimizer="AdamW",
         lr0=LEARNING_RATE,
@@ -92,7 +94,7 @@ def training_settings():
     )
 
 
-def prepare_data(batch=BATCH, output=DATA):
+def prepare_data(batch=DATA, output=DATA):
     """Write image lists without copying images or changing their labels."""
     manifest = json.loads((batch / "manifest.json").read_text())
     if "splits" in manifest:
@@ -194,20 +196,20 @@ def main():
     config = training_settings()
     print(f"Verified {verify_images()} unchanged original screenshots.")
     dataset = prepare_data()
-    files = [DATA / "train.txt", DATA / "val.txt", BATCH / "manifest.json"]
-    if (BATCH / "partial_audit.json").exists():
-        files.append(BATCH / "partial_audit.json")
-    files += sorted((BATCH / "labels").glob("*.txt"))
+    files = [DATA / "train.txt", DATA / "val.txt", DATA / "manifest.json"]
+    if (DATA / "partial_audit.json").exists():
+        files.append(DATA / "partial_audit.json")
+    files += sorted((DATA / "labels").glob("*.txt"))
     fingerprints = {}
     for path in files:
-        fingerprints[str(path.relative_to(ROOT))] = hashlib.sha256(path.read_bytes()).hexdigest()
+        fingerprints[str(path.relative_to(ROOT))] = file_sha256(path)
     record = dict(
         settings=config,
         initial_checkpoint=str(MODEL),
         status="running",
         training_images=(DATA / "train.txt").read_text().splitlines(),
         validation_images=(DATA / "val.txt").read_text().splitlines(),
-        checkpoint_sha256=hashlib.sha256(MODEL.read_bytes()).hexdigest(),
+        checkpoint_sha256=file_sha256(MODEL),
         inputs=fingerprints,
     )
     device = "mps" if torch.backends.mps.is_available() else "cpu"
@@ -239,12 +241,12 @@ def main():
         )
     for path in files:
         if (
-            hashlib.sha256(path.read_bytes()).hexdigest()
+            file_sha256(path)
             != record["inputs"][str(path.relative_to(ROOT))]
         ):
             raise ValueError("Dataset inputs changed during training; do not compare this run.")
     record.update(status="complete", epochs_completed=model.trainer.epoch + 1)
-    (model.trainer.save_dir / "run.json").write_text(json.dumps(record, indent=2) + "\n")
+    save_run(model.trainer)
     print(f"Best checkpoint: {model.trainer.best}")
 
 

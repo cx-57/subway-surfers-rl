@@ -9,6 +9,11 @@ data/labeling/*/review/
 data/cleanup.json
 # Share actual checkpoint bytes, not Git LFS pointers.
 models/*
+!models/player_detector/
+models/player_detector/*
+!models/player_detector/best.pt
+!models/player_detector/results.csv
+!models/player_detector/*_points.json
 !models/baseline/
 !models/barriers_640/
 !models/training/

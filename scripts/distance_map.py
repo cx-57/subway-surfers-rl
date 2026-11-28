@@ -1,6 +1,5 @@
 """Fresh distance-ROI AP50 on reviewed holdouts whose source images are retained."""
 
-import hashlib
 import json
 from pathlib import Path
 import sys
@@ -14,7 +13,7 @@ if __package__ in (None, ""):
 
 from agent.detection import CLASS_NAMES, nearby_indexes, complete_nms
 from scripts.evaluate import match_objects, write_json, check_coverage
-from scripts.train import ROOT
+from scripts.train import ROOT, file_sha256
 
 
 def score_records(records, distance=True):
@@ -77,7 +76,7 @@ def main():
 
     settings.update({"sync": False})
     checkpoint = ROOT / "models/barriers_640/weights/best.pt"
-    sha = hashlib.sha256(checkpoint.read_bytes()).hexdigest()
+    sha = file_sha256(checkpoint)
     output = ROOT / f"models/evaluation/distance_map50_{time_ns()}"
     output.mkdir()
     model = YOLO(checkpoint)
@@ -128,7 +127,7 @@ def main():
                     image = Path(r.path)
                     seen.append(str(image.absolute()))
                     if (
-                        hashlib.sha256(image.read_bytes()).hexdigest()
+                        file_sha256(image)
                         != frames[image.name]["sha256"]
                     ):
                         raise ValueError(f"Original image changed: {image}")
@@ -159,7 +158,7 @@ def main():
         write_json(output / f"{name}_predictions.json", records)
         all_records += records
         print(name, json.dumps(cohorts[name]), flush=True)
-    if hashlib.sha256(checkpoint.read_bytes()).hexdigest() != sha:
+    if file_sha256(checkpoint) != sha:
         raise ValueError("Checkpoint changed during evaluation")
     result = dict(
         checkpoint_sha256=sha,
